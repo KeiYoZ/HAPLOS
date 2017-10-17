@@ -1,0 +1,181 @@
+/*
+Theme Name: TwentySeventeen Child
+Author: Anonymous
+Version: 1.0.0
+Template: twentyseventeen
+*/
+
+a {
+	text-decoration: none;
+}
+body, span, pre, img, ul, li, ol, p{
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+.container-fluid{
+	padding: 0 !important;
+}
+.navbar {
+	background: #5b755f;
+}
+
+/* navbar menu */
+.navbar-fixed-top {
+	min-height: 70px;
+}
+
+.navbar-nav > li > a {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	line-height: 70px;
+}
+
+.navbar-nav > li > a, .dropdown-menu > li > a {
+	font-family: 'League Spartan';
+	color: #fff;
+}
+
+.navbar-nav > li > .dropdown-menu {
+	background-color: #5b755f;
+}
+
+@media (max-width: 767px) {
+	.navbar-nav > li > a {
+		line-height: 20px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+}
+
+/*************************************************************/
+
+/* navbar logo */
+.navbar.navbar-inverse {
+	border: none;
+}
+.navbar .navbar-brand {
+	padding-top: 0px;
+}
+.navbar .navbar-brand img {
+	height: 70px;
+}
+
+/****************** Custom styles **********************/
+
+.section {
+	height: 100vh;
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+}
+
+.homeinfusionprocess {
+	color: #fff;
+	font-family: 'League Spartan';
+	line-height: 1.0em;
+	font-size: 90px;
+}
+
+.hand-injection{
+	margin-top: -250px;
+	width: 900px;
+}
+
+.hip-desc {
+	color: #fff;
+	width: 70%;
+	font-size: 20px;
+}
+
+.container-fluid {
+	padding:0px;
+	margin:0px;
+}
+
+.section-2-image {
+	width: 400px;
+	margin-left: 300px;
+}
+
+.section-2-text {
+	margin-right: 250px;
+	font-weight:bold;
+}
+
+.section-2-title-1{
+	color:#9cb0a4;
+	font-weight:bold;
+	font-size:70px;
+	margin-left:150px;
+}
+
+.section-2-title-2{
+	color:#709586;
+	font-weight:bold;
+	font-size:100px;
+	margin-left:150px;
+}
+
+#ano_ang_haplos span {
+	line-height: 5.0em;
+}
+
+.section-3-title-1{
+	color:#9cb0a4;
+	font-size:80px;
+	font-weight:bold;
+}
+
+.section-3-title-2{
+	color:#709586;
+	font-size:110px;
+	font-weight:bold;
+}
+
+.section-3-text{
+	font-weight: bold;
+	font-size:16px;
+	margin-top:20px;
+	margin-bottom:20px;
+	margin-left: 200px;
+}
+
+.contact{
+	color: #fff;
+	font-size:90px;
+	font-weight:bold;
+}
+
+#contact_haplos img {
+	width: 40px;
+}
+
+.section-5-title{
+	color:#fff;
+	font-size:70px;
+	font-weight:bold;
+	line-height: 1.0em;
+}
+
+.col-centered{
+float: none;
+margin: 0 auto;
+}
+
+.vcenter {
+  display: table-cell;
+  vertical-align: middle;
+  float: none;
+  background: #333;
+}
+
+.contact-text{
+	background: #a4d2bf;
+	border-radius:15px;
+	padding:5px;
+}
