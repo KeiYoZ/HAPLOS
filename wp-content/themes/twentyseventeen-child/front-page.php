@@ -1,7 +1,4 @@
 <?php get_header(); ?>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/scripts.js"></script>
 <!-- container start -->
 <div class="container-fluid">
 	<!-- First section start -->
@@ -17,10 +14,11 @@
 			</div>
 			<div class="col-md-6">
 				<p class="hip-desc"><?php the_field('section_1_description'); ?></p>
-				<input type="button" class="btn btn-danger" value="ghsdjfgh">
+				<input type="button" class="btn btn-danger" value="Test Alert">
 			</div>
 		</div>
 	</div>
+
 	<!-- First section end -->
 
 	<!-- Second section start -->
@@ -70,26 +68,26 @@
 		</div>
 		<div class="row">
 			<div class="col-md-2 text-center col-centered">
-					<img style="float:left;" src="<?php the_field('section_4_contact_1_image'); ?>"/>
-					<p class="contact-text" style="vertical-align:middle;"><?php the_field('section_4_contact_1_text'); ?></p>
+				<img style="float:left;" src="<?php the_field('section_4_contact_1_image'); ?>"/>
+				<p class="contact-text" style="vertical-align:middle;"><?php the_field('section_4_contact_1_text'); ?></p>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-md-2 text-center col-centered">
-					<img style="float:left;" src="<?php the_field('section_4_contact_2_image'); ?>"/>
-					<p class="contact-text"><?php the_field('section_4_contact_2_text'); ?></p>
+				<img style="float:left;" src="<?php the_field('section_4_contact_2_image'); ?>"/>
+				<p class="contact-text"><?php the_field('section_4_contact_2_text'); ?></p>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-md-3 text-cente col-centered">
-					<img style="float:left;" src="<?php the_field('section_4_contact_3_image'); ?>"/>
-					<p class="contact-text"><?php the_field('section_4_contact_3_text'); ?></p>
+				<img style="float:left;" src="<?php the_field('section_4_contact_3_image'); ?>"/>
+				<p class="contact-text"><?php the_field('section_4_contact_3_text'); ?></p>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-md-3 text-center col-centered">
-					<img style="float:left;" src="<?php the_field('section_4_contact_4_image'); ?>"/>
-					<p class="contact-text"><?php the_field('section_4_contact_4_text'); ?></p>
+				<img style="float:left;" src="<?php the_field('section_4_contact_4_image'); ?>"/>
+				<p class="contact-text"><?php the_field('section_4_contact_4_text'); ?></p>
 			</div>
 		</div>
 	</div>
