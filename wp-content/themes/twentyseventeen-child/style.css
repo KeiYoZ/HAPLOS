@@ -17,11 +17,15 @@ body {
 	overflow-x: hidden;
 }
 
+.row {
+	margin-right:0px !important;
+}
+
 .container-fluid{
 	padding: 0 !important;
 }
 .navbar {
-	background: #5b755f;
+	background: #4f7e6b;
 }
 
 /* navbar menu */
@@ -41,7 +45,7 @@ body {
 }
 
 .navbar-nav > li > .dropdown-menu {
-	background-color: #5b755f;
+	background-color: #4f7e6b;
 }
 
 @media (max-width: 767px) {
@@ -68,10 +72,11 @@ body {
 /****************** Custom styles **********************/
 
 .section {
-	height: 100vh;
+	height: auto;
 	padding: 0px;
 	margin: 0px;
 	width: 100%;
+	padding-bottom:100px;
 }
 
 .homeinfusionprocess {
@@ -82,8 +87,9 @@ body {
 }
 
 .hand-injection{
-	margin-top: -250px;
-	width: 900px;
+	margin-top: -140px;
+	width: 100%;
+	float: left;
 }
 
 .hip-desc {
@@ -95,6 +101,22 @@ body {
 .container-fluid {
 	padding:0px;
 	margin:0px;
+}
+
+.start-process{
+	margin-left: 180px;
+	background-color:#a4d2bf;
+	border-radius:100px;
+	padding:6px 20px;
+}
+
+.section-1-container{
+	padding-top:70px;
+	padding-left:280px;
+}
+
+.section-2-container{
+	padding-top:200px;
 }
 
 .section-2-image {
@@ -121,8 +143,18 @@ body {
 	margin-left:150px;
 }
 
+.section-2-title-container{
+	margin-top:100px;
+}
+
 #ano_ang_haplos span {
 	line-height: 5.0em;
+}
+
+.section-3-container {
+	background-color: #e6e5db;
+	padding-top:200px;
+	padding-left:180px;
 }
 
 .section-3-title-1{
@@ -143,6 +175,7 @@ body {
 	margin-top:20px;
 	margin-bottom:20px;
 	margin-left: 200px;
+	width: 50%;
 }
 
 .contact{
@@ -152,7 +185,7 @@ body {
 }
 
 #contact_haplos img {
-	width: 40px;
+	width: 55px;
 }
 
 .section-5-title{
@@ -174,10 +207,39 @@ body {
 	background: #333;
 }
 
-.contact-text{
+.clear {
+	margin:0;
+	clear:both;
+}
+.contact-wrapper {
+	margin:0 auto;
+	width:39%;
+	padding-left:140px;
+	padding-bottom:100px;
+}
+
+.col-1{
+	width: 13%;
+	float: left;
+	margin-top: 10px;
+}
+
+.col-2{
+	width: 70%;
+	float: left;
+}
+
+.contact-text {
 	background: #a4d2bf;
-	border-radius:15px;
-	padding:5px;
+	border-radius: 12px;
+	padding: 5px;
+	margin-top: 19px;
+	text-align: center;
+	width: 87%;
+}
+
+.section-5-container{
+	padding-bottom:550px;
 }
 
 /* SIDEBAR NAVIGATION */
@@ -193,10 +255,10 @@ body {
 /* menu bar style */
 
 .dropdown-menu li a:hover{
- border-left: 6px solid #a4d2bf;
- transition: border-left 0.33s;
- background-color:#5b755f;
- font-weight: bold;
+	border-left: 6px solid #a4d2bf;
+	transition: border-left 0.33s;
+	background-color:#4f7e6b ;
+	font-weight: bold;
 }
 
 /**********tutorial css************/
@@ -208,10 +270,10 @@ body {
 
 .tut-banner-title{
 	color: #5B755F;
-    text-align: center;
-    font-size: 55px;
-    font-weight: bold;
-    line-height: 48px;
+	text-align: center;
+	font-size: 55px;
+	font-weight: bold;
+	line-height: 48px;
 }
 
 .tut-banner-icon-box{
@@ -223,7 +285,7 @@ body {
 
 .tut-banner-sub{
 	color: #5B755F;
-    text-align: center;
+	text-align: center;
 }
 
 .tut-bene-warn{
@@ -237,8 +299,8 @@ body {
 .tut-bene{
 	height: 82vh;
 	width: 35%;
-    margin-left: 160px;
-    margin-right: 50px;
+	margin-left: 160px;
+	margin-right: 50px;
 	background-color: #9FB19B;
 	border-radius: 25px;
 }
@@ -266,14 +328,14 @@ body {
 
 .tut-reminder-title{
 	font-size: 75px;
-    text-align: center;
-    font-weight: bold;
-    line-height: 75px;
+	text-align: center;
+	font-weight: bold;
+	line-height: 75px;
 }
 
 .tut-reminder-inst{
 	margin-left: 350px;
-    margin-right: 210px;
+	margin-right: 210px;
 }
 
 .tut-reminder-number{
@@ -294,9 +356,9 @@ body {
 
 .tut-dosage-desc-title{
 	font-size: 75px;
-    font-weight: bold;
-    line-height: 75px;
-    color: #9FB19B; 
+	font-weight: bold;
+	line-height: 75px;
+	color: #9FB19B; 
 }
 
 .tut-dosage-desc-number{
@@ -330,24 +392,24 @@ body {
 }
 
 .styleSelect select {
-  background: transparent;
-  width: 250px;
-  padding: 5px;
-  font-size: 16px;
-  line-height: 1;
-  border: 0;
-  border-radius: 0;
-  height: 34px;
-  -webkit-appearance: none;
-  color: #000;
+	background: transparent;
+	width: 250px;
+	padding: 5px;
+	font-size: 16px;
+	line-height: 1;
+	border: 0;
+	border-radius: 0;
+	height: 34px;
+	-webkit-appearance: none;
+	color: #000;
 }
 
 .styleSelect {
 	margin: 0 40%;
-  	width: 250px;
-  	height: 32px;
-  	overflow: hidden;
-  	border: 2px solid #000;
+	width: 250px;
+	height: 32px;
+	overflow: hidden;
+	border: 2px solid #000;
 }
 
 .tut-dosage-calc-box{
@@ -373,9 +435,9 @@ body {
 
 .calc-input{
 	background-color: #9FB19B;
-    border: none;
-    border-bottom: 2px solid white;
-    width: 100%;
+	border: none;
+	border-bottom: 2px solid white;
+	width: 100%;
 }
 
 .calc-submit{
@@ -386,4 +448,184 @@ body {
 	border-radius: 11px;
 	color: white;
 	background-color: #6D9075;
+}
+
+
+/*************** Responsiveness of index ***************/
+
+/*Larger Screens*/
+@media only screen and (min-width : 1600px) {
+
+
+}
+
+/*Desktops & laptops*/
+@media only screen and (min-width : 1225px) and (max-width: 1599px) {
+	.hand-injection {
+		margin-top:-100px;
+	}
+	.section-1-container{
+		padding-left:200px;
+	}
+	.homeinfusionprocess {
+		font-size: 80px;
+	}
+	.section-2-image {
+		width: 500px;
+		margin-left: 110px;
+	}
+	.section-2-text {
+		margin-right: 150px;
+		font-weight: bold;
+		padding-left: 80px;
+		font-size: 15px;
+	}
+	.section-2-title-container{
+		margin-top:50px;
+	}
+	.section-3-text{
+		font-size:20px;
+		width: 65%;
+	}
+	.section-2-container{
+		padding-top:130px;
+	}
+
+	.section-3-container {
+		background-color: #e6e5db;
+		padding-top:130px;
+		padding-left:180px;
+	}
+	.section-3-text{
+		font-size:15px;
+		margin-top:60px;
+		margin-bottom:60px;
+	}
+
+	.contact-wrapper {
+		width: 54%;
+	}
+
+	.section-5-title{
+		font-size:62px;
+	}
+}
+/*Tablets*/
+@media only screen and (min-width : 992px) and (max-width : 1224px) {
+	.hand-injection {
+		margin-top:-80px;
+	}
+	.section-1-container{
+		padding-left:200px;
+	}
+	.homeinfusionprocess {
+		font-size: 80px;
+	}
+	.hip-desc{
+		font-size:17px;
+	}
+	.section-1-container {
+		padding-left:100px;
+	}
+	.section-2-image {
+		width: 500px;
+		margin-left: 50px;
+	}
+	.section-2-text {
+		margin-right: 100px;
+		font-weight: bold;
+		padding-left: 30px;
+		font-size: 15px;
+		margin-top:30px;
+	}
+	.section-2-title-container{
+		margin-top:20px;
+	}
+	.section-2-container{
+		padding-top:130px;
+	}
+	.section-2-title-1, .section-2-title-2 {
+		margin-left: 50px;
+	}
+	.section-3-container {
+		padding-top: 80px;
+		padding-left:48px;
+	}
+	.contact-wrapper {
+		width: 58%;
+	}
+	.section-title{
+		font-size:50px;
+	}
+}
+
+@media only screen and (min-width : 480px) and (max-width : 991px) {
+	.section-1-container {
+		padding-left: 140px;
+	}
+	.homeinfusionprocess {
+		font-size: 133px;
+	}
+	.hand-injection {
+		margin-top: -292px;
+	}
+	.hip-desc {
+		margin-top:30px;
+		font-size: 32px;
+		margin-left: 140px;
+	}
+
+	.start-process{
+		font-size:40px;
+		margin-left:280px;
+		margin-top:20px;
+	}
+	.section-2-image {
+		width: 100%;
+		margin-left:0px;
+		padding-left:20px;
+		padding-right:10px;
+	}
+
+	.section-2-text{
+		margin:0 auto;
+		width: 80%;
+		font-size:22px;
+		margin-top:40px;
+	}
+
+	.section-2-title-1, .section-2-title-2 {
+		margin-left:75px;
+	}
+	.section-2-title-1{
+		font-size:80px;
+	}
+	.section-2-title-2{
+		margin-top:5px;
+		font-size:110px;
+	}
+
+	.section-3-text {
+		font-size:30px;
+		width: 70%;
+		margin-left:85px;
+	}
+	.section-3-title-1{
+		font-size:90px;
+	}
+	.setion-3-title-2{
+		font-size:120px;		
+	}
+	.section-3-container{
+		padding-left:95px;
+	}
+	.contact-wrapper{
+		margin-top:100px;
+		width: 80%;
+	}
+	.contact-text{
+		font-size:25px;
+		padding-left:15px;
+		padding-right:15px;
+	}
 }

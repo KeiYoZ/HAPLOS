@@ -9,71 +9,78 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script>
 		$(document).ready(function(){
-
 			//Smooth Scrolling
 			$('a[href*="#"]') .not('[href="#"]') .not('[href="#0"]') .click(function(event) {if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname ) {var target = $(this.hash); target = target.length ? target : $('[name=' + this.hash.slice(1) + ']'); if (target.length) {event.preventDefault(); $('html, body').animate({scrollTop: target.offset().top }, 850, function() {var $target = $(target); $target.focus(); if ($target.is(":focus")) {return false; } else {$target.attr('tabindex','-1'); $target.focus(); }; }); } } });
 
 			//Navigation dot bar
-			$(document).ready(function(){
-				$.scrollTo = $.fn.scrollTo = function(x, y, options){
-					if (!(this instanceof $)) return $.fn.scrollTo.apply($('html, body'), arguments);
-					options = $.extend({}, {
-						gap: {
-							x: 0,
-							y: 0
+			$(document).ready(function() {
+				$.scrollTo = $.fn.scrollTo = function(x, y, options) {
+					if (!(this instanceof $))
+						return $.fn.scrollTo.apply($("html, body"), arguments);
+					options = $.extend(
+						{},
+						{
+							gap: {
+								x: 0,
+								y: 0
+							},
+							animation: {
+								easing: "swing",
+								duration: 600,
+								complete: $.noop,
+								step: $.noop
+							}
 						},
-						animation: {
-							easing: 'swing',
-							duration: 600,
-							complete: $.noop,
-							step: $.noop
-						}
-					}, options);
-					return this.each(function(){
+						options
+						);
+					return this.each(function() {
 						var elem = $(this);
-						elem.stop().animate({
+						elem.stop().animate(
+						{
 							scrollLeft: !isNaN(Number(x)) ? x : $(y).offset().left + options.gap.x,
 							scrollTop: !isNaN(Number(y)) ? y : $(y).offset().top + options.gap.y
-						}, options.animation);
+						},
+						options.animation
+						);
 					});
 				};
-				var aChildren = $("nav li").children();
+				var aChildren = $(".sidebar-nav li").children();
 				var aArray = [];
-				for (var i=0; i < aChildren.length; i++) {    
+				for (var i = 0; i < aChildren.length; i++) {
 					var aChild = aChildren[i];
-					var ahref = $(aChild).attr('href');
+					var ahref = $(aChild).attr("href");
 					aArray.push(ahref);
-				}     
-				$(window).scroll(function(){
+				}
+				$(window).scroll(function() {
 					var windowPos = $(window).scrollTop();
 					var windowHeight = $(window).height();
 					var docHeight = $(document).height();
-					for (var i=0; i < aArray.length; i++) {
+					for (var i = 0; i < aArray.length; i++) {
 						var theID = aArray[i];
-						var divPos = $(theID).offset().top; 
-						var divHeight = $(theID).height(); 
-						if (windowPos >= divPos && windowPos < (divPos + divHeight)) {
-							$("a[href='" + theID + "']").addClass("name-active");
+						var divPos = $(theID).offset().top;
+						var divHeight = $(theID).height();
+						if (windowPos >= divPos && windowPos < divPos + divHeight) {
+							$(".sidebar-nav a[href='" + theID + "']").addClass("name-active");
 						} else {
-							$("a[href='" + theID + "']").removeClass("name-active");
+							$(".sidebar-nav a[href='" + theID + "']").removeClass("name-active");
 						}
 					}
-					if(windowPos + windowHeight == docHeight) {
-						if (!$("nav li:last-child a").hasClass("name-active")) {
+					if (windowPos + windowHeight == docHeight) {
+						if (!$(".sidebar-nav li:last-child a").hasClass("name-active")) {
 							var navActiveCurrent = $(".name-active").attr("href");
 							$("a[href='" + navActiveCurrent + "']").removeClass("name-active");
-							$("nav li:last-child a").addClass("name-active");
+							$(".sidebar-nav li:last-child a").addClass("name-active");
 						}
 					}
 				});
-				$("nav a").click(function(evn){
+				$(".sidebar-nav a").click(function(evn) {
 					evn.preventDefault();
-					$('html,body').scrollTo(this.hash, this.hash);
+					$("html,body").scrollTo(this.hash, this.hash);
 				});
 			});
-
-
 		}); //document.ready end
+		
+
 	</script>
 </head>
 <body>
