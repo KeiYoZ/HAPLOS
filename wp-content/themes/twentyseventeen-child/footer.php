@@ -16,7 +16,21 @@
 ?>
 
 </div><!-- #content -->
+<script type="text/javascript">
+	hidePanels("first-step-tabcontent");
+	hidePanels("second-step-tabcontent");
+	hidePanels("third-step-tabcontent");
+	hidePanels("third-step-pt2-tabcontent");
+	hidePanels("fourth-step-tabcontent");
 
+	function hidePanels(tabGroup){
+		// Get all elements with class="tabcontent" and hide them
+	    var tabcontent = document.getElementsByClassName(tabGroup);
+	    for (i = 1; i < tabcontent.length; i++) {
+	        tabcontent[i].style.display = "none";
+	    }
+	}
+</script>
 <footer id="colophon" class="site-footer" role="contentinfo">
 	<div class="wrap">
 		<?php
