@@ -190,3 +190,11 @@ body {
 .sidebar-nav ul {list-style-type:none; margin:0; padding:0;}
 .name-active {color:rgba(255,255,255,.8); background-color:#FFD95F; text-align:right;}
 
+/* menu bar style */
+
+.dropdown-menu li a:hover{
+	border-left: 6px solid #a4d2bf;
+	transition: border-left 0.33s;
+	background-color:#5b755f;
+	font-weight: bold;
+}
