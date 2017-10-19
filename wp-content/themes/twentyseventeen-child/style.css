@@ -193,8 +193,197 @@ body {
 /* menu bar style */
 
 .dropdown-menu li a:hover{
-	border-left: 6px solid #a4d2bf;
-	transition: border-left 0.33s;
-	background-color:#5b755f;
+ border-left: 6px solid #a4d2bf;
+ transition: border-left 0.33s;
+ background-color:#5b755f;
+ font-weight: bold;
+}
+
+/**********tutorial css************/
+.tut-banner{
+	background-color: #EBE4D5;
+	margin-top: 70px;
+	padding-top: 50px;
+}
+
+.tut-banner-title{
+	color: #5B755F;
+    text-align: center;
+    font-size: 55px;
+    font-weight: bold;
+    line-height: 48px;
+}
+
+.tut-banner-icon-box{
+	margin: 20px 0;
+	border-top: 5px solid #D7CEC3;
+	border-bottom: 5px solid #D7CEC3;
+	padding: 20px 0;
+}
+
+.tut-banner-sub{
+	color: #5B755F;
+    text-align: center;
+}
+
+.tut-bene-warn{
+	background-color: #EBE4D5;
+}
+
+.tut-bene-warn-title{
+	font-size: 75px;
+}
+
+.tut-bene{
+	height: 82vh;
+	width: 35%;
+    margin-left: 160px;
+    margin-right: 50px;
+	background-color: #9FB19B;
+	border-radius: 25px;
+}
+
+.tut-warn{
+	height: 82vh;
+	width: 35%;
+	background-color: #6D9075;
+	border-radius: 25px;
+}
+
+.tut-bene-number{
+	font-size: 60px;
+	color: white;
+}
+
+.tut-bene-desc{
+	color: white;
+	margin-top: 15px;
+}
+
+.tut-reminder{
+	background-color: #EBE4D5;
+}
+
+.tut-reminder-title{
+	font-size: 75px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 75px;
+}
+
+.tut-reminder-inst{
+	margin-left: 350px;
+    margin-right: 210px;
+}
+
+.tut-reminder-number{
+	font-size: 60px;
+	color: #9FB19B;
+	text-align: right;
 	font-weight: bold;
+}
+
+.tut-reminder-desc{
+	margin-top: 20px;
+	font-size: 18px;
+}
+
+.tut-dosage-desc{
+	background-color: #EBE4D5;
+}
+
+.tut-dosage-desc-title{
+	font-size: 75px;
+    font-weight: bold;
+    line-height: 75px;
+    color: #9FB19B; 
+}
+
+.tut-dosage-desc-number{
+	font-size: 60px;
+	color: #6D9075;
+	text-align: right;
+	font-weight: bold;
+}
+
+.tut-dosage-desc-desc{
+	font-size: 18px;
+}
+
+.dosage-formula{
+	border: 5px solid #6D9075;
+	border-radius: 15px; 
+	width: 46%;
+	padding: 10px;
+	margin-left: 50px;
+}
+
+.tut-dosage-calc{
+	background-color: #EBE4D5;
+}
+
+.tut-dosage-calc-title{
+	color: #6D9075;
+	font-size: 75px;
+	margin-top: 20px;
+	text-align: center;
+}
+
+.styleSelect select {
+  background: transparent;
+  width: 250px;
+  padding: 5px;
+  font-size: 16px;
+  line-height: 1;
+  border: 0;
+  border-radius: 0;
+  height: 34px;
+  -webkit-appearance: none;
+  color: #000;
+}
+
+.styleSelect {
+	margin: 0 40%;
+  	width: 250px;
+  	height: 32px;
+  	overflow: hidden;
+  	border: 2px solid #000;
+}
+
+.tut-dosage-calc-box{
+	margin: 50px 33%;
+	background-color: #9FB19B;
+	border-radius:	25px;
+	padding: 10px 35px;
+	width: 32%;
+	height: 42vh;
+}
+
+.tut-dosage-calc-inner{
+	margin: 20px 0;
+
+}
+
+.calc-input-labels{
+	background-color: white;
+	border-radius: 25px;
+	text-align: center;
+	padding: 5px;
+}
+
+.calc-input{
+	background-color: #9FB19B;
+    border: none;
+    border-bottom: 2px solid white;
+    width: 100%;
+}
+
+.calc-submit{
+	margin: 0 35%;
+}
+
+.calc-submit-button{
+	border-radius: 11px;
+	color: white;
+	background-color: #6D9075;
 }
