@@ -78,6 +78,7 @@
 					$("html,body").scrollTo(this.hash, this.hash);
 				});
 			});
+			
 		}); //document.ready end
 		
 
