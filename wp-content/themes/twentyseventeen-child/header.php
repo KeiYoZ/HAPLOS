@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8">
 	<title>Site Title</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -10,7 +11,7 @@
 	<script>
 		$(document).ready(function(){
 			//Smooth Scrolling
-			$('a[href*="#"]') .not('[href="#"]') .not('[href="#0"]') .click(function(event) {if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname ) {var target = $(this.hash); target = target.length ? target : $('[name=' + this.hash.slice(1) + ']'); if (target.length) {event.preventDefault(); $('html, body').animate({scrollTop: target.offset().top }, 850, function() {var $target = $(target); $target.focus(); if ($target.is(":focus")) {return false; } else {$target.attr('tabindex','-1'); $target.focus(); }; }); } } });
+			$('a[href*="#"]') .not('[href="#"]') .not('[href="#0"]') .click(function(event) {if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname ) {var target = $(this.hash); target = target.length ? target : $('[name=' + this.hash.slice(1) + ']'); if (target.length) {event.preventDefault(); $('html, body').animate({scrollTop: target.offset().top }, 500, function() {var $target = $(target); $target.focus(); if ($target.is(":focus")) {return false; } else {$target.attr('tabindex','-1'); $target.focus(); }; }); } } });
 
 			// dot nav start
 			$(document).ready(function($){
@@ -87,17 +88,6 @@
 	</script>
 </head>
 <body>
-	<!-- dot nav start -->
-	<div class="vNav">
-		<ul class="vNav">
-			<li><a href="#top"></a></li>
-			<li><a href="#ano_ang_haplos"></a></li>
-			<li><a href="#hemophilia"></a></li>
-			<li><a href="#contact_haplos"></a></li>
-			<li><a href="#mga_ospital"></a></li>
-		</ul>
-	</div>
-	<!-- dot nav bar end -->
 	<!-- NAVBAR START -->
 	<div class="top-header" id="top">
 		<nav class="navbar navbar-inverse navbar-fixed-top">
@@ -119,33 +109,33 @@
 				</ul>
 				<div id="navbar" class="collapse navbar-collapse">
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#top" style="color: #fff;">home</a></li>
+						<li><a href="/haplos_wp/#top" style="color: #fff;">home</a></li>
 						<li class="dropdown">
 							<a style="color: #fff; class="dropdown-toggle" data-toggle="dropdown" href="#">about<span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="#ano_ang_haplos">Ano ang HAPLOS</a></li>
-								<li><a href="#hemophilia">Ano ang Hemophilia?</a></li>
+								<li><a href="/haplos_wp/#ano_ang_haplos">Ano ang HAPLOS</a></li>
+								<li><a href="/haplos_wp/#hemophilia">Ano ang Hemophilia?</a></li>
 							</ul>
 						</li>
 						<li class="dropdown">
 							<a style="color: #fff;" class="dropdown-toggle" data-toggle="dropdown" href="#">contact<span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="#contact_haplos">Contact HAPLOS</a></li>
-								<li><a href="#mga_ospital">Mga Ospital at Treatment Centers</a></li>
+								<li><a href="/haplos_wp/#contact_haplos">Contact HAPLOS</a></li>
+								<li><a href="/haplos_wp/#mga_ospital">Mga Ospital at Treatment Centers</a></li>
 							</ul>
 						</li>
 						<li class="dropdown">
 							<a style="color: #fff;" class="dropdown-toggle" data-toggle="dropdown" href="#">home infusion process<span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="#">Ano ang Home Infusion Process?</a></li>
-								<li><a href="#">Mga Benepisyo at Panganib nito</a></li>
-								<li><a href="#">Dosage Calculator</a></li>
-								<li><a href="#">Unang Bahagi: Paghahanda</a></li>
-								<li><a href="#">Pangalawang Bahagi: Paghahanap ng Ugat</a></li>
-								<li><a href="#">Pangatlong Bahagi: Pagturok</a></li>
-								<li><a href="#">Pang-apat na Bahagi: Pagkatapos Mag-Infuse</a></li>
-								<li><a href="#">Mga Pagkakamali sa Pagturok</a></li>
-								<li><a href="#">Pagsusulit</a></li>
+								<li><a href="/haplos_wp/tutorial/#tut-banner">Ano ang Home Infusion Process?</a></li>
+								<li><a href="/haplos_wp/tutorial/#tut-bene-warn">Mga Benepisyo at Panganib nito</a></li>
+								<li><a href="/haplos_wp/tutorial/#tut-dosage-calc">Dosage Calculator</a></li>
+								<li><a href="/haplos_wp/tutorial/#tut-first-step">Unang Bahagi: Paghahanda</a></li>
+								<li><a href="/haplos_wp/tutorial/#tut-second-step">Pangalawang Bahagi: Paghahanap ng Ugat</a></li>
+								<li><a href="/haplos_wp/tutorial/#tut-third-step">Pangatlong Bahagi: Pagturok</a></li>
+								<li><a href="/haplos_wp/tutorial/#tut-fourth-step">Pang-apat na Bahagi: Pagkatapos Mag-Infuse</a></li>
+								<li><a href="/haplos_wp/tutorial/#tut-mistakes">Mga Pagkakamali sa Pagturok</a></li>
+								<li><a href="/haplos_wp/tutorial/#tut-end">Pagsusulit</a></li>
 							</ul>
 						</li>
 					</ul>

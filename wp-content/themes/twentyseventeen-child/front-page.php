@@ -1,4 +1,16 @@
 <?php get_header(); ?>
+
+<!-- dot nav start -->
+<div class="vNav">
+	<ul class="vNav">
+		<li><a href="#top"></a></li>
+		<li><a href="#ano_ang_haplos"></a></li>
+		<li><a href="#hemophilia"></a></li>
+		<li><a href="#contact_haplos"></a></li>
+		<li><a href="#mga_ospital"></a></li>
+	</ul>
+</div>
+<!-- dot nav bar end -->
 <!-- container start -->
 <div class="container-fluid">
 	<!-- First section start -->
