@@ -12,78 +12,47 @@
 			//Smooth Scrolling
 			$('a[href*="#"]') .not('[href="#"]') .not('[href="#0"]') .click(function(event) {if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname ) {var target = $(this.hash); target = target.length ? target : $('[name=' + this.hash.slice(1) + ']'); if (target.length) {event.preventDefault(); $('html, body').animate({scrollTop: target.offset().top }, 850, function() {var $target = $(target); $target.focus(); if ($target.is(":focus")) {return false; } else {$target.attr('tabindex','-1'); $target.focus(); }; }); } } });
 
-			//Navigation dot bar
-			$(document).ready(function() {
-				$.scrollTo = $.fn.scrollTo = function(x, y, options) {
-					if (!(this instanceof $))
-						return $.fn.scrollTo.apply($("html, body"), arguments);
-					options = $.extend(
-						{},
-						{
-							gap: {
-								x: 0,
-								y: 0
-							},
-							animation: {
-								easing: "swing",
-								duration: 600,
-								complete: $.noop,
-								step: $.noop
-							}
-						},
-						options
-						);
-					return this.each(function() {
-						var elem = $(this);
-						elem.stop().animate(
-						{
-							scrollLeft: !isNaN(Number(x)) ? x : $(y).offset().left + options.gap.x,
-							scrollTop: !isNaN(Number(y)) ? y : $(y).offset().top + options.gap.y
-						},
-						options.animation
-						);
-					});
-				};
-				var aChildren = $(".sidebar-nav li").children();
-				var aArray = [];
-				for (var i = 0; i < aChildren.length; i++) {
-					var aChild = aChildren[i];
-					var ahref = $(aChild).attr("href");
-					aArray.push(ahref);
-				}
-				$(window).scroll(function() {
-					var windowPos = $(window).scrollTop();
-					var windowHeight = $(window).height();
-					var docHeight = $(document).height();
-					for (var i = 0; i < aArray.length; i++) {
-						var theID = aArray[i];
-						var divPos = $(theID).offset().top;
-						var divHeight = $(theID).height();
-						if (windowPos >= divPos && windowPos < divPos + divHeight) {
-							$(".sidebar-nav a[href='" + theID + "']").addClass("name-active");
-						} else {
-							$(".sidebar-nav a[href='" + theID + "']").removeClass("name-active");
-						}
-					}
-					if (windowPos + windowHeight == docHeight) {
-						if (!$(".sidebar-nav li:last-child a").hasClass("name-active")) {
-							var navActiveCurrent = $(".name-active").attr("href");
-							$("a[href='" + navActiveCurrent + "']").removeClass("name-active");
-							$(".sidebar-nav li:last-child a").addClass("name-active");
-						}
-					}
+			// dot nav start
+			$(document).ready(function($){
+				var parPosition = [];
+				$('.section').each(function() {
+					parPosition.push($(this).offset().top);
 				});
-				$(".sidebar-nav a").click(function(evn) {
-					evn.preventDefault();
-					$("html,body").scrollTo(this.hash, this.hash);
+
+				$('a').click(function(){
+					$('html, body').animate({
+						scrollTop: $( $.attr(this, 'href') ).offset().top
+					}, 500);
+					return false;
+				});
+
+				$('.vNav ul li a').click(function () {
+					$('.vNav ul li a').removeClass('active');
+					$(this).addClass('active');
+				}); 
+
+				$('.vNav a').hover(function() {
+					$(this).find('.label').show();
+				}, function() {
+					$(this).find('.label').hide();
+				});
+
+				$(document).scroll(function(){
+					var position = $(document).scrollTop(),
+					index; 
+					for (var i=0; i<parPosition.length; i++) {
+						if (position <= parPosition[i]) {
+							index = i;
+							break;
+						}
+					}
+					$('.vNav ul li a').removeClass('active');
+					$('.vNav ul li a:eq('+index+')').addClass('active');
 				});
 			});
-			
+			// dot nav end
 		}); //document.ready end
-		
-
 	</script>
-
 	<script type="text/javascript">
 
 		function openStep(evt, tabGroup, tabLinkGroup, tabNumber, from = "tab") {
@@ -93,13 +62,13 @@
 		    // Get all elements with class="tabcontent" and hide them
 		    tabcontent = document.getElementsByClassName(tabGroup);
 		    for (i = 0; i < tabcontent.length; i++) {
-		        tabcontent[i].style.display = "none";
+		    	tabcontent[i].style.display = "none";
 		    }
 
 		    // Get all elements with class="tablinks" and remove the class "active"
 		    tablinks = document.getElementsByClassName(tabLinkGroup);
 		    for (i = 0; i < tablinks.length; i++) {
-		        tablinks[i].className = tablinks[i].className.replace(" active", "");
+		    	tablinks[i].className = tablinks[i].className.replace(" active", "");
 		    }
 
 		    // Show the current tab, and add an "active" class to the link that opened the tab
@@ -112,28 +81,23 @@
 		    	var tabNumberTokens = tabNumber.split("-");
 		    	var tabDigit = parseInt(tabNumberTokens[tabNumberTokens.length - 1]) - 1;
 
-				tablinks[tabDigit].className += " active";
+		    	tablinks[tabDigit].className += " active";
 		    }
-
-
 		}
-
 	</script>
 </head>
 <body>
-	<!-- SIDEBAR -->
-	<div class="sidebar">
-		<nav class="sidebar-nav">
-			<ul>
-				<li><a href="#top" class="dot name-active"><span></span></a></li>
-				<li><a href="#ano_ang_haplos" class="dot"><span></span></a></li>
-				<li><a href="#hemophilia" class="dot"><span></span></a></li>
-				<li><a href="#contact_haplos" class="dot"><span></span></a></li>
-				<li><a href="#mga_ospital" class="dot"><span></span></a></li>
-			</ul>
-		</nav>
+	<!-- dot nav start -->
+	<div class="vNav">
+		<ul class="vNav">
+			<li><a href="#top"></a></li>
+			<li><a href="#ano_ang_haplos"></a></li>
+			<li><a href="#hemophilia"></a></li>
+			<li><a href="#contact_haplos"></a></li>
+			<li><a href="#mga_ospital"></a></li>
+		</ul>
 	</div>
-	<!-- /sidebar -->
+	<!-- dot nav bar end -->
 	<!-- NAVBAR START -->
 	<div class="top-header" id="top">
 		<nav class="navbar navbar-inverse navbar-fixed-top">
@@ -145,7 +109,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="#"><img src="<?php the_field('logo'); ?>" alt=""></a>
+					<a class="navbar-brand" href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/HAPLOS-Logo.png" alt=""></a>
 					<a href="#"><span class="navbar-text">ENGLISH</span></a>
 					<a href="#"><span class="navbar-text">|</span></a>
 					<a href="#"><span class="navbar-text">FILIPINO</span></a>
