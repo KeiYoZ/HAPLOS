@@ -88,6 +88,15 @@
 	</script>
 </head>
 <body>
+	<?php
+	global $wp;
+	$current_url = home_url(add_query_arg(array(),$wp->request));
+	if (is_page('Home') || is_page('Front Page - En')) {
+		$current_url = home_url(add_query_arg(array(),$wp->request)); //makes anchor links work from front-page and front-page-en
+	} elseif (is_page('Tutorial')) {
+		$current_url = home_url(); //can jump from tutorial to front-page and viceversa
+	}
+	?>
 	<!-- NAVBAR START -->
 	<div class="top-header" id="top">
 		<nav class="navbar navbar-inverse navbar-fixed-top">
@@ -100,42 +109,39 @@
 						<span class="icon-bar"></span>
 					</button>
 					<a class="navbar-brand" href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/HAPLOS-Logo.png" alt=""></a>
-					<a href="#"><span class="navbar-text">ENGLISH</span></a>
+					<a href="<?php echo $current_url; ?>/front-page-en"><span class="navbar-text">ENGLISH</span></a>
 					<a href="#"><span class="navbar-text">|</span></a>
-					<a href="#"><span class="navbar-text">FILIPINO</span></a>
+					<a href="<?php echo $current_url; ?>/"><span class="navbar-text">FILIPINO</span></a>
 				</div>
-				<ul class="nav navbar-nav">
-
-				</ul>
 				<div id="navbar" class="collapse navbar-collapse">
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="/haplos_wp/#top" style="color: #fff;">home</a></li>
+						<li><a href="<?php echo $current_url; ?>/#top" style="color: #fff;">home</a></li>
 						<li class="dropdown">
 							<a style="color: #fff; class="dropdown-toggle" data-toggle="dropdown" href="#">about<span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="/haplos_wp/#ano_ang_haplos">Ano ang HAPLOS</a></li>
-								<li><a href="/haplos_wp/#hemophilia">Ano ang Hemophilia?</a></li>
+								<li><a href="<?php echo $current_url; ?>/#ano_ang_haplos">Ano ang HAPLOS</a></li>
+								<li><a href="<?php echo $current_url; ?>/#hemophilia">Ano ang Hemophilia?</a></li>
 							</ul>
 						</li>
 						<li class="dropdown">
 							<a style="color: #fff;" class="dropdown-toggle" data-toggle="dropdown" href="#">contact<span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="/haplos_wp/#contact_haplos">Contact HAPLOS</a></li>
-								<li><a href="/haplos_wp/#mga_ospital">Mga Ospital at Treatment Centers</a></li>
+								<li><a href="<?php echo $current_url; ?>/#contact_haplos">Contact HAPLOS</a></li>
+								<li><a href="<?php echo $current_url; ?>/#mga_ospital">Mga Ospital at Treatment Centers</a></li>
 							</ul>
 						</li>
 						<li class="dropdown">
 							<a style="color: #fff;" class="dropdown-toggle" data-toggle="dropdown" href="#">home infusion process<span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="/haplos_wp/tutorial/#tut-banner">Ano ang Home Infusion Process?</a></li>
-								<li><a href="/haplos_wp/tutorial/#tut-bene-warn">Mga Benepisyo at Panganib nito</a></li>
-								<li><a href="/haplos_wp/tutorial/#tut-dosage-calc">Dosage Calculator</a></li>
-								<li><a href="/haplos_wp/tutorial/#tut-first-step">Unang Bahagi: Paghahanda</a></li>
-								<li><a href="/haplos_wp/tutorial/#tut-second-step">Pangalawang Bahagi: Paghahanap ng Ugat</a></li>
-								<li><a href="/haplos_wp/tutorial/#tut-third-step">Pangatlong Bahagi: Pagturok</a></li>
-								<li><a href="/haplos_wp/tutorial/#tut-fourth-step">Pang-apat na Bahagi: Pagkatapos Mag-Infuse</a></li>
-								<li><a href="/haplos_wp/tutorial/#tut-mistakes">Mga Pagkakamali sa Pagturok</a></li>
-								<li><a href="/haplos_wp/tutorial/#tut-end">Pagsusulit</a></li>
+								<li><a href="<?php echo $current_url; ?>/tutorial/#tut-banner">Ano ang Home Infusion Process?</a></li>
+								<li><a href="<?php echo $current_url; ?>/tutorial/#tut-bene-warn">Mga Benepisyo at Panganib nito</a></li>
+								<li><a href="<?php echo $current_url; ?>/tutorial/#tut-dosage-calc">Dosage Calculator</a></li>
+								<li><a href="<?php echo $current_url; ?>/tutorial/#tut-first-step">Unang Bahagi: Paghahanda</a></li>
+								<li><a href="<?php echo $current_url; ?>/tutorial/#tut-second-step">Pangalawang Bahagi: Paghahanap ng Ugat</a></li>
+								<li><a href="<?php echo $current_url; ?>/tutorial/#tut-third-step">Pangatlong Bahagi: Pagturok</a></li>
+								<li><a href="<?php echo $current_url; ?>/tutorial/#tut-fourth-step">Pang-apat na Bahagi: Pagkatapos Mag-Infuse</a></li>
+								<li><a href="<?php echo $current_url; ?>/tutorial/#tut-mistakes">Mga Pagkakamali sa Pagturok</a></li>
+								<li><a href="<?php echo $current_url; ?>/tutorial/#tut-end">Pagsusulit</a></li>
 							</ul>
 						</li>
 					</ul>
