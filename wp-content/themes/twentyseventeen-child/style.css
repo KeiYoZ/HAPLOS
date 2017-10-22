@@ -338,6 +338,12 @@ padding-right: 12px; */
 	padding: 20px 0;
 }
 
+.tut-banner-icons{
+	float: left;
+	width: 5%;
+	margin: 20px 53px;
+}
+
 .tut-banner-sub{
 	color: #5B755F;
 	text-align: center;
@@ -355,7 +361,7 @@ padding-right: 12px; */
 .tut-bene{
 	height: auto;
 	padding-bottom: 229px;
-	width: 35%;
+	width: 75%;
 	margin-left: 160px;
 	margin-right: 50px;
 	background-color: #9FB19B;
@@ -365,7 +371,7 @@ padding-right: 12px; */
 .tut-warn{
 	height: auto;
 	padding-bottom: 120px;
-	width: 35%;
+	width: 75%;
 	background-color: #6D9075;
 	border-radius: 25px;
 }
@@ -390,6 +396,8 @@ padding-right: 12px; */
 	text-align: center;
 	font-weight: bold;
 	line-height: 75px;
+	color: #9FB19B; 
+	margin-top: 30px;
 }
 
 .tut-reminder-inst{
@@ -521,10 +529,10 @@ padding-right: 12px; */
 .tut-step-title{
 	color: #842B25;
 	font-size: 75px;
-	margin-top: 20px;
+	/*margin-top: 20px;*/
 	text-align: center;
 	font-weight: bold;
-	line-height: 55px;
+	line-height: 75px;
 }
 
 .step-tab-holder{
@@ -675,6 +683,11 @@ div.step-tab button.active {
 	border-radius: 30px;
 	background-color: #EBE4D5
 	color: black;
+}
+
+.step-gif{
+	width: 50%;
+    margin: 0 auto;
 }
 
 /*************** Responsiveness of index ***************/

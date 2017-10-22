@@ -86,6 +86,46 @@
 		    }
 		}
 	</script>
+
+	<script type="text/javascript">
+		
+		// $('.calc-submit-button').click(function(e) {
+		    
+		//     e.preventDefault();
+
+		//     var weight = getElementById('weight-text').value;
+		// 	var percent_activity = getElementById('pec-act-text').value;
+
+		// 	alert(weight);
+		// });
+
+		function computeDosage(){
+
+			var hemo_types = document.getElementById('hemo-types');
+			var hemo_type = hemo_types.options[hemo_types.selectedIndex].value;
+
+			var weight = document.getElementById('weight-text').value;
+			var percent_activity = document.getElementById('pec-act-text').value;
+
+			var dosage = 0;
+
+			if (hemo_type == 1){
+				
+				dosage = (weight * percent_activity)/2;
+
+			}else if(hemo_type == 2){
+				
+				dosage = weight * percent_activity;
+
+			}else if (hemo_type == 0){
+				alert('Please Select a Hemophilia Type.');
+			}
+
+			document.getElementById('dosage-text').value = dosage;
+
+		}
+
+	</script>
 </head>
 <body>
 	<?php
