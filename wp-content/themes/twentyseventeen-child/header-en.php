@@ -140,39 +140,39 @@
 						<span class="icon-bar"></span>
 					</button>
 					<a class="navbar-brand" href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/HAPLOS-Logo.png" alt=""></a>
-					<a href="/HAPLOS/front-page-en"><span class="navbar-text">ENGLISH</span></a>
+					<a href="/HAPLOS/front-page-en" style="color:#fff;"><span class="navbar-text">ENGLISH</span></a>
 					<a href="#"><span class="navbar-text">|</span></a>
 					<a href="/HAPLOS"><span class="navbar-text">FILIPINO</span></a>
 				</div>
 				<div id="navbar" class="collapse navbar-collapse">
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="/HAPLOS/#top" style="color: #fff;">home</a></li>
+						<li><a href="/HAPLOS/front-page-en/#top" style="color: #fff;">(EN)home</a></li>
 						<li class="dropdown">
 							<a style="color: #fff; class="dropdown-toggle" data-toggle="dropdown" href="#">about<span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="/HAPLOS/#ano_ang_haplos">Ano ang HAPLOS</a></li>
-								<li><a href="/HAPLOS/#hemophilia">Ano ang Hemophilia?</a></li>
+								<li><a href="/HAPLOS/front-page-en/#ano_ang_haplos">Ano ang HAPLOS</a></li>
+								<li><a href="/HAPLOS/front-page-en/#hemophilia">Ano ang Hemophilia?</a></li>
 							</ul>
 						</li>
 						<li class="dropdown">
 							<a style="color: #fff;" class="dropdown-toggle" data-toggle="dropdown" href="#">contact<span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="/HAPLOS/#contact_haplos">Contact HAPLOS</a></li>
-								<li><a href="/HAPLOS/#mga_ospital">Mga Ospital at Treatment Centers</a></li>
+								<li><a href="/HAPLOS/front-page-en/#contact_haplos">Contact HAPLOS</a></li>
+								<li><a href="/HAPLOS/front-page-en/#mga_ospital">Mga Ospital at Treatment Centers</a></li>
 							</ul>
 						</li>
 						<li class="dropdown">
 							<a style="color: #fff;" class="dropdown-toggle" data-toggle="dropdown" href="#">home infusion process<span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="/HAPLOS/tutorial/#tut-banner">Ano ang Home Infusion Process?</a></li>
-								<li><a href="/HAPLOS/tutorial/#tut-bene-warn">Mga Benepisyo at Panganib nito</a></li>
-								<li><a href="/HAPLOS/tutorial/#tut-dosage-calc">Dosage Calculator</a></li>
-								<li><a href="/HAPLOS/tutorial/#tut-first-step">Unang Bahagi: Paghahanda</a></li>
-								<li><a href="/HAPLOS/tutorial/#tut-second-step">Pangalawang Bahagi: Paghahanap ng Ugat</a></li>
-								<li><a href="/HAPLOS/tutorial/#tut-third-step">Pangatlong Bahagi: Pagturok</a></li>
-								<li><a href="/HAPLOS/tutorial/#tut-fourth-step">Pang-apat na Bahagi: Pagkatapos Mag-Infuse</a></li>
-								<li><a href="/HAPLOS/tutorial/#tut-mistakes">Mga Pagkakamali sa Pagturok</a></li>
-								<li><a href="/HAPLOS/tutorial/#tut-end">Pagsusulit</a></li>
+								<li><a href="/HAPLOS/front-page-en/tutorial/#tut-banner">Ano ang Home Infusion Process?</a></li>
+								<li><a href="/HAPLOS/front-page-en/tutorial/#tut-bene-warn">Mga Benepisyo at Panganib nito</a></li>
+								<li><a href="/HAPLOS/front-page-en/tutorial/#tut-dosage-calc">Dosage Calculator</a></li>
+								<li><a href="/HAPLOS/front-page-en/tutorial/#tut-first-step">Unang Bahagi: Paghahanda</a></li>
+								<li><a href="/HAPLOS/front-page-en/tutorial/#tut-second-step">Pangalawang Bahagi: Paghahanap ng Ugat</a></li>
+								<li><a href="/HAPLOS/front-page-en/tutorial/#tut-third-step">Pangatlong Bahagi: Pagturok</a></li>
+								<li><a href="/HAPLOS/front-page-en/tutorial/#tut-fourth-step">Pang-apat na Bahagi: Pagkatapos Mag-Infuse</a></li>
+								<li><a href="/HAPLOS/front-page-en/tutorial/#tut-mistakes">Mga Pagkakamali sa Pagturok</a></li>
+								<li><a href="/HAPLOS/front-page-en/tutorial/#tut-end">Pagsusulit</a></li>
 							</ul>
 						</li>
 					</ul>

@@ -1,4 +1,11 @@
-<?php get_header(); ?>
+<?php 
+if(is_page(2)) {
+	get_header();
+}
+else {
+	get_header('en');
+}
+?>
 
 <!-- dot nav start -->
 <div class="vNav">

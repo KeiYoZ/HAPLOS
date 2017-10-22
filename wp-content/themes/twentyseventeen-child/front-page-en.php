@@ -4,7 +4,14 @@ Template Name: Front Page English
 */
 ?>
 
-<?php get_header(); ?>
+<?php 
+if(is_page(66)) {
+	get_header('en');
+}
+else {
+	get_header();
+}
+?>
 
 <!-- dot nav start -->
 <div class="vNav">
