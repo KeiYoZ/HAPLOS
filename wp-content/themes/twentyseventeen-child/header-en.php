@@ -130,7 +130,7 @@
 						<span class="icon-bar"></span>
 					</button>
 					<a class="navbar-brand" href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/HAPLOS-Logo.png" alt=""></a>
-					<a href="/HAPLOS/front-page-en" style="color:#fff;"><span class="navbar-text">ENGLISH</span></a>
+					<a href="/HAPLOS/front-page-en" style="color:white; font-weight: bold;"><span class="navbar-text">ENGLISH</span></a>
 					<a href="#"><span class="navbar-text">|</span></a>
 					<a href="/HAPLOS"><span class="navbar-text">FILIPINO</span></a>
 				</div>
