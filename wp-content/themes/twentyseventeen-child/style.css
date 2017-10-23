@@ -726,6 +726,13 @@ div.step-tab button.active {
 	margin: 0 auto;
 }
 
+.user-score{
+	font-size: 60px;
+    text-align: center;
+    font-weight: bold;
+    color: #b5d8ca;
+}
+
 /*************** Responsiveness of index ***************/
 
 /*Larger Screens*/
