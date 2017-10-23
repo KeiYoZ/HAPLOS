@@ -1,4 +1,3 @@
-
 <?php
 /**
  * The template for displaying the footer
@@ -30,6 +29,17 @@
 	        tabcontent[i].style.display = "none";
 	    }
 	}
+</script>
+
+<script type="text/javascript">
+    window.addEventListener('load', function(){
+        var allimages= document.getElementsByTagName('img');
+        for (var i=0; i<allimages.length; i++) {
+            if (allimages[i].getAttribute('data-src')) {
+                allimages[i].setAttribute('src', allimages[i].getAttribute('data-src'));
+            }
+        }
+    }, false)
 </script>
 <footer id="colophon" class="site-footer" role="contentinfo">
 	<div class="wrap">
