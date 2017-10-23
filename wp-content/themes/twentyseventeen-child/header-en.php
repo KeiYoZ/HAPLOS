@@ -130,45 +130,51 @@
 						<span class="icon-bar"></span>
 					</button>
 					<a class="navbar-brand" href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/HAPLOS-Logo.png" alt=""></a>
-					<a href="/HAPLOS/front-page-en" style="color:white; font-weight: bold;"><span class="navbar-text">ENGLISH</span></a>
+					<?php if (is_page(125)){ ?>
+					<a href="/haplos_wp/front-page-en"><span class="navbar-text" style="color:#fff; font-weight:bold;">ENGLISH</span></a>
 					<a href="#"><span class="navbar-text">|</span></a>
-					<a href="/HAPLOS"><span class="navbar-text">FILIPINO</span></a>
+					<a href="/haplos_wp"><span class="navbar-text">FILIPINO</span></a>
+					<?php }else if (is_page(122)){?>
+					<a href="/haplos_wp/tutorial-english"><span class="navbar-text" style="color:#fff; font-weight:bold;">ENGLISH</span></a>
+					<a href="#"><span class="navbar-text">|</span></a>
+					<a href="/haplos_wp/tutorial"><span class="navbar-text">FILIPINO</span></a>
+					<?php } ?>
 				</div>
 				<div id="navbar" class="collapse navbar-collapse">
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="/HAPLOS/front-page-en/#top" style="color: #fff;">(EN)home</a></li>
+						<li><a href="/haplos_wp/front-page-en/#top" style="color: #fff;">home</a></li>
 						<li class="dropdown">
 							<a style="color: #fff; class="dropdown-toggle" data-toggle="dropdown" href="#">about<span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="/HAPLOS/front-page-en/#ano_ang_haplos">What is HAPLOS?</a></li>
-								<li><a href="/HAPLOS/front-page-en/#hemophilia">What is Hemophilia?</a></li>
+								<li><a href="/haplos_wp/front-page-en/#ano_ang_haplos">What is HAPLOS?</a></li>
+								<li><a href="/haplos_wp/front-page-en/#hemophilia">What is Hemophilia?</a></li>
 							</ul>
 						</li>
 						<li class="dropdown">
 							<a style="color: #fff;" class="dropdown-toggle" data-toggle="dropdown" href="#">contact<span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="/HAPLOS/front-page-en/#contact_haplos">Contact HAPLOS</a></li>
-								<li><a href="/HAPLOS/front-page-en/#mga_ospital">Hospitals and Treatment Centers</a></li>
+								<li><a href="/haplos_wp/front-page-en/#contact_haplos">Contact HAPLOS</a></li>
+								<li><a href="/haplos_wp/front-page-en/#mga_ospital">Hospitals and Treatment Centers</a></li>
 							</ul>
 						</li>
 						<li class="dropdown">
 							<a style="color: #fff;" class="dropdown-toggle" data-toggle="dropdown" href="#">home infusion process<span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="/HAPLOS/tutorial-english/#tut-banner">What is Home Infusion Process?</a></li>
-								<li><a href="/HAPLOS/tutorial-english/#tut-bene-warn">What are its Benetifs and Risks?</a></li>
-								<li><a href="/HAPLOS/tutorial-english/#tut-dosage-calc">Dosage Calculator</a></li>
-								<li><a href="/HAPLOS/tutorial-english/#tut-dosage-desc">Things to Remember Before Infusing</a></li>
-								<li><a href="/HAPLOS/tutorial-english/#tut-first-step">Part One: Preparation</a></li>
-								<li><a href="/HAPLOS/tutorial-english/#tut-second-step">Part Two: Locating the Vein</a></li>
-								<li><a href="/HAPLOS/tutorial-english/#tut-third-step">Part Three: Puncturing the Vein (Venipuncture)</a></li>
-								<li><a href="/HAPLOS/tutorial-english/#tut-fourth-step">Part Four: Post-Infusion</a></li>
-								<li><a href="/HAPLOS/tutorial-english/#tut-mistakes">Common Mistakes in Venipuncture
-								<li><a href="/HAPLOS/tutorial-english/#tut-end">Practice Test</a></li>
-							</ul>
-						</li>
-					</ul>
-				</div><!--/.nav-collapse -->
-			</div>
-		</nav>
-	</div>
+								<li><a href="/haplos_wp/tutorial-english/#tut-banner">What is Home Infusion Process?</a></li>
+								<li><a href="/haplos_wp/tutorial-english/#tut-bene-warn">What are its Benetifs and Risks?</a></li>
+								<li><a href="/haplos_wp/tutorial-english/#tut-reminder">Things to Remember Before Infusing</a></li>
+								<li><a href="/haplos_wp/tutorial-english/#tut-dosage-calc">Dosage Calculator</a></li>
+								<li><a href="/haplos_wp/tutorial-english/#tut-first-step">Part One: Preparation</a></li>
+								<li><a href="/haplos_wp/tutorial-english/#tut-second-step">Part Two: Locating the Vein</a></li>
+								<li><a href="/haplos_wp/tutorial-english/#tut-third-step">Part Three: Puncturing the Vein (Venipuncture)</a></li>
+								<li><a href="/haplos_wp/tutorial-english/#tut-fourth-step">Part Four: Post-Infusion</a></li>
+								<li><a href="/haplos_wp/tutorial-english/#tut-mistakes">Common Mistakes in Venipuncture
+									<li><a href="/haplos_wp/tutorial-english/#tut-end">Practice Test</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div><!--/.nav-collapse -->
+				</div>
+			</nav>
+		</div>
 	<!-- NAVBAR END -->
