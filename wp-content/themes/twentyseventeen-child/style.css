@@ -77,7 +77,7 @@ body {
 	padding: 0px;
 	margin: 0px;
 	width: 100%;
-	padding-bottom:120px;
+	padding-bottom:130px;
 }
 
 .homeinfusionprocess {
@@ -189,12 +189,55 @@ body {
 	width: 55px;
 }
 
+
+.section-5-container{
+
+}
+
+.section-5-container .container{
+	width:55% !important;
+}
+
 .section-5-title{
 	color:#fff;
 	font-size:70px;
 	font-weight:bold;
 	line-height: 1.0em;
 }
+
+.treatment-header{
+	color: #bdd7bf;
+	font-weight: bold;
+	font-size: 36px;
+	margin-bottom: 5px;
+}
+
+.hospital-name {
+	font-weight: bold;
+	font-size: 18px;
+	color: #fff;
+	margin-left:7%;
+}
+
+.hospital-details, .doc{
+	font-size: 18px;
+	color: #fff;
+	margin-left:7%;
+}
+
+.section-5-container .contact-text{
+	width:auto;
+	float:left;
+	margin-left:7%;
+	margin-top:5px;
+}
+
+
+
+
+
+
+
 
 .col-centered{
 	float: none;
@@ -240,7 +283,7 @@ body {
 }
 
 .section-5-container{
-	padding-bottom:550px;
+	
 }
 
 /* dot nav */
@@ -687,7 +730,7 @@ div.step-tab button.active {
 
 .step-gif{
 	width: 50%;
-    margin: 0 auto;
+	margin: 0 auto;
 }
 
 /*************** Responsiveness of index ***************/

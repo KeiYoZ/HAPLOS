@@ -4,7 +4,11 @@
 * Template Name: Tutorial
 *
 **/
-get_header();
+if(is_page(62)) {
+	get_header();
+} elseif(is_page(122)) {
+	get_header('en');
+}
 ?>
 
 

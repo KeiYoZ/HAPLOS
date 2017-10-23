@@ -140,29 +140,30 @@
 						<li class="dropdown">
 							<a style="color: #fff; class="dropdown-toggle" data-toggle="dropdown" href="#">about<span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="/HAPLOS/front-page-en/#ano_ang_haplos">Ano ang HAPLOS</a></li>
-								<li><a href="/HAPLOS/front-page-en/#hemophilia">Ano ang Hemophilia?</a></li>
+								<li><a href="/HAPLOS/front-page-en/#ano_ang_haplos">What is HAPLOS?</a></li>
+								<li><a href="/HAPLOS/front-page-en/#hemophilia">What is Hemophilia?</a></li>
 							</ul>
 						</li>
 						<li class="dropdown">
 							<a style="color: #fff;" class="dropdown-toggle" data-toggle="dropdown" href="#">contact<span class="caret"></span></a>
 							<ul class="dropdown-menu">
 								<li><a href="/HAPLOS/front-page-en/#contact_haplos">Contact HAPLOS</a></li>
-								<li><a href="/HAPLOS/front-page-en/#mga_ospital">Mga Ospital at Treatment Centers</a></li>
+								<li><a href="/HAPLOS/front-page-en/#mga_ospital">Hospitals and Treatment Centers</a></li>
 							</ul>
 						</li>
 						<li class="dropdown">
 							<a style="color: #fff;" class="dropdown-toggle" data-toggle="dropdown" href="#">home infusion process<span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="/HAPLOS/front-page-en/tutorial/#tut-banner">Ano ang Home Infusion Process?</a></li>
-								<li><a href="/HAPLOS/front-page-en/tutorial/#tut-bene-warn">Mga Benepisyo at Panganib nito</a></li>
-								<li><a href="/HAPLOS/front-page-en/tutorial/#tut-dosage-calc">Dosage Calculator</a></li>
-								<li><a href="/HAPLOS/front-page-en/tutorial/#tut-first-step">Unang Bahagi: Paghahanda</a></li>
-								<li><a href="/HAPLOS/front-page-en/tutorial/#tut-second-step">Pangalawang Bahagi: Paghahanap ng Ugat</a></li>
-								<li><a href="/HAPLOS/front-page-en/tutorial/#tut-third-step">Pangatlong Bahagi: Pagturok</a></li>
-								<li><a href="/HAPLOS/front-page-en/tutorial/#tut-fourth-step">Pang-apat na Bahagi: Pagkatapos Mag-Infuse</a></li>
-								<li><a href="/HAPLOS/front-page-en/tutorial/#tut-mistakes">Mga Pagkakamali sa Pagturok</a></li>
-								<li><a href="/HAPLOS/front-page-en/tutorial/#tut-end">Pagsusulit</a></li>
+								<li><a href="/HAPLOS/tutorial-english/#tut-banner">What is Home Infusion Process?</a></li>
+								<li><a href="/HAPLOS/tutorial-english/#tut-bene-warn">What are its Benetifs and Risks?</a></li>
+								<li><a href="/HAPLOS/tutorial-english/#tut-dosage-calc">Dosage Calculator</a></li>
+								<li><a href="/HAPLOS/tutorial-english/#tut-dosage-desc">Things to Remember Before Infusing</a></li>
+								<li><a href="/HAPLOS/tutorial-english/#tut-first-step">Part One: Preparation</a></li>
+								<li><a href="/HAPLOS/tutorial-english/#tut-second-step">Part Two: Locating the Vein</a></li>
+								<li><a href="/HAPLOS/tutorial-english/#tut-third-step">Part Three: Puncturing the Vein (Venipuncture)</a></li>
+								<li><a href="/HAPLOS/tutorial-english/#tut-fourth-step">Part Four: Post-Infusion</a></li>
+								<li><a href="/HAPLOS/tutorial-english/#tut-mistakes">Common Mistakes in Venipuncture
+								<li><a href="/HAPLOS/tutorial-english/#tut-end">Practice Test</a></li>
 							</ul>
 						</li>
 					</ul>

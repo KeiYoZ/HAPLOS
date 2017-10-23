@@ -166,6 +166,7 @@
 							<ul class="dropdown-menu">
 								<li><a href="/HAPLOS/tutorial/#tut-banner">Ano ang Home Infusion Process?</a></li>
 								<li><a href="/HAPLOS/tutorial/#tut-bene-warn">Mga Benepisyo at Panganib nito</a></li>
+								<li><a href="/HAPLOS/tutorial/#tut-dosage-desc">Mga Benepisyo at Panganib nito</a></li>
 								<li><a href="/HAPLOS/tutorial/#tut-dosage-calc">Dosage Calculator</a></li>
 								<li><a href="/HAPLOS/tutorial/#tut-first-step">Unang Bahagi: Paghahanda</a></li>
 								<li><a href="/HAPLOS/tutorial/#tut-second-step">Pangalawang Bahagi: Paghahanap ng Ugat</a></li>
