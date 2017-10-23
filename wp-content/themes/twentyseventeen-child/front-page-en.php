@@ -40,7 +40,6 @@ if(is_page(125)) {
 			</div>
 		</div>
 	</div>
-
 	<!-- First section end -->
 
 	<!-- Second section start -->
