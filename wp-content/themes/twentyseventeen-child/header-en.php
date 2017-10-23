@@ -88,16 +88,6 @@
 	</script>
 
 	<script type="text/javascript">
-		
-		// $('.calc-submit-button').click(function(e) {
-		    
-		//     e.preventDefault();
-
-		//     var weight = getElementById('weight-text').value;
-		// 	var percent_activity = getElementById('pec-act-text').value;
-
-		// 	alert(weight);
-		// });
 
 		function computeDosage(){
 
