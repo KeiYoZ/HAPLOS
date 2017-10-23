@@ -17,6 +17,23 @@ body {
 	overflow-x: hidden;
 }
 
+@font-face{
+	font-family:'Gill Sans MT';
+	src: url('fonts/GIL_____.ttf');
+}
+@font-face{
+	font-family:'Gotham';
+	src: url('fonts/Gotham-Light_0(1).otf');
+}
+@font-face{
+	font-family:'League Spartan';
+	src: url('fonts/LeagueSpartan-Bold.otf');
+}
+@font-face{
+	font-family:'Minion Pro';
+	src: url('fonts/MinionPro-Regular.otf');
+}
+
 .row {
 	margin-right:0px !important;
 }
@@ -26,7 +43,7 @@ body {
 }
 
 .navbar {
-	background: #4f7e6b;
+	background: #5b755f;
 }
 
 /* navbar menu */
@@ -95,8 +112,10 @@ body {
 
 .hip-desc {
 	color: #fff;
-	width: 70%;
+	width: 60%;
 	font-size: 20px;
+	font-family:'Gill Sans MT';
+	margin-left:15%;
 }
 
 .container-fluid {
@@ -105,7 +124,8 @@ body {
 }
 
 .start-process{
-	margin-left: 180px;
+	margin-left: 32%;
+	margin-top:3%;
 	background-color:#a4d2bf;
 	border-radius:100px;
 	padding:6px 20px;
@@ -113,7 +133,7 @@ body {
 
 .section-1-container{
 	padding-top:70px;
-	padding-left:280px;
+	padding-left:15%;
 }
 
 .section-2-container{
@@ -737,13 +757,12 @@ div.step-tab button.active {
 /*Desktops & laptops*/
 @media only screen and (min-width : 1225px) and (max-width: 1599px) {
 	.hand-injection {
+		width:90%;
 		margin-top:-100px;
 	}
-	.section-1-container{
-		padding-left:200px;
-	}
+
 	.homeinfusionprocess {
-		font-size: 80px;
+		font-size: 60px;
 	}
 	.section-2-image {
 		width: 500px;
@@ -788,19 +807,15 @@ div.step-tab button.active {
 /*Tablets*/
 @media only screen and (min-width : 992px) and (max-width : 1224px) {
 	.hand-injection {
+		width:80%;
 		margin-top:-80px;
 	}
-	.section-1-container{
-		padding-left:200px;
-	}
+
 	.homeinfusionprocess {
-		font-size: 80px;
+		font-size: 60px;
 	}
 	.hip-desc{
 		font-size:17px;
-	}
-	.section-1-container {
-		padding-left:100px;
 	}
 	.section-2-image {
 		width: 500px;
@@ -835,14 +850,13 @@ div.step-tab button.active {
 }
 
 @media only screen and (min-width : 480px) and (max-width : 991px) {
-	.section-1-container {
-		padding-left: 140px;
-	}
 	.homeinfusionprocess {
-		font-size: 133px;
+		font-size: 70px;
 	}
 	.hand-injection {
-		margin-top: -292px;
+		width:70%;
+		margin-right:10%;
+
 	}
 	.hip-desc {
 		margin-top:30px;

@@ -136,9 +136,14 @@
 
 	<script type="text/javascript">
 		window.onload = function() {
-    			Gifffer();
+			Gifffer();
 		}
+	</script>
 
+	<script>
+		$('.navbar-nav a').click(function(){
+			$(this).css('background','');
+		});
 	</script>
 </head>
 <body>
