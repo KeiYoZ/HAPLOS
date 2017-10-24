@@ -32,9 +32,9 @@ if(is_page(62)) {
 					<img class="tut-banner-icons img-responsive" src="<?php echo get_stylesheet_directory_uri();?>/images/icons/2.png">
 					<img class="tut-banner-icons img-responsive" src="<?php echo get_stylesheet_directory_uri();?>/images/icons/3.png">
 					<img class="tut-banner-icons img-responsive" src="<?php echo get_stylesheet_directory_uri();?>/images/icons/4.png">
-					<img class="tut-banner-icons img-responsive" style="width: 50px;" src="<?php echo get_stylesheet_directory_uri();?>/images/icons/5.png">
+					<img class="tut-banner-icons img-responsive" src="<?php echo get_stylesheet_directory_uri();?>/images/icons/5.png">
 					<img class="tut-banner-icons img-responsive" src="<?php echo get_stylesheet_directory_uri();?>/images/icons/6.png">
-					<img class="tut-banner-icons img-responsive" style="width: 43px;" src="<?php echo get_stylesheet_directory_uri();?>/images/icons/7.png">
+					<img class="tut-banner-icons img-responsive" src="<?php echo get_stylesheet_directory_uri();?>/images/icons/7.png">
 					<img class="tut-banner-icons img-responsive" src="<?php echo get_stylesheet_directory_uri();?>/images/icons/8.png">
 			</div>
 		</div>

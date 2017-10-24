@@ -13,7 +13,10 @@ body, span, pre, img, ul, li, ol, p{
 	padding: 0px;
 }
 
-body {
+html, body {
+	width: 100%;
+    margin: 0px;
+    padding: 0px;
 	overflow-x: hidden;
 }
 
@@ -396,8 +399,24 @@ padding-right: 12px; */
 
 .tut-banner-icons{
 	float: left;
-	width: 5%;
-	margin: 20px 53px;
+	width: 7%;
+	margin: 20px 40px;
+}
+
+.tut-banner-icons:nth-of-type(1){
+	margin-top: 35px;
+}
+
+.tut-banner-icons:nth-of-type(2), .tut-banner-icons:nth-of-type(8){
+	margin-top:40px;
+}
+
+.tut-banner-icons:nth-of-type(5){
+	width: 70px;
+}
+
+.tut-banner-icons:nth-of-type(7){
+	width: 55px;
 }
 
 .tut-banner-sub{
@@ -810,6 +829,49 @@ div.step-tab button.active {
 	.section-5-title{
 		font-size:62px;
 	}
+
+
+/*tutorial page responsive*/
+
+	.tut-banner-icons{
+		float: left;
+		width: 7%;
+		margin: 20px 40px;
+	}
+
+	.tut-banner-icons:nth-of-type(1){
+		margin-top: 35px;
+	}
+
+	.tut-banner-icons:nth-of-type(2), .tut-banner-icons:nth-of-type(8){
+		margin-top:40px;
+	}
+
+	.tut-banner-icons:nth-of-type(5){
+		width: 70px;
+	}
+
+	.tut-banner-icons:nth-of-type(7){
+		width: 55px;
+	}
+
+	
+	.tut-bene-warn{
+		padding-top: 75px;
+	}
+
+	.tut-bene{
+		padding-bottom: 165px;
+	}
+
+	.tut-warn{
+		padding-bottom: 35px;
+	}
+
+	.step-tab-holder{
+		margin: 40px 12%;
+	}
+
 }
 /*Tablets*/
 @media only screen and (min-width : 992px) and (max-width : 1224px) {
@@ -853,6 +915,53 @@ div.step-tab button.active {
 	}
 	.section-title{
 		font-size:50px;
+	}
+
+	/*tutorial responsive*/
+
+	.tut-banner-icons{
+		float: left;
+		width: 7%;
+		margin: 20px 40px;
+	}
+
+	.tut-banner-icons:nth-of-type(1){
+		margin-top: 30px;
+	}
+
+	.tut-banner-icons:nth-of-type(2), .tut-banner-icons:nth-of-type(8){
+		margin-top: 40px;
+	}
+
+	.tut-banner-icons:nth-of-type(3){
+		margin-top: 30px;
+	}
+
+	.tut-banner-icons:nth-of-type(5){
+		width: 70px;
+	}
+
+	.tut-banner-icons:nth-of-type(7){
+		width: 55px;
+	}
+
+	.tut-bene-warn{
+		padding-top: 75px;
+	}
+
+	.tut-bene-warn-title:nth-of-type(1){
+		text-align: center;
+	}
+
+	.tut-bene{
+		margin-left: 20px;
+    	width: 100%;
+    	padding-bottom: 185px;
+	}
+
+	.tut-warn{
+		width: 100%;
+		padding-bottom: 35px;
 	}
 }
 

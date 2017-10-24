@@ -57,24 +57,31 @@
 			var exam_row = exam_form[0].getElementsByTagName("div");
 			var exam_container = exam_row[0].getElementsByTagName("div");
 			var exam_choices = exam_container[0].getElementsByTagName("p");
-			var exam_inputs = exam_choices[2].getElementsByTagName("input");
 
 			var user_answer = "";
 
 			if (i < 6){
+				var exam_inputs = exam_choices[2].getElementsByTagName("input");
+
 				if (exam_inputs[0].checked){
 					user_answer = 't';
 				}else if (exam_inputs[1].checked){
 					user_answer = 'f';
 				}
 			}else if (i > 5){
-				if (exam_inputs[0].checked){
+
+				var exam_input_1 = exam_choices[2].getElementsByTagName("input");
+				var exam_input_2 = exam_choices[3].getElementsByTagName("input");
+				var exam_input_3 = exam_choices[4].getElementsByTagName("input");
+				var exam_input_4 = exam_choices[5].getElementsByTagName("input");
+
+				if (exam_input_1[0].checked){
 					user_answer = '1';
-				}else if (exam_inputs[1].checked){
+				}else if (exam_input_2[0].checked){
 					user_answer = '2';
-				}else if (exam_inputs[2].checked){
+				}else if (exam_input_3[0].checked){
 					user_answer = '3';
-				}else if (exam_inputs[3].checked){
+				}else if (exam_input_4[0].checked){
 					user_answer = '4';
 				}
 			}
