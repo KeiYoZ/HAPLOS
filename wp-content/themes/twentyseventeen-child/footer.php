@@ -24,42 +24,38 @@
 
 	function hidePanels(tabGroup){
 		// Get all elements with class="tabcontent" and hide them
-	    var tabcontent = document.getElementsByClassName(tabGroup);
-	    for (i = 1; i < tabcontent.length; i++) {
-	        tabcontent[i].style.display = "none";
-	    }
+		var tabcontent = document.getElementsByClassName(tabGroup);
+		for (i = 1; i < tabcontent.length; i++) {
+			tabcontent[i].style.display = "none";
+		}
 	}
 </script>
 
 <script type="text/javascript">
-    window.addEventListener('load', function(){
-        var allimages= document.getElementsByTagName('img');
-        for (var i=0; i<allimages.length; i++) {
-            if (allimages[i].getAttribute('data-src')) {
-                allimages[i].setAttribute('src', allimages[i].getAttribute('data-src'));
-            }
-        }
-    }, false)
+	window.addEventListener('load', function(){
+		var allimages= document.getElementsByTagName('img');
+		for (var i=0; i<allimages.length; i++) {
+			if (allimages[i].getAttribute('data-src')) {
+				allimages[i].setAttribute('src', allimages[i].getAttribute('data-src'));
+			}
+		}
+	}, false)
 </script>
 
 <script type="text/javascript">
 	
 	function getExamScore(){
-
 		var answer_key_en = ['f', 't', 't', 'f', 't', '1', '3', '1', '3', '2', '2', '4', '4', '1', '1'];
-
 		var user_score = 0;
 		
 		for (var i=1; i <= 15; i++){
-
 			var exam_item = document.getElementById(i);
 			var exam_form = exam_item.getElementsByTagName("form");
 			var exam_row = exam_form[0].getElementsByTagName("div");
 			var exam_container = exam_row[0].getElementsByTagName("div");
 			var exam_choices = exam_container[0].getElementsByTagName("p");
-
+			
 			var user_answer = "";
-
 			if (i < 6){
 				var exam_inputs = exam_choices[2].getElementsByTagName("input");
 
@@ -85,12 +81,10 @@
 					user_answer = '4';
 				}
 			}
-
 			if (user_answer == answer_key_en[i-1]){
 				user_score++;
 			}
 		}
-
 		document.getElementById("user-score").innerHTML = "Score: <span style='text-decoration:underline;'>" + user_score + "</span>/15";
 		return true;
 	}

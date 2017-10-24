@@ -3,7 +3,7 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8">
-	<title>HAPLOS</title>
+	<title>HAPLOS Home Infusion</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css">
 
@@ -89,7 +89,7 @@
 		    		var tabDigit = parseInt(tabNumberTokens[tabNumberTokens.length - 1]) - 8;
 		    		
 		    		if (dir == "right"){
-		    		     tabDigit = parseInt(tabNumberTokens[tabNumberTokens.length - 1]) - 8;
+		    			tabDigit = parseInt(tabNumberTokens[tabNumberTokens.length - 1]) - 8;
 		    		}
 		    	}
 
@@ -130,16 +130,32 @@
 
 	<script type="text/javascript">
 		window.onload = function() {
-    			Gifffer();
+			Gifffer();
 		}
-
 	</script>
-
+	<script>
+		$(document).ready(function(){
+			$('.navbar-nav li.dropdown .dropdown-toggle').click(function(){
+				$(this).css('background-color','#5b755f');
+			});
+			$('.navbar-inverse .navbar-nav>li>a').focus(function(){
+				$(this).addClass('active-nav');
+			});
+			$('.navbar-inverse .navbar-nav>li>a').focusout(function(){
+				$(this).removeClass('active-nav');
+			});
+			$('.navbar-inverse .navbar-nav>li>a').click(function(){
+				if($('.navbar-inverse .navbar-nav>li>a').hasClass('active-nav')){
+					$(this).removeClass('active-nav');
+				}
+			});
+		});
+	</script>
 </head>
 <body>
 	<!-- NAVBAR START -->
 	<div class="top-header" id="top">
-		<nav class="navbar navbar-inverse navbar-fixed-top">
+		<nav class="navbar navbar-inverse navbar-fixed-top"  style="border:0;">
 			<div class="container">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -148,7 +164,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/HAPLOS-Logo.png" alt=""></a>
+					<a class="navbar-brand" href="/haplos_wp/front-page-en"><img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/images/HAPLOS-Logo.png" alt=""></a>
 					<?php if (is_page(125)){ ?>
 					<a href="/front-page-en"><span class="navbar-text" style="color:#fff; font-weight:bold;">ENGLISH</span></a>
 					<a href="#"><span class="navbar-text">|</span></a>
@@ -161,23 +177,23 @@
 				</div>
 				<div id="navbar" class="collapse navbar-collapse">
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="/front-page-en/#top" style="color: #fff;">home</a></li>
+						<li><a href="/front-page-en/#top">home</a></li>
 						<li class="dropdown">
-							<a style="color: #fff; class="dropdown-toggle" data-toggle="dropdown" href="#">about<span class="caret"></span></a>
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">about<span class="caret"></span></a>
 							<ul class="dropdown-menu">
 								<li><a href="/front-page-en/#ano_ang_haplos">What is HAPLOS?</a></li>
 								<li><a href="/front-page-en/#hemophilia">What is Hemophilia?</a></li>
 							</ul>
 						</li>
 						<li class="dropdown">
-							<a style="color: #fff;" class="dropdown-toggle" data-toggle="dropdown" href="#">contact<span class="caret"></span></a>
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">contact<span class="caret"></span></a>
 							<ul class="dropdown-menu">
 								<li><a href="/front-page-en/#contact_haplos">Contact HAPLOS</a></li>
 								<li><a href="/front-page-en/#mga_ospital">Hospitals and Treatment Centers</a></li>
 							</ul>
 						</li>
 						<li class="dropdown">
-							<a style="color: #fff;" class="dropdown-toggle" data-toggle="dropdown" href="#">home infusion process<span class="caret"></span></a>
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">home infusion process<span class="caret"></span></a>
 							<ul class="dropdown-menu">
 								<li><a href="/tutorial-english/#tut-banner">What is Home Infusion Process?</a></li>
 								<li><a href="/tutorial-english/#tut-bene-warn">What are its Benetifs and Risks?</a></li>

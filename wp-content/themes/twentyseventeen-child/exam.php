@@ -60,13 +60,13 @@ if(is_page(160)){
 							</p>
 							<?php if(is_page(160)){?>
 							<p class="exam-radio-btn exam-question">
-								<input type="radio" value="t">Tama<br>
-								<input type="radio" value="f">Mali
+								<input type="radio" name="choice" value="t">Tama<br>
+								<input type="radio" name="choice" value="f">Mali
 							</p>
 							<?php }else if(is_page(128)){ ?>
 							<p class="exam-radio-btn exam-question">
-								<input type="radio" value="t">True<br>
-								<input type="radio" value="f">False
+								<input type="radio" name="choice" value="t">True<br>
+								<input type="radio" name="choice" value="f">False
 							</p>
 							<?php } ?>
 						</div>
@@ -121,7 +121,7 @@ if(is_page(160)){
 						while( have_rows('p2_choices') ): the_row();
 						?>
 						<p class="exam-radio-btn exam-question">
-							<input type="radio" value="<?php the_sub_field('choices'); ?>"><?php the_sub_field('choices'); ?>
+							<input type="radio" name="choice" value="<?php the_sub_field('choices'); ?>"><?php the_sub_field('choices'); ?>
 						</p>
 						<?php endwhile; ?>
 					<?php endif;?>

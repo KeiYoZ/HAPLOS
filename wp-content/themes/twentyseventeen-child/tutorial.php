@@ -28,14 +28,14 @@ if(is_page(62)) {
 		</div>
 		<div class="row">
 			<div class="col-md-12 tut-banner-icon-box">
-					<img class="tut-banner-icons img-responsive" src="<?php echo get_stylesheet_directory_uri();?>/images/icons/1.png">
-					<img class="tut-banner-icons img-responsive" src="<?php echo get_stylesheet_directory_uri();?>/images/icons/2.png">
-					<img class="tut-banner-icons img-responsive" src="<?php echo get_stylesheet_directory_uri();?>/images/icons/3.png">
-					<img class="tut-banner-icons img-responsive" src="<?php echo get_stylesheet_directory_uri();?>/images/icons/4.png">
-					<img class="tut-banner-icons img-responsive" src="<?php echo get_stylesheet_directory_uri();?>/images/icons/5.png">
-					<img class="tut-banner-icons img-responsive" src="<?php echo get_stylesheet_directory_uri();?>/images/icons/6.png">
-					<img class="tut-banner-icons img-responsive" src="<?php echo get_stylesheet_directory_uri();?>/images/icons/7.png">
-					<img class="tut-banner-icons img-responsive" src="<?php echo get_stylesheet_directory_uri();?>/images/icons/8.png">
+				<img class="tut-banner-icons img-responsive" src="<?php echo get_stylesheet_directory_uri();?>/images/icons/1.png">
+				<img class="tut-banner-icons img-responsive" src="<?php echo get_stylesheet_directory_uri();?>/images/icons/2.png">
+				<img class="tut-banner-icons img-responsive" src="<?php echo get_stylesheet_directory_uri();?>/images/icons/3.png">
+				<img class="tut-banner-icons img-responsive" src="<?php echo get_stylesheet_directory_uri();?>/images/icons/4.png">
+				<img class="tut-banner-icons img-responsive" src="<?php echo get_stylesheet_directory_uri();?>/images/icons/5.png">
+				<img class="tut-banner-icons img-responsive" src="<?php echo get_stylesheet_directory_uri();?>/images/icons/6.png">
+				<img class="tut-banner-icons img-responsive" src="<?php echo get_stylesheet_directory_uri();?>/images/icons/7.png">
+				<img class="tut-banner-icons img-responsive" src="<?php echo get_stylesheet_directory_uri();?>/images/icons/8.png">
 			</div>
 		</div>
 		<div class="row">
@@ -78,9 +78,9 @@ if(is_page(62)) {
 				<?php the_field('dosage_description_instructions'); ?>
 				<div>
 					<?php if (is_page(62)){ ?>
-					<a href="#tut-dosage-calc" class="btn btn-default" style="float: right; margin-right: 100px; background-color: #EBE4D5; border-radius: 15px" role="button">Gamitin ang Calculator</a>
+					<a href="#tut-dosage-calc" class="btn btn-default tut-dosage-calc-btn" style="float: right; margin-right: 100px; border-radius: 15px" role="button">Gamitin ang Calculator</a>
 					<?php } else if (is_page(122)) {?>
-					<a href="#tut-dosage-calc" class="btn btn-default" style="float: right; margin-right: 100px; background-color: #EBE4D5; border-radius: 15px" role="button">Use the Calculator</a>
+					<a href="#tut-dosage-calc" class="btn btn-default tut-dosage-calc-btn" style="float: right; margin-right: 100px; border-radius: 15px" role="button">Use the Calculator</a>
 					<?php } ?>
 				</div>
 			</div>
@@ -185,7 +185,7 @@ if(is_page(62)) {
 						</div>	
 					</div>
 					<div class="col-md-12 step-btn-holder">
-<?php if (is_page(62)){ ?>
+						<?php if (is_page(62)){ ?>
 						<button class="btn btn-default step-btn-next" onclick="openStep(event, 'first-step-tabcontent', 'first-step-tablinks', 'first-step-2', 'btn')" >Susunod</button>
 						<?php } else if (is_page(122)) {?>
 						<button class="btn btn-default step-btn-next" onclick="openStep(event, 'first-step-tabcontent', 'first-step-tablinks', 'first-step-2', 'btn')" >Next</button>
@@ -196,7 +196,7 @@ if(is_page(62)) {
 				<div id="first-step-2" class="first-step-tabcontent">
 					<?php the_field('first_step_part_2'); ?>
 					<div class="col-md-12 step-btn-holder">
-<?php if (is_page(62)){ ?>
+						<?php if (is_page(62)){ ?>
 						<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'first-step-tabcontent', 'first-step-tablinks', 'first-step-1', 'btn')">Bumalik</button>
 						<button class="btn btn-default step-btn-next" onclick="openStep(event, 'first-step-tabcontent', 'first-step-tablinks', 'first-step-3', 'btn')">Susunod</button>
 						<?php } else if (is_page(122)) {?>
@@ -210,7 +210,7 @@ if(is_page(62)) {
 					<?php the_field('first_step_part_3'); ?>
 					<div class="col-md-12 step-btn-holder">
 						
-<?php if (is_page(62)){ ?>
+						<?php if (is_page(62)){ ?>
 						<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'first-step-tabcontent', 'first-step-tablinks', 'first-step-2', 'btn')">Bumalik</button>
 						<button class="btn btn-default step-btn-next" onclick="openStep(event, 'first-step-tabcontent', 'first-step-tablinks', 'first-step-4', 'btn')">Susunod</button>
 						<?php } else if (is_page(122)) {?>
@@ -227,7 +227,7 @@ if(is_page(62)) {
 					</div>
 					<div class="col-md-12 step-btn-holder">
 
-<?php if (is_page(62)){ ?>
+						<?php if (is_page(62)){ ?>
 						<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'first-step-tabcontent', 'first-step-tablinks', 'first-step-3', 'btn')">Bumalik</button>
 						<span class="step-tbc">i-scroll pababa para sa susunod na bahagi</span>
 						<?php } else if (is_page(122)) {?>
@@ -260,7 +260,7 @@ if(is_page(62)) {
 						<img class="img-responsive step-gif" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="<?php echo get_stylesheet_directory_uri();?>/images/gifs/Part_2_Step_1.gif"/>
 					</div>
 					<div class="col-md-12 step-btn-holder">
-<?php if (is_page(62)){ ?>
+						<?php if (is_page(62)){ ?>
 						<span class="step-btp">i-scroll pataas para sa nakaraang bahagi</span>
 						<button class="btn btn-default step-btn-next" onclick="openStep(event, 'second-step-tabcontent', 'second-step-tablinks', 'second-step-2', 'btn')" >Susunod</button>
 						<?php } else if (is_page(122)) {?>
@@ -277,7 +277,7 @@ if(is_page(62)) {
 					</div>
 					<div class="col-md-12 step-btn-holder">
 						
-<?php if (is_page(62)){ ?>
+						<?php if (is_page(62)){ ?>
 						<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'second-step-tabcontent', 'second-step-tablinks', 'second-step-1', 'btn')">Bumalik</button>
 						<button class="btn btn-default step-btn-next" onclick="openStep(event, 'second-step-tabcontent', 'second-step-tablinks', 'second-step-3', 'btn')">Susunod</button>
 						<?php } else if (is_page(122)) {?>
@@ -291,7 +291,7 @@ if(is_page(62)) {
 					<?php the_field('second_step_part_3'); ?>
 					<div class="col-md-12 step-btn-holder">
 						
-<?php if (is_page(62)){ ?>
+						<?php if (is_page(62)){ ?>
 						<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'second-step-tabcontent', 'second-step-tablinks', 'second-step-2', 'btn')">Bumalik</button>
 						<span class="step-tbc">i-scroll pababa para sa susunod na bahagi</span>
 						<?php } else if (is_page(122)) {?>
@@ -329,7 +329,7 @@ if(is_page(62)) {
 					</div>
 					<div class="col-md-12 step-btn-holder">
 						
-<?php if (is_page(62)){ ?>
+						<?php if (is_page(62)){ ?>
 						<span class="step-btp">i-scroll pataas para sa nakaraang bahagi</span>
 						<button class="btn btn-default step-btn-next" onclick="openStep(event, 'third-step-tabcontent', 'third-step-tablinks', 'third-step-2', 'btn')" >Susunod</button>
 						<?php } else if (is_page(122)) {?>
@@ -346,7 +346,7 @@ if(is_page(62)) {
 					</div>
 					<div class="col-md-12 step-btn-holder">
 						
-<?php if (is_page(62)){ ?>
+						<?php if (is_page(62)){ ?>
 						<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'third-step-tabcontent', 'third-step-tablinks', 'third-step-1', 'btn')">Bumalik</button>
 						<button class="btn btn-default step-btn-next" onclick="openStep(event, 'third-step-tabcontent', 'third-step-tablinks', 'third-step-3', 'btn')">Susunod</button>
 						<?php } else if (is_page(122)) {?>
@@ -363,7 +363,7 @@ if(is_page(62)) {
 					</div>
 					<div class="col-md-12 step-btn-holder">
 						
-<?php if (is_page(62)){ ?>
+						<?php if (is_page(62)){ ?>
 						<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'third-step-tabcontent', 'third-step-tablinks', 'third-step-2', 'btn')">Bumalik</button>
 						<button class="btn btn-default step-btn-next" onclick="openStep(event, 'third-step-tabcontent', 'third-step-tablinks', 'third-step-4', 'btn')">Susunod</button>
 						<?php } else if (is_page(122)) {?>
@@ -380,7 +380,7 @@ if(is_page(62)) {
 					</div>
 					<div class="col-md-12 step-btn-holder">
 						
-<?php if (is_page(62)){ ?>
+						<?php if (is_page(62)){ ?>
 						<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'third-step-tabcontent', 'third-step-tablinks', 'third-step-3', 'btn')">Bumalik</button>
 						<button class="btn btn-default step-btn-next" onclick="openStep(event, 'third-step-tabcontent', 'third-step-tablinks', 'third-step-5', 'btn')">Susunod</button>
 						<?php } else if (is_page(122)) {?>
@@ -397,7 +397,7 @@ if(is_page(62)) {
 					</div>
 					<div class="col-md-12 step-btn-holder">
 						
-<?php if (is_page(62)){ ?>
+						<?php if (is_page(62)){ ?>
 						<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'third-step-tabcontent', 'third-step-tablinks', 'third-step-4', 'btn')">Bumalik</button>
 						<button class="btn btn-default step-btn-next" onclick="openStep(event, 'third-step-tabcontent', 'third-step-tablinks', 'third-step-6', 'btn')">Susunod</button>
 						<?php } else if (is_page(122)) {?>
@@ -414,7 +414,7 @@ if(is_page(62)) {
 					</div>
 					<div class="col-md-12 step-btn-holder">
 						
-<?php if (is_page(62)){ ?>
+						<?php if (is_page(62)){ ?>
 						<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'third-step-tabcontent', 'third-step-tablinks', 'third-step-5', 'btn')">Bumalik</button>
 						<button class="btn btn-default step-btn-next" onclick="openStep(event, 'third-step-tabcontent', 'third-step-tablinks', 'third-step-7', 'btn')">Susunod</button>
 						<?php } else if (is_page(122)) {?>
@@ -431,7 +431,7 @@ if(is_page(62)) {
 					</div>
 					<div class="col-md-12 step-btn-holder">
 						
-<?php if (is_page(62)){ ?>
+						<?php if (is_page(62)){ ?>
 						<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'third-step-tabcontent', 'third-step-tablinks', 'third-step-6', 'btn')">Bumalik</button>
 						<span class="step-tbc">i-scroll pababa para sa pangalawang parte na bahaging ito</span>
 						<?php } else if (is_page(122)) {?>
@@ -466,7 +466,7 @@ if(is_page(62)) {
 					</div>
 					<div class="col-md-12 step-btn-holder">
 						
-<?php if (is_page(62)){ ?>
+						<?php if (is_page(62)){ ?>
 						<span class="step-btp">i-scroll pataas para sa nakaraang bahagi</span>
 						<button class="btn btn-default step-btn-next" onclick="openStep(event, 'third-step-pt2-tabcontent', 'third-step-pt2-tablinks', 'third-step-9', 'btn')" >Susunod</button>
 						<?php } else if (is_page(122)) {?>
@@ -483,7 +483,7 @@ if(is_page(62)) {
 					</div>
 					<div class="col-md-12 step-btn-holder">
 						
-<?php if (is_page(62)){ ?>
+						<?php if (is_page(62)){ ?>
 						<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'third-step-pt2-tabcontent', 'third-step-pt2-tablinks', 'third-step-8', 'btn')">Bumalik</button>
 						<button class="btn btn-default step-btn-next" onclick="openStep(event, 'third-step-pt2-tabcontent', 'third-step-pt2-tablinks', 'third-step-10', 'btn')">Susunod</button>
 						<?php } else if (is_page(122)) {?>
@@ -500,7 +500,7 @@ if(is_page(62)) {
 					</div>
 					<div class="col-md-12 step-btn-holder">
 						
-<?php if (is_page(62)){ ?>
+						<?php if (is_page(62)){ ?>
 						<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'third-step-pt2-tabcontent', 'third-step-pt2-tablinks', 'third-step-9', 'btn')">Bumalik</button>
 						<button class="btn btn-default step-btn-next" onclick="openStep(event, 'third-step-pt2-tabcontent', 'third-step-pt2-tablinks', 'third-step-11', 'btn')">Susunod</button>
 						<?php } else if (is_page(122)) {?>
@@ -517,7 +517,7 @@ if(is_page(62)) {
 					</div>
 					<div class="col-md-12 step-btn-holder">
 						
-<?php if (is_page(62)){ ?>
+						<?php if (is_page(62)){ ?>
 						<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'third-step-pt2-tabcontent', 'third-step-pt2-tablinks', 'third-step-10', 'btn')">Bumalik</button>
 						<button class="btn btn-default step-btn-next" onclick="openStep(event, 'third-step-pt2-tabcontent', 'third-step-pt2-tablinks', 'third-step-12', 'btn')">Susunod</button>
 						<?php } else if (is_page(122)) {?>
@@ -534,7 +534,7 @@ if(is_page(62)) {
 					</div>
 					<div class="col-md-12 step-btn-holder">
 						
-<?php if (is_page(62)){ ?>
+						<?php if (is_page(62)){ ?>
 						<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'third-step-pt2-tabcontent', 'third-step-pt2-tablinks', 'third-step-11', 'btn')">Bumalik</button>
 						<button class="btn btn-default step-btn-next" onclick="openStep(event, 'third-step-pt2-tabcontent', 'third-step-pt2-tablinks', 'third-step-13', 'btn')">Susunod</button>
 						<?php } else if (is_page(122)) {?>
@@ -551,7 +551,7 @@ if(is_page(62)) {
 					</div>
 					<div class="col-md-12 step-btn-holder">
 						
-<?php if (is_page(62)){ ?>
+						<?php if (is_page(62)){ ?>
 						<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'third-step-pt2-tabcontent', 'third-step-pt2-tablinks', 'third-step-12', 'btn')">Bumalik</button>
 						<span class="step-tbc">i-scroll pababa para sa pangalawang parte na bahaging ito</span>
 						<?php } else if (is_page(122)) {?>
@@ -585,7 +585,7 @@ if(is_page(62)) {
 					</div>
 					<div class="col-md-12 step-btn-holder">
 						
-<?php if (is_page(62)){ ?>
+						<?php if (is_page(62)){ ?>
 						<span class="step-btp">i-scroll pataas para sa nakaraang bahagi</span>
 						<button class="btn btn-default step-btn-next" onclick="openStep(event, 'fourth-step-tabcontent', 'fourth-step-tablinks', 'fourth-step-2', 'btn')" >Susunod</button>
 						<?php } else if (is_page(122)) {?>
@@ -599,7 +599,7 @@ if(is_page(62)) {
 					<?php the_field('fourth_step_part_2'); ?>
 					<div class="col-md-12 step-btn-holder">
 						
-<?php if (is_page(62)){ ?>
+						<?php if (is_page(62)){ ?>
 						<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'fourth-step-tabcontent', 'fourth-step-tablinks', 'fourth-step-1', 'btn')">Bumalik</button>
 						<button class="btn btn-default step-btn-next" onclick="openStep(event, 'fourth-step-tabcontent', 'fourth-step-tablinks', 'fourth-step-3', 'btn')">Susunod</button>
 						<?php } else if (is_page(122)) {?>
@@ -613,7 +613,7 @@ if(is_page(62)) {
 					<?php the_field('fourth_step_part_3'); ?>
 					<div class="col-md-12 step-btn-holder">
 						
-<?php if (is_page(62)){ ?>
+						<?php if (is_page(62)){ ?>
 						<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'fourth-step-tabcontent', 'fourth-step-tablinks', 'fourth-step-2', 'btn')">Bumalik</button>
 						<?php } else if (is_page(122)) {?>
 						<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'fourth-step-tabcontent', 'fourth-step-tablinks', 'fourth-step-2', 'btn')">Back</button>
@@ -650,7 +650,7 @@ if(is_page(62)) {
 
 	<div class="section tut-end" id="tut-end">
 		<div class="row">
-<?php if (is_page(62)){ ?>
+			<?php if (is_page(62)){ ?>
 			<div class="col-md-12">
 				<p class="tut-end-title">CONGRATULATIONS!</p>
 				<p class="tut-sub-title">Naisagawa mo ang home <br> infusion process.</p>
@@ -678,9 +678,9 @@ if(is_page(62)) {
 	<ul class="vNav">
 		<li><a href="#tut-banner"></a></li>
 		<li><a href="#tut-bene-warn"></a></li>
-		<li><a href="#tut-reminder"></a></li>
 		<li><a href="#tut-dosage-desc"></a></li>
 		<li><a href="#tut-dosage-calc"></a></li>
+		<li><a href="#tut-reminder"></a></li>
 		<li><a href="#tut-first-step"></a></li>
 		<li><a href="#tut-second-step"></a></li>
 		<li><a href="#tut-third-step"></a></li>
