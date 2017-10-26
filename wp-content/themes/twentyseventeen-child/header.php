@@ -87,7 +87,7 @@
 		    		var tabDigit = parseInt(tabNumberTokens[tabNumberTokens.length - 1]) - 1;	
 		    	}else if(tabLinkGroup.includes("pt2")){
 		    		var tabNumberTokens = tabNumber.split("-");
-		    		var tabDigit = parseInt(tabNumberTokens[tabNumberTokens.length - 1]) - 7;
+		    		var tabDigit = parseInt(tabNumberTokens[tabNumberTokens.length - 1]) - 8;
 		    	}
 
 		    	tablinks[tabDigit].className += " active";
