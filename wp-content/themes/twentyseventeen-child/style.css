@@ -455,6 +455,8 @@ padding-right: 12px; */
 	padding-top: 95px;
 }
 
+
+
 .tut-bene-warn-title{
 	font-size: 75px;
 	font-family:'League Spartan';
@@ -541,6 +543,10 @@ padding-right: 12px; */
 	padding-top: 85px;
 }
 
+.tut-dosage-desc-container{
+	padding-left: 150px;
+}
+
 .tut-dosage-desc-title{
 	font-size: 75px;
 	font-weight: bold;
@@ -558,7 +564,7 @@ padding-right: 12px; */
 }
 
 .tut-dosage-desc-desc{
-	font-size: 18px;
+	font-size: 17px;
 	font-family:'Gill Sans MT';
 }
 
@@ -724,6 +730,15 @@ div.step-tab button.active {
 	border-radius: 0 10px 10px 10px;
 }
 
+.first-image{
+	width: 90%;
+}
+
+.mistake-image {
+    width: 90%;
+    margin-top: 20px;
+}
+
 .step-tab-holder p {
 	font-family:'Minion Pro';
 }
@@ -770,6 +785,10 @@ div.step-tab button.active {
 	font-family:'League Spartan';
 }
 
+.tut-mistakes-holder{
+	margin: 30px 12%;
+}
+
 .tut-mistakes-panels{
 	height: 450px;
 	border: 5px solid #6D9075;
@@ -814,6 +833,10 @@ div.step-tab button.active {
 
 .tut-sub-title{
 	font-size: 60px;
+}
+
+.tut-end-btn-holder{
+	    margin: 20px 40%;
 }
 
 .tut-end-btn{
@@ -898,7 +921,7 @@ div.step-tab button.active {
 	.tut-banner-icons{
 		float: left;
 		width: 7%;
-		margin: 20px 40px;
+		margin: 20px 35px;
 	}
 
 	.tut-banner-icons:nth-of-type(1){
@@ -984,11 +1007,11 @@ div.step-tab button.active {
 	.tut-banner-icons{
 		float: left;
 		width: 7%;
-		margin: 20px 40px;
+		margin: 20px 25px;
 	}
 
 	.tut-banner-icons:nth-of-type(1){
-		margin-top: 30px;
+		margin-top: 37px;
 	}
 
 	.tut-banner-icons:nth-of-type(2), .tut-banner-icons:nth-of-type(8){
@@ -999,12 +1022,24 @@ div.step-tab button.active {
 		margin-top: 30px;
 	}
 
+	.tut-banner-icons:nth-of-type(4){
+		margin-top: 28px;
+	}
+
 	.tut-banner-icons:nth-of-type(5){
-		width: 70px;
+		width: 52px;
+	}
+
+	.tut-banner-icons:nth-of-type(6){
+		margin-top: 25px;
 	}
 
 	.tut-banner-icons:nth-of-type(7){
-		width: 55px;
+		width: 42px;
+	}
+
+	.tut-banner-icons:nth-of-type(8){
+		width: 75px;
 	}
 
 	.tut-bene-warn{
@@ -1023,7 +1058,34 @@ div.step-tab button.active {
 
 	.tut-warn{
 		width: 100%;
-		padding-bottom: 35px;
+		padding-bottom: 26px;
+	}
+
+	.styleSelect{
+		margin: 0 36%;
+	}
+
+	.tut-reminder-inst{
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+
+	.step-tab-holder {
+	    margin: 45px 5%;
+	}
+
+	.first-step-tabcontent, .second-step-tabcontent, .third-step-tabcontent, 
+	.third-step-pt2-tabcontent, .fourth-step-tabcontent{
+		width: 85%;
+	}
+
+	.tut-mistakes-holder{
+		margin: 30px 5%;
+	}
+
+	.tut-mistakes-panels{
+		height: 500px;
+		width: 30%;
 	}
 }
 
@@ -1106,6 +1168,216 @@ div.step-tab button.active {
 		font-size:25px;
 		padding-left:15px;
 		padding-right:15px;
+	}
+
+	/*tutorial responsive*/
+
+	.tut-banner-icon-box {
+	    margin: 30px 0;
+	    padding: 0px 0;
+	    padding-left: 0;
+	    height: 250px;
+	}
+
+	.tut-banner-icons{
+		width: 9%;
+    	margin: 20px 35px;
+	}
+
+	.tut-banner-icons:nth-of-type(1){
+		margin-top: 37px;
+    	width: 60px;
+	}
+
+	.tut-banner-icons:nth-of-type(2){
+		margin-top: 42px;
+    	width: 60px
+	}
+
+	.tut-banner-icons:nth-of-type(3){
+		margin-top: 40px;
+	}
+
+	.tut-banner-icons:nth-of-type(4){
+		margin-top: 45px;
+    	width: 50px;
+	}
+
+	.tut-banner-icons:nth-of-type(5){
+		width: 45px;
+		margin-left: 43px;
+	}
+
+	.tut-banner-icons:nth-of-type(6){
+		margin-top: 25px;
+		width: 58px;
+		margin-left: 45px;
+	}
+
+	.tut-banner-icons:nth-of-type(7){
+		width: 37px;
+	}
+
+	.tut-banner-icons:nth-of-type(8){
+		width: 70px;
+	    margin-left: 20px;
+	    margin-top: 34px;
+	}
+
+	.tut-bene-warn-first{
+		margin-top: 30px;
+	}
+
+	.tut-bene-warn{
+		padding-top: 75px;
+	}
+
+	.tut-bene-warn-title:nth-of-type(1){
+		text-align: center;
+	}
+
+	.tut-bene{
+		margin: 0 8px;
+    	width: 100%;
+    	padding-bottom: 130px;
+    	overflow: auto;
+	}
+
+	.tut-bene-number {
+	    padding-top: 0;
+	    text-align: center;
+	}
+
+	.tut-bene-desc {
+	    margin-bottom: 25px;
+	    margin-top: 0px;
+	    font-size: 17px;
+	}
+
+	.tut-warn{
+		width: 100%;
+    	padding-bottom: 70px;
+    	margin: 0 8px;
+    	overflow: auto;
+	}
+
+	.tut-dosage-desc-container {
+	    padding-left: 30px;
+	}
+
+	.tut-dosage-desc-number {
+	    text-align: center;
+	}
+
+	.tut-dosage-desc-desc {
+	    margin-top: 0px;
+	    margin-bottom: 20px;
+	}
+
+	.dosage-formula {
+	    width: 87%;
+	    margin-top: 10px;
+	}
+
+	.tut-dosage-calc-btn {
+     	float: left; 
+    	margin-left: 33%;
+    }
+
+	.styleSelect{
+		margin: 0 25%;
+	}
+
+	.tut-dosage-calc-box {
+	    margin: 50px 6%;
+    	width: 90%;
+	}
+
+	.tut-dosage-calc-inner {
+	    margin: 45px 0;
+	}
+
+	.calc-input-labels{
+		padding: 5px 0px;
+		font-size: 16px;
+	}
+
+	.tut-reminder-title {
+	    margin-left: 12px;
+	}
+
+	.tut-reminder-number {
+	    text-align: left; 
+	}
+
+	.tut-reminder-desc {
+	    margin-top: 0;
+	    margin-bottom: 20px;
+	}
+
+	.tut-reminder-inst{
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+
+	.step-tab-holder {
+	    margin: 45px 0%;
+	    margin-left: 15px; 
+	}
+
+	.tut-step-title {
+	    font-size: 60px;
+	}
+
+	.step-gif {
+	    width: 100%;
+	    margin: 100px auto;
+	}
+
+	.first-step-tabcontent, .second-step-tabcontent, .third-step-tabcontent, 
+	.third-step-pt2-tabcontent, .fourth-step-tabcontent{
+		width: 87%;
+		height: 650px;
+	}
+
+	.first-image {
+	    width: 100%;
+	}
+
+	.step-btn-prev {
+	    margin-left: -10px;
+	}
+
+	.step-btn-next {
+	    float: right;
+	    /*margin-left: 185px;*/
+	    margin-right: 55px;
+	}
+
+	.tut-mistakes-holder{
+		margin: 30px 5%;
+	}
+
+	.tut-mistakes-panels{
+		height: 500px;
+	}
+
+	.tut-end-title {
+	    font-size: 43px;
+	    margin-top: 20%;
+	}
+
+	.tut-sub-title{
+		font-size: 40px;
+		line-height: 45px;
+	}
+
+	.tut-end-btn-holder{
+		margin: 20px 27%;
+	}
+
+	.mistake-image {
+	    width: 100%;
 	}
 }
 

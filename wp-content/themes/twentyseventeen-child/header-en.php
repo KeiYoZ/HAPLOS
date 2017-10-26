@@ -58,7 +58,7 @@
 	</script>
 	<script type="text/javascript">
 
-		function openStep(evt, tabGroup, tabLinkGroup, tabNumber, from = "tab", dir = "left") {
+		function openStep(evt, tabGroup, tabLinkGroup, tabNumber, from = "tab") {
 		    // Declare all variables
 		    var i, tabcontent, tablinks;
 
@@ -87,10 +87,6 @@
 		    	}else if(tabLinkGroup.includes("pt2")){
 		    		var tabNumberTokens = tabNumber.split("-");
 		    		var tabDigit = parseInt(tabNumberTokens[tabNumberTokens.length - 1]) - 8;
-		    		
-		    		if (dir == "right"){
-		    			tabDigit = parseInt(tabNumberTokens[tabNumberTokens.length - 1]) - 8;
-		    		}
 		    	}
 
 		    	tablinks[tabDigit].className += " active";

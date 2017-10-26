@@ -40,7 +40,6 @@ if(is_page(62)) {
 		</div>
 		<div class="row">
 			<div class="col-md-12">
-				<!-- <p class="tut-banner-sub">Ang home infusion ay ang pagsalin ng clotting factor concentrate <br>sa katawan ng isang PWH (person with hemophilia) sa pamamagitan ng pagturok ng gamot <br> sa sariling pamamahay.</p> -->
 				<?php the_field('banner_description'); ?>
 			</div>
 		</div>
@@ -49,7 +48,6 @@ if(is_page(62)) {
 	<div class="section tut-bene-warn" id="tut-bene-warn">
 		<div class="row">
 			<div class="col-md-6">
-				<!-- <p class="tut-bene-warn-title" style="color: #9FB19B; text-align: right;">BENEPISYO</p> -->
 				<?php the_field('benefit_titles'); ?>
 				<div class="col-md-12 tut-bene">
 					<?php the_field('benefit_panel'); ?>
@@ -65,11 +63,9 @@ if(is_page(62)) {
 		</div>
 	</div>
 
-	
-
 	<div class="section tut-dosage-desc" id="tut-dosage-desc">
 		<div class="row">
-			<div class="col-md-12" style="padding-left: 150px;">
+			<div class="col-md-12 tut-dosage-desc-container">
 				<?php the_field('dosage_description_title'); ?>
 			</div>
 		</div>
@@ -78,9 +74,9 @@ if(is_page(62)) {
 				<?php the_field('dosage_description_instructions'); ?>
 				<div>
 					<?php if (is_page(62)){ ?>
-					<a href="#tut-dosage-calc" class="btn btn-default tut-dosage-calc-btn" style="float: right; margin-right: 100px; border-radius: 15px" role="button">Gamitin ang Calculator</a>
+					<a href="#tut-dosage-calc" class="btn btn-default tut-dosage-calc-btn" role="button">Gamitin ang Calculator</a>
 					<?php } else if (is_page(122)) {?>
-					<a href="#tut-dosage-calc" class="btn btn-default tut-dosage-calc-btn" style="float: right; margin-right: 100px; border-radius: 15px" role="button">Use the Calculator</a>
+					<a href="#tut-dosage-calc" class="btn btn-default tut-dosage-calc-btn" role="button">Use the Calculator</a>
 					<?php } ?>
 				</div>
 			</div>
@@ -108,22 +104,22 @@ if(is_page(62)) {
 			<div class="col-md-12">
 				<div class="tut-dosage-calc-box">
 					<div class="col-md-12 tut-dosage-calc-inner">
-						<div class="col-md-6 calc-input-labels">
+						<div class="col-md-6 col-xs-6 col-sm-6 calc-input-labels">
 							<?php if (is_page(62)){ ?>
 							<p>Timbang (kg)</p>
 							<?php } else if (is_page(122)) {?>
 							<p>Weight (kg)</p>
 							<?php } ?>
 						</div>
-						<div class="col-md-6">
+						<div class="col-md-6 col-xs-6 col-sm-6">
 							<input type="number" class="calc-input" name="weight-text" id="weight-text">
 						</div>	
 					</div>
 					<div class="col-md-12 tut-dosage-calc-inner">
-						<div class="col-md-6 calc-input-labels">
+						<div class="col-md-6 col-xs-6 col-sm-6 calc-input-labels">
 							<p>Percent Activity</p>
 						</div>
-						<div class="col-md-6">
+						<div class="col-md-6 col-xs-6 col-sm-6">
 							<input type="number" class="calc-input" name="pec-act-text" id="pec-act-text">
 						</div>	
 					</div>
@@ -131,10 +127,10 @@ if(is_page(62)) {
 						<button type="button" class="btn btn-default calc-submit-button" onclick="computeDosage()">CALCULATE</button>
 					</div>
 					<div class="col-md-12 tut-dosage-calc-inner">
-						<div class="col-md-6 calc-input-labels">
+						<div class="col-md-6 col-xs-6 col-sm-6 calc-input-labels">
 							<p>Dosage</p>
 						</div>
-						<div class="col-md-6">
+						<div class="col-md-6 col-xs-6 col-sm-6">
 							<input type="number" class="calc-input" readonly name="dosage-text" id="dosage-text">
 						</div>	
 					</div>
@@ -164,10 +160,10 @@ if(is_page(62)) {
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-12 col-md-12 step-tab-holder">
+			<div class="col-md-12 step-tab-holder">
 				<div class="step-tab">
 					<button class="first-step-tablinks active" onclick="openStep(event,'first-step-tabcontent', 'first-step-tablinks', 'first-step-1')">1</button>
-					<button class="first-step-tablinks" onclick="openStep(event, 'first-step-tabcontent', 'first-step-tablinks', 'first-step-2' )">2</button>
+					<button class="first-step-tablinks" onclick="openStep(event, 'first-step-tabcontent', 'first-step-tablinks', 'first-step-2')">2</button>
 					<button class="first-step-tablinks" onclick="openStep(event, 'first-step-tabcontent', 'first-step-tablinks', 'first-step-3')">3</button>
 					<button class="first-step-tablinks" onclick="openStep(event, 'first-step-tabcontent', 'first-step-tablinks', 'first-step-4')">4</button>
 				</div>
@@ -180,42 +176,68 @@ if(is_page(62)) {
 					<?php } ?>
 					<div>
 						<?php the_field('first_step_part_1'); ?>
-						<div class="col-md-6">
-							<img class="img-responsive" src="data:image/png;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="<?php echo get_stylesheet_directory_uri();?>/images/Part_1_Step_1.png" style="width:90%;" />
+						<div class="col-md-6" style="margin-top: 20px;">
+							<img class="img-responsive first-image" src="data:image/png;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="<?php echo get_stylesheet_directory_uri();?>/images/Part_1_Step_1.png" />
 						</div>	
 					</div>
-					<div class="col-md-12 step-btn-holder">
+					<div class="col-md-12 col-xs-12 step-btn-holder">
 						<?php if (is_page(62)){ ?>
-						<button class="btn btn-default step-btn-next" onclick="openStep(event, 'first-step-tabcontent', 'first-step-tablinks', 'first-step-2', 'btn')" >Susunod</button>
+						<div class="col-md-6 col-xs-6">
+							<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'fourth-step-tabcontent', 'fourth-step-tablinks', 'fourth-step-2', 'btn')" style="visibility: hidden">Bumalik</button>
+						</div>
+						<div class="col-md-6 col-xs-6">
+							<button class="btn btn-default step-btn-next" onclick="openStep(event, 'first-step-tabcontent', 'first-step-tablinks', 'first-step-2', 'btn')" >Susunod</button>
+						</div>
 						<?php } else if (is_page(122)) {?>
-						<button class="btn btn-default step-btn-next" onclick="openStep(event, 'first-step-tabcontent', 'first-step-tablinks', 'first-step-2', 'btn')" >Next</button>
+						<div class="col-md-6 col-xs-6">
+							<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'fourth-step-tabcontent', 'fourth-step-tablinks', 'fourth-step-2', 'btn')" style="visibility: hidden">Back</button>
+						</div>
+						<div class="col-md-6 col-xs-6">
+							<button class="btn btn-default step-btn-next" onclick="openStep(event, 'first-step-tabcontent', 'first-step-tablinks', 'first-step-2', 'btn')" >Next</button>
+						</div>
 						<?php } ?>
 					</div>
 				</div>
 
 				<div id="first-step-2" class="first-step-tabcontent">
 					<?php the_field('first_step_part_2'); ?>
-					<div class="col-md-12 step-btn-holder">
+					<div class="col-md-12 col-xs-12 step-btn-holder">
 						<?php if (is_page(62)){ ?>
-						<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'first-step-tabcontent', 'first-step-tablinks', 'first-step-1', 'btn')">Bumalik</button>
-						<button class="btn btn-default step-btn-next" onclick="openStep(event, 'first-step-tabcontent', 'first-step-tablinks', 'first-step-3', 'btn')">Susunod</button>
+						<div class="col-md-6 col-xs-6">
+							<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'first-step-tabcontent', 'first-step-tablinks', 'first-step-1', 'btn')">Bumalik</button>
+						</div>
+						<div class="col-md-6 col-xs-6">
+							<button class="btn btn-default step-btn-next" onclick="openStep(event, 'first-step-tabcontent', 'first-step-tablinks', 'first-step-3', 'btn')">Susunod</button>	
+						</div>
 						<?php } else if (is_page(122)) {?>
-						<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'first-step-tabcontent', 'first-step-tablinks', 'first-step-1', 'btn')">Back</button>
-						<button class="btn btn-default step-btn-next" onclick="openStep(event, 'first-step-tabcontent', 'first-step-tablinks', 'first-step-3', 'btn')">Next</button>
+						<div class="col-md-6 col-xs-6">
+							<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'first-step-tabcontent', 'first-step-tablinks', 'first-step-1', 'btn')">Back</button>
+						</div>
+						<div class="col-md-6 col-xs-6">
+							<button class="btn btn-default step-btn-next" onclick="openStep(event, 'first-step-tabcontent', 'first-step-tablinks', 'first-step-3', 'btn')">Next</button>	
+						</div>
 						<?php } ?>
 					</div>
 				</div>
 
 				<div id="first-step-3" class="first-step-tabcontent">
 					<?php the_field('first_step_part_3'); ?>
-					<div class="col-md-12 step-btn-holder">
+					<div class="col-md-12 col-xs-12 step-btn-holder">
 						
 						<?php if (is_page(62)){ ?>
-						<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'first-step-tabcontent', 'first-step-tablinks', 'first-step-2', 'btn')">Bumalik</button>
-						<button class="btn btn-default step-btn-next" onclick="openStep(event, 'first-step-tabcontent', 'first-step-tablinks', 'first-step-4', 'btn')">Susunod</button>
+						<div class="col-md-6 col-xs-6">
+							<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'first-step-tabcontent', 'first-step-tablinks', 'first-step-2', 'btn')">Bumalik</button>
+						</div>
+						<div class="col-md-6 col-xs-6">
+							<button class="btn btn-default step-btn-next" onclick="openStep(event, 'first-step-tabcontent', 'first-step-tablinks', 'first-step-4', 'btn')">Susunod</button>
+						</div>
 						<?php } else if (is_page(122)) {?>
-						<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'first-step-tabcontent', 'first-step-tablinks', 'first-step-2', 'btn')">Back</button>
-						<button class="btn btn-default step-btn-next" onclick="openStep(event, 'first-step-tabcontent', 'first-step-tablinks', 'first-step-4', 'btn')">Next</button>
+						<div class="col-md-6 col-xs-6">
+							<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'first-step-tabcontent', 'first-step-tablinks', 'first-step-2', 'btn')">Back</button>
+						</div>
+						<div class="col-md-6 col-xs-6">
+							<button class="btn btn-default step-btn-next" onclick="openStep(event, 'first-step-tabcontent', 'first-step-tablinks', 'first-step-4', 'btn')">Next</button>	
+						</div>
 						<?php } ?>
 					</div>
 				</div>
@@ -225,14 +247,21 @@ if(is_page(62)) {
 					<div class="col-md-12">
 						<img class="img-responsive step-gif" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="<?php echo get_stylesheet_directory_uri();?>/images/gifs/Part_1_Step_4.gif"/>
 					</div>
-					<div class="col-md-12 step-btn-holder">
-
+					<div class="col-md-12 col-xs-12 step-btn-holder">
 						<?php if (is_page(62)){ ?>
-						<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'first-step-tabcontent', 'first-step-tablinks', 'first-step-3', 'btn')">Bumalik</button>
-						<span class="step-tbc">i-scroll pababa para sa susunod na bahagi</span>
+						<div class="col-md-6 col-xs-6">
+							<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'first-step-tabcontent', 'first-step-tablinks', 'first-step-3', 'btn')">Bumalik</button>
+						</div>
+						<div class="col-md-6 col-xs-6">
+							<a href="#tut-second-step"><button class="btn btn-default step-btn-next">Susunod</button></a>
+						</div>
 						<?php } else if (is_page(122)) {?>
-						<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'first-step-tabcontent', 'first-step-tablinks', 'first-step-3', 'btn')">Back</button>
-						<span class="step-tbc">scroll down for the next step</span>
+						<div class="col-md-6 col-xs-6">
+							<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'first-step-tabcontent', 'first-step-tablinks', 'first-step-2', 'btn')">Back</button>
+						</div>
+						<div class="col-md-6 col-xs-6">
+							<a href="#tut-second-step"><button class="btn btn-default step-btn-next">Next</button></a>
+						</div>
 						<?php } ?>
 					</div>
 				</div>	
@@ -259,13 +288,21 @@ if(is_page(62)) {
 					<div class="col-md-12">
 						<img class="img-responsive step-gif" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="<?php echo get_stylesheet_directory_uri();?>/images/gifs/Part_2_Step_1.gif"/>
 					</div>
-					<div class="col-md-12 step-btn-holder">
+					<div class="col-md-12 col-xs-12 step-btn-holder">
 						<?php if (is_page(62)){ ?>
-						<span class="step-btp">i-scroll pataas para sa nakaraang bahagi</span>
-						<button class="btn btn-default step-btn-next" onclick="openStep(event, 'second-step-tabcontent', 'second-step-tablinks', 'second-step-2', 'btn')" >Susunod</button>
+						<div class="col-md-6 col-xs-6">
+							<a href="#tut-first-step"><button class="btn btn-default step-btn-prev">Bumalik</button></a>
+						</div>
+						<div class="col-md-6 col-xs-6">
+							<button class="btn btn-default step-btn-next" onclick="openStep(event, 'second-step-tabcontent', 'second-step-tablinks', 'second-step-2', 'btn')" >Susunod</button>
+						</div>
 						<?php } else if (is_page(122)) {?>
-						<span class="step-btp">scroll up for the previous step</span>
-						<button class="btn btn-default step-btn-next" onclick="openStep(event, 'second-step-tabcontent', 'second-step-tablinks', 'second-step-2', 'btn')" >Next</button>
+						<div class="col-md-6 col-xs-6">
+							<a href="#tut-first-step"><button class="btn btn-default step-btn-prev">Back</button></a>
+						</div>
+						<div class="col-md-6 col-xs-6">
+							<button class="btn btn-default step-btn-next" onclick="openStep(event, 'second-step-tabcontent', 'second-step-tablinks', 'second-step-2', 'btn')" >Next</button>
+						</div>
 						<?php } ?>
 					</div>
 				</div>
@@ -275,28 +312,42 @@ if(is_page(62)) {
 					<div class="col-md-12">
 						<img class="img-responsive step-gif" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="<?php echo get_stylesheet_directory_uri();?>/images/gifs/Part_2_Step_2.gif"/>
 					</div>
-					<div class="col-md-12 step-btn-holder">
-						
+					<div class="col-md-12 col-xs-12 step-btn-holder">
 						<?php if (is_page(62)){ ?>
-						<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'second-step-tabcontent', 'second-step-tablinks', 'second-step-1', 'btn')">Bumalik</button>
-						<button class="btn btn-default step-btn-next" onclick="openStep(event, 'second-step-tabcontent', 'second-step-tablinks', 'second-step-3', 'btn')">Susunod</button>
+						<div class="col-md-6 col-xs-6">
+							<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'second-step-tabcontent', 'second-step-tablinks', 'second-step-1', 'btn')">Bumalik</button>
+						</div>
+						<div class="col-md-6 col-xs-6">
+							<button class="btn btn-default step-btn-next" onclick="openStep(event, 'second-step-tabcontent', 'second-step-tablinks', 'second-step-3', 'btn')">Susunod</button>
+						</div>
 						<?php } else if (is_page(122)) {?>
-						<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'second-step-tabcontent', 'second-step-tablinks', 'second-step-1', 'btn')">Back</button>
-						<button class="btn btn-default step-btn-next" onclick="openStep(event, 'second-step-tabcontent', 'second-step-tablinks', 'second-step-3', 'btn')">Next</button>
+						<div class="col-md-6 col-xs-6">
+							<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'second-step-tabcontent', 'second-step-tablinks', 'second-step-1', 'btn')">Back</button>
+						</div>
+						<div class="col-md-6 col-xs-6">
+							<button class="btn btn-default step-btn-next" onclick="openStep(event, 'second-step-tabcontent', 'second-step-tablinks', 'second-step-3', 'btn')">Next</button>
+						</div>
 						<?php } ?>
 					</div>
 				</div>
 
 				<div id="second-step-3" class="second-step-tabcontent">
 					<?php the_field('second_step_part_3'); ?>
-					<div class="col-md-12 step-btn-holder">
-						
+					<div class="col-md-12 col-xs-12 step-btn-holder">
 						<?php if (is_page(62)){ ?>
-						<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'second-step-tabcontent', 'second-step-tablinks', 'second-step-2', 'btn')">Bumalik</button>
-						<span class="step-tbc">i-scroll pababa para sa susunod na bahagi</span>
+						<div class="col-md-6 col-xs-6">
+							<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'second-step-tabcontent', 'second-step-tablinks', 'second-step-2', 'btn')">Bumalik</button>
+						</div>
+						<div class="col-md-6 col-xs-6">
+							<a href="#tut-third-step"><button class="btn btn-default step-btn-next">Susunod</button></a>
+						</div>
 						<?php } else if (is_page(122)) {?>
-						<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'second-step-tabcontent', 'second-step-tablinks', 'second-step-2', 'btn')">Back</button>
-						<span class="step-tbc">scroll down for the next step</span>
+						<div class="col-md-6 col-xs-6">
+							<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'second-step-tabcontent', 'second-step-tablinks', 'second-step-2', 'btn')">Back</button>
+						</div>
+						<div class="col-md-6 col-xs-6">
+							<a href="#tut-third-step"><button class="btn btn-default step-btn-next">Next</button></a>
+						</div>
 						<?php } ?>
 					</div>
 				</div>
@@ -327,14 +378,21 @@ if(is_page(62)) {
 					<div class="col-md-12">
 						<img class="img-responsive step-gif" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="<?php echo get_stylesheet_directory_uri();?>/images/gifs/Part_3_Step_1.gif"/>
 					</div>
-					<div class="col-md-12 step-btn-holder">
-						
+					<div class="col-md-12 col-xs-12 step-btn-holder">
 						<?php if (is_page(62)){ ?>
-						<span class="step-btp">i-scroll pataas para sa nakaraang bahagi</span>
-						<button class="btn btn-default step-btn-next" onclick="openStep(event, 'third-step-tabcontent', 'third-step-tablinks', 'third-step-2', 'btn')" >Susunod</button>
+						<div class="col-md-6 col-xs-6">
+							<a href="#tut-second-step"><button class="btn btn-default step-btn-prev">Bumalik</button></a>
+						</div>
+						<div class="col-md-6 col-xs-6">
+							<button class="btn btn-default step-btn-next" onclick="openStep(event, 'third-step-tabcontent', 'third-step-tablinks', 'third-step-2', 'btn')" >Susunod</button>
+						</div>
 						<?php } else if (is_page(122)) {?>
-						<span class="step-btp">scroll up for the previous step</span>
-						<button class="btn btn-default step-btn-next" onclick="openStep(event, 'third-step-tabcontent', 'third-step-tablinks', 'third-step-2', 'btn')" >Next</button>
+						<div class="col-md-6 col-xs-6">
+							<a href="#tut-second-step"><button class="btn btn-default step-btn-prev">Back</button></a>
+						</div>
+						<div class="col-md-6 col-xs-6">
+							<button class="btn btn-default step-btn-next" onclick="openStep(event, 'third-step-tabcontent', 'third-step-tablinks', 'third-step-2', 'btn')" >Next</button>
+						</div>
 						<?php } ?>
 					</div>
 				</div>
@@ -344,14 +402,21 @@ if(is_page(62)) {
 					<div class="col-md-12">
 						<img class="img-responsive step-gif" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="<?php echo get_stylesheet_directory_uri();?>/images/gifs/Part_3_Step_2.gif"/>
 					</div>
-					<div class="col-md-12 step-btn-holder">
-						
+					<div class="col-md-12 col-xs-12 step-btn-holder">
 						<?php if (is_page(62)){ ?>
-						<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'third-step-tabcontent', 'third-step-tablinks', 'third-step-1', 'btn')">Bumalik</button>
-						<button class="btn btn-default step-btn-next" onclick="openStep(event, 'third-step-tabcontent', 'third-step-tablinks', 'third-step-3', 'btn')">Susunod</button>
+						<div class="col-md-6 col-xs-6">
+							<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'third-step-tabcontent', 'third-step-tablinks', 'third-step-1', 'btn')">Bumalik</button>
+						</div>
+						<div class="col-md-6 col-xs-6">
+							<button class="btn btn-default step-btn-next" onclick="openStep(event, 'third-step-tabcontent', 'third-step-tablinks', 'third-step-3', 'btn')">Susunod</button>
+						</div>
 						<?php } else if (is_page(122)) {?>
-						<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'third-step-tabcontent', 'third-step-tablinks', 'third-step-1', 'btn')">Back</button>
-						<button class="btn btn-default step-btn-next" onclick="openStep(event, 'third-step-tabcontent', 'third-step-tablinks', 'third-step-3', 'btn')">Next</button>
+						<div class="col-md-6 col-xs-6">
+							<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'third-step-tabcontent', 'third-step-tablinks', 'third-step-1', 'btn')">Back</button>
+						</div>
+						<div class="col-md-6 col-xs-6">
+							<button class="btn btn-default step-btn-next" onclick="openStep(event, 'third-step-tabcontent', 'third-step-tablinks', 'third-step-3', 'btn')">Next</button>
+						</div>
 						<?php } ?>
 					</div>
 				</div>
@@ -361,14 +426,21 @@ if(is_page(62)) {
 					<div class="col-md-12">
 						<img class="img-responsive step-gif" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="<?php echo get_stylesheet_directory_uri();?>/images/gifs/Part_3_Step_3.gif"/>
 					</div>
-					<div class="col-md-12 step-btn-holder">
-						
+					<div class="col-md-12 col-xs-12 step-btn-holder">
 						<?php if (is_page(62)){ ?>
-						<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'third-step-tabcontent', 'third-step-tablinks', 'third-step-2', 'btn')">Bumalik</button>
-						<button class="btn btn-default step-btn-next" onclick="openStep(event, 'third-step-tabcontent', 'third-step-tablinks', 'third-step-4', 'btn')">Susunod</button>
+						<div class="col-md-6 col-xs-6">
+							<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'third-step-tabcontent', 'third-step-tablinks', 'third-step-2', 'btn')">Bumalik</button>
+						</div>
+						<div class="col-md-6 col-xs-6">
+							<button class="btn btn-default step-btn-next" onclick="openStep(event, 'third-step-tabcontent', 'third-step-tablinks', 'third-step-4', 'btn')">Susunod</button>
+						</div>
 						<?php } else if (is_page(122)) {?>
-						<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'third-step-tabcontent', 'third-step-tablinks', 'third-step-2', 'btn')">Back</button>
-						<button class="btn btn-default step-btn-next" onclick="openStep(event, 'third-step-tabcontent', 'third-step-tablinks', 'third-step-4', 'btn')">Next</button>
+						<div class="col-md-6 col-xs-6">
+							<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'third-step-tabcontent', 'third-step-tablinks', 'third-step-2', 'btn')">Back</button>
+						</div>
+						<div class="col-md-6 col-xs-6">
+							<button class="btn btn-default step-btn-next" onclick="openStep(event, 'third-step-tabcontent', 'third-step-tablinks', 'third-step-4', 'btn')">Next</button>
+						</div>
 						<?php } ?>
 					</div>
 				</div>
@@ -378,14 +450,21 @@ if(is_page(62)) {
 					<div class="col-md-12">
 						<img class="img-responsive step-gif" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="<?php echo get_stylesheet_directory_uri();?>/images/gifs/Part_3_Step_4.gif"/>
 					</div>
-					<div class="col-md-12 step-btn-holder">
-						
+					<div class="col-md-12 col-xs-12 step-btn-holder">
 						<?php if (is_page(62)){ ?>
-						<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'third-step-tabcontent', 'third-step-tablinks', 'third-step-3', 'btn')">Bumalik</button>
-						<button class="btn btn-default step-btn-next" onclick="openStep(event, 'third-step-tabcontent', 'third-step-tablinks', 'third-step-5', 'btn')">Susunod</button>
+						<div class="col-md-6 col-xs-6">
+							<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'third-step-tabcontent', 'third-step-tablinks', 'third-step-3', 'btn')">Bumalik</button>
+						</div>
+						<div class="col-md-6 col-xs-6">
+							<button class="btn btn-default step-btn-next" onclick="openStep(event, 'third-step-tabcontent', 'third-step-tablinks', 'third-step-5', 'btn')">Susunod</button>
+						</div>
 						<?php } else if (is_page(122)) {?>
-						<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'third-step-tabcontent', 'third-step-tablinks', 'third-step-3', 'btn')">Back</button>
-						<button class="btn btn-default step-btn-next" onclick="openStep(event, 'third-step-tabcontent', 'third-step-tablinks', 'third-step-5', 'btn')">Next</button>
+						<div class="col-md-6 col-xs-6">
+							<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'third-step-tabcontent', 'third-step-tablinks', 'third-step-3', 'btn')">Back</button>
+						</div>
+						<div class="col-md-6 col-xs-6">
+							<button class="btn btn-default step-btn-next" onclick="openStep(event, 'third-step-tabcontent', 'third-step-tablinks', 'third-step-5', 'btn')">Next</button>
+						</div>
 						<?php } ?>
 					</div>
 				</div>
@@ -395,14 +474,21 @@ if(is_page(62)) {
 					<div class="col-md-12">
 						<img class="img-responsive step-gif" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="<?php echo get_stylesheet_directory_uri();?>/images/gifs/Part_3_Step_5.gif"/>
 					</div>
-					<div class="col-md-12 step-btn-holder">
-						
+					<div class="col-md-12 col-xs-12 step-btn-holder">
 						<?php if (is_page(62)){ ?>
-						<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'third-step-tabcontent', 'third-step-tablinks', 'third-step-4', 'btn')">Bumalik</button>
-						<button class="btn btn-default step-btn-next" onclick="openStep(event, 'third-step-tabcontent', 'third-step-tablinks', 'third-step-6', 'btn')">Susunod</button>
+						<div class="col-md-6 col-xs-6">
+							<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'third-step-tabcontent', 'third-step-tablinks', 'third-step-4', 'btn')">Bumalik</button>
+						</div>
+						<div class="col-md-6 col-xs-6">
+							<button class="btn btn-default step-btn-next" onclick="openStep(event, 'third-step-tabcontent', 'third-step-tablinks', 'third-step-6', 'btn')">Susunod</button>
+						</div>
 						<?php } else if (is_page(122)) {?>
-						<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'third-step-tabcontent', 'third-step-tablinks', 'third-step-4', 'btn')">Backk</button>
-						<button class="btn btn-default step-btn-next" onclick="openStep(event, 'third-step-tabcontent', 'third-step-tablinks', 'third-step-6', 'btn')">Next</button>
+						<div class="col-md-6 col-xs-6">
+							<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'third-step-tabcontent', 'third-step-tablinks', 'third-step-4', 'btn')">Back</button>
+						</div>
+						<div class="col-md-6 col-xs-6">
+							<button class="btn btn-default step-btn-next" onclick="openStep(event, 'third-step-tabcontent', 'third-step-tablinks', 'third-step-6', 'btn')">Next</button>
+						</div>
 						<?php } ?>
 					</div>
 				</div>
@@ -412,14 +498,21 @@ if(is_page(62)) {
 					<div class="col-md-12">
 						<img class="img-responsive step-gif" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="<?php echo get_stylesheet_directory_uri();?>/images/gifs/Part_3_Step_6.gif"/>
 					</div>
-					<div class="col-md-12 step-btn-holder">
-						
+					<div class="col-md-12 col-xs-12 step-btn-holder">
 						<?php if (is_page(62)){ ?>
-						<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'third-step-tabcontent', 'third-step-tablinks', 'third-step-5', 'btn')">Bumalik</button>
-						<button class="btn btn-default step-btn-next" onclick="openStep(event, 'third-step-tabcontent', 'third-step-tablinks', 'third-step-7', 'btn')">Susunod</button>
+						<div class="col-md-6 col-xs-6">
+							<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'third-step-tabcontent', 'third-step-tablinks', 'third-step-5', 'btn')">Bumalik</button>
+						</div>
+						<div class="col-md-6 col-xs-6">
+							<button class="btn btn-default step-btn-next" onclick="openStep(event, 'third-step-tabcontent', 'third-step-tablinks', 'third-step-7', 'btn')">Susunod</button>
+						</div>
 						<?php } else if (is_page(122)) {?>
-						<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'third-step-tabcontent', 'third-step-tablinks', 'third-step-5', 'btn')">Back</button>
-						<button class="btn btn-default step-btn-next" onclick="openStep(event, 'third-step-tabcontent', 'third-step-tablinks', 'third-step-7', 'btn')">Next</button>
+						<div class="col-md-6 col-xs-6">
+							<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'third-step-tabcontent', 'third-step-tablinks', 'third-step-5', 'btn')">Back</button>
+						</div>
+						<div class="col-md-6 col-xs-6">
+							<button class="btn btn-default step-btn-next" onclick="openStep(event, 'third-step-tabcontent', 'third-step-tablinks', 'third-step-7', 'btn')">Next</button>
+						</div>
 						<?php } ?>
 					</div>
 				</div>
@@ -429,14 +522,21 @@ if(is_page(62)) {
 					<div class="col-md-12">
 						<img class="img-responsive step-gif" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="<?php echo get_stylesheet_directory_uri();?>/images/gifs/Part_3_Step_7.gif"/>
 					</div>
-					<div class="col-md-12 step-btn-holder">
-						
+					<div class="col-md-12 col-xs-12 step-btn-holder">
 						<?php if (is_page(62)){ ?>
-						<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'third-step-tabcontent', 'third-step-tablinks', 'third-step-6', 'btn')">Bumalik</button>
-						<span class="step-tbc">i-scroll pababa para sa pangalawang parte na bahaging ito</span>
+						<div class="col-md-6 col-xs-6">
+							<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'third-step-tabcontent', 'third-step-tablinks', 'third-step-6', 'btn')">Bumalik</button>
+						</div>
+						<div class="col-md-6 col-xs-6">
+							<a href="#tut-third-step-pt2"><button class="btn btn-default step-btn-next">Susunod</button></a>
+						</div>
 						<?php } else if (is_page(122)) {?>
-						<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'third-step-tabcontent', 'third-step-tablinks', 'third-step-6', 'btn')">Back</button>
-						<span class="step-tbc">scroll down for the next step</span>
+						<div class="col-md-6 col-xs-6">
+							<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'third-step-tabcontent', 'third-step-tablinks', 'third-step-6', 'btn')">Back</button>
+						</div>
+						<div class="col-md-6 col-xs-6">
+							<a href="#tut-third-step-pt2"><button class="btn btn-default step-btn-next">Susunod</button></a>
+						</div>
 						<?php } ?>
 					</div>
 				</div>
@@ -464,14 +564,21 @@ if(is_page(62)) {
 					<div class="col-md-12">
 						<img class="img-responsive step-gif" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="<?php echo get_stylesheet_directory_uri();?>/images/gifs/Part_3_Step_8.gif"/>
 					</div>
-					<div class="col-md-12 step-btn-holder">
-						
+					<div class="col-md-12 col-xs-12 step-btn-holder">
 						<?php if (is_page(62)){ ?>
-						<span class="step-btp">i-scroll pataas para sa nakaraang bahagi</span>
-						<button class="btn btn-default step-btn-next" onclick="openStep(event, 'third-step-pt2-tabcontent', 'third-step-pt2-tablinks', 'third-step-9', 'btn')" >Susunod</button>
+						<div class="col-md-6 col-xs-6">
+							<a href="#tut-third-step"><button class="btn btn-default step-btn-prev">Bumalik</button></a>
+						</div>
+						<div class="col-md-6 col-xs-6">
+							<button class="btn btn-default step-btn-next" onclick="openStep(event, 'third-step-pt2-tabcontent', 'third-step-pt2-tablinks', 'third-step-9', 'btn')" >Susunod</button>
+						</div>
 						<?php } else if (is_page(122)) {?>
-						<span class="step-btp">scroll up for the previous step</span>
-						<button class="btn btn-default step-btn-next" onclick="openStep(event, 'third-step-pt2-tabcontent', 'third-step-pt2-tablinks', 'third-step-9', 'btn')" >Next</button>
+						<div class="col-md-6 col-xs-6">
+							<a href="#tut-third-step"><button class="btn btn-default step-btn-prev">Back</button></a>
+						</div>
+						<div class="col-md-6 col-xs-6">
+							<button class="btn btn-default step-btn-next" onclick="openStep(event, 'third-step-pt2-tabcontent', 'third-step-pt2-tablinks', 'third-step-9', 'btn')" >Next</button>
+						</div>
 						<?php } ?>
 					</div>
 				</div>
@@ -481,14 +588,21 @@ if(is_page(62)) {
 					<div class="col-md-12">
 						<img class="img-responsive step-gif" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="<?php echo get_stylesheet_directory_uri();?>/images/gifs/Part_3_Step_9.gif"/>
 					</div>
-					<div class="col-md-12 step-btn-holder">
-						
+					<div class="col-md-12 col-xs-12 step-btn-holder">
 						<?php if (is_page(62)){ ?>
-						<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'third-step-pt2-tabcontent', 'third-step-pt2-tablinks', 'third-step-8', 'btn')">Bumalik</button>
-						<button class="btn btn-default step-btn-next" onclick="openStep(event, 'third-step-pt2-tabcontent', 'third-step-pt2-tablinks', 'third-step-10', 'btn')">Susunod</button>
+						<div class="col-md-6 col-xs-6">
+							<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'third-step-pt2-tabcontent', 'third-step-pt2-tablinks', 'third-step-8', 'btn')">Bumalik</button>
+						</div>
+						<div class="col-md-6 col-xs-6">
+							<button class="btn btn-default step-btn-next" onclick="openStep(event, 'third-step-pt2-tabcontent', 'third-step-pt2-tablinks', 'third-step-10', 'btn')">Susunod</button>
+						</div>
 						<?php } else if (is_page(122)) {?>
-						<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'third-step-pt2-tabcontent', 'third-step-pt2-tablinks', 'third-step-8', 'btn')">Back</button>
-						<button class="btn btn-default step-btn-next" onclick="openStep(event, 'third-step-pt2-tabcontent', 'third-step-pt2-tablinks', 'third-step-10', 'btn')">Next</button>
+						<div class="col-md-6 col-xs-6">
+							<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'third-step-pt2-tabcontent', 'third-step-pt2-tablinks', 'third-step-8', 'btn')">Back</button>
+						</div>
+						<div class="col-md-6 col-xs-6">
+							<button class="btn btn-default step-btn-next" onclick="openStep(event, 'third-step-pt2-tabcontent', 'third-step-pt2-tablinks', 'third-step-10', 'btn')">Next</button>
+						</div>
 						<?php } ?>
 					</div>
 				</div>
@@ -498,14 +612,21 @@ if(is_page(62)) {
 					<div class="col-md-12">
 						<img class="img-responsive step-gif" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="<?php echo get_stylesheet_directory_uri();?>/images/gifs/Part_3_Step_10.gif"/>
 					</div>
-					<div class="col-md-12 step-btn-holder">
-						
+					<div class="col-md-12 col-xs-12 step-btn-holder">
 						<?php if (is_page(62)){ ?>
-						<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'third-step-pt2-tabcontent', 'third-step-pt2-tablinks', 'third-step-9', 'btn')">Bumalik</button>
-						<button class="btn btn-default step-btn-next" onclick="openStep(event, 'third-step-pt2-tabcontent', 'third-step-pt2-tablinks', 'third-step-11', 'btn')">Susunod</button>
+						<div class="col-md-6 col-xs-6">
+							<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'third-step-pt2-tabcontent', 'third-step-pt2-tablinks', 'third-step-9', 'btn')">Bumalik</button>
+						</div>
+						<div class="col-md-6 col-xs-6">
+							<button class="btn btn-default step-btn-next" onclick="openStep(event, 'third-step-pt2-tabcontent', 'third-step-pt2-tablinks', 'third-step-11', 'btn')">Susunod</button>
+						</div>
 						<?php } else if (is_page(122)) {?>
-						<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'third-step-pt2-tabcontent', 'third-step-pt2-tablinks', 'third-step-9', 'btn')">Back</button>
-						<button class="btn btn-default step-btn-next" onclick="openStep(event, 'third-step-pt2-tabcontent', 'third-step-pt2-tablinks', 'third-step-11', 'btn')">Next</button>
+						<div class="col-md-6 col-xs-6">
+							<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'third-step-pt2-tabcontent', 'third-step-pt2-tablinks', 'third-step-9', 'btn')">Back</button>
+						</div>
+						<div class="col-md-6 col-xs-6">
+							<button class="btn btn-default step-btn-next" onclick="openStep(event, 'third-step-pt2-tabcontent', 'third-step-pt2-tablinks', 'third-step-11', 'btn')">Next</button>
+						</div>
 						<?php } ?>
 					</div>
 				</div>
@@ -515,14 +636,21 @@ if(is_page(62)) {
 					<div class="col-md-12">
 						<img class="img-responsive step-gif" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="<?php echo get_stylesheet_directory_uri();?>/images/gifs/Part_3_Step_11.gif"/>
 					</div>
-					<div class="col-md-12 step-btn-holder">
-						
+					<div class="col-md-12 col-xs-12 step-btn-holder">
 						<?php if (is_page(62)){ ?>
-						<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'third-step-pt2-tabcontent', 'third-step-pt2-tablinks', 'third-step-10', 'btn')">Bumalik</button>
-						<button class="btn btn-default step-btn-next" onclick="openStep(event, 'third-step-pt2-tabcontent', 'third-step-pt2-tablinks', 'third-step-12', 'btn')">Susunod</button>
+						<div class="col-md-6 col-xs-6">
+							<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'third-step-pt2-tabcontent', 'third-step-pt2-tablinks', 'third-step-10', 'btn')">Bumalik</button>
+						</div>
+						<div class="col-md-6 col-xs-6">
+							<button class="btn btn-default step-btn-next" onclick="openStep(event, 'third-step-pt2-tabcontent', 'third-step-pt2-tablinks', 'third-step-12', 'btn')">Susunod</button>
+						</div>
 						<?php } else if (is_page(122)) {?>
-						<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'third-step-pt2-tabcontent', 'third-step-pt2-tablinks', 'third-step-10', 'btn')">Back</button>
-						<button class="btn btn-default step-btn-next" onclick="openStep(event, 'third-step-pt2-tabcontent', 'third-step-pt2-tablinks', 'third-step-12', 'btn')">Next</button>
+						<div class="col-md-6 col-xs-6">
+							<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'third-step-pt2-tabcontent', 'third-step-pt2-tablinks', 'third-step-10', 'btn')">Back</button>
+						</div>
+						<div class="col-md-6 col-xs-6">
+							<button class="btn btn-default step-btn-next" onclick="openStep(event, 'third-step-pt2-tabcontent', 'third-step-pt2-tablinks', 'third-step-12', 'btn')">Next</button>
+						</div>
 						<?php } ?>
 					</div>
 				</div>
@@ -532,14 +660,21 @@ if(is_page(62)) {
 					<div class="col-md-12">
 						<img class="img-responsive step-gif" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="<?php echo get_stylesheet_directory_uri();?>/images/gifs/Part_3_Step_12.gif"/>
 					</div>
-					<div class="col-md-12 step-btn-holder">
-						
+					<div class="col-md-12 col-xs-12 step-btn-holder">
 						<?php if (is_page(62)){ ?>
-						<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'third-step-pt2-tabcontent', 'third-step-pt2-tablinks', 'third-step-11', 'btn')">Bumalik</button>
-						<button class="btn btn-default step-btn-next" onclick="openStep(event, 'third-step-pt2-tabcontent', 'third-step-pt2-tablinks', 'third-step-13', 'btn')">Susunod</button>
+						<div class="col-md-6 col-xs-6">
+							<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'third-step-pt2-tabcontent', 'third-step-pt2-tablinks', 'third-step-11', 'btn')">Bumalik</button>
+						</div>
+						<div class="col-md-6 col-xs-6">
+							<button class="btn btn-default step-btn-next" onclick="openStep(event, 'third-step-pt2-tabcontent', 'third-step-pt2-tablinks', 'third-step-13', 'btn')">Susunod</button>
+						</div>
 						<?php } else if (is_page(122)) {?>
-						<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'third-step-pt2-tabcontent', 'third-step-pt2-tablinks', 'third-step-11', 'btn')">Back</button>
-						<button class="btn btn-default step-btn-next" onclick="openStep(event, 'third-step-pt2-tabcontent', 'third-step-pt2-tablinks', 'third-step-13', 'btn')">Next</button>
+						<div class="col-md-6 col-xs-6">
+							<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'third-step-pt2-tabcontent', 'third-step-pt2-tablinks', 'third-step-11', 'btn')">Back</button>
+						</div>
+						<div class="col-md-6 col-xs-6">
+							<button class="btn btn-default step-btn-next" onclick="openStep(event, 'third-step-pt2-tabcontent', 'third-step-pt2-tablinks', 'third-step-13', 'btn')">Next</button>
+						</div>
 						<?php } ?>
 					</div>
 				</div>
@@ -549,14 +684,21 @@ if(is_page(62)) {
 					<div class="col-md-12">
 						<img class="img-responsive step-gif" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="<?php echo get_stylesheet_directory_uri();?>/images/gifs/Part_3_Step_13.gif"/>
 					</div>
-					<div class="col-md-12 step-btn-holder">
-						
+					<div class="col-md-12 col-xs-12 step-btn-holder">
 						<?php if (is_page(62)){ ?>
-						<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'third-step-pt2-tabcontent', 'third-step-pt2-tablinks', 'third-step-12', 'btn')">Bumalik</button>
-						<span class="step-tbc">i-scroll pababa para sa pangalawang parte na bahaging ito</span>
+						<div class="col-md-6 col-xs-6">
+							<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'third-step-pt2-tabcontent', 'third-step-pt2-tablinks', 'third-step-12', 'btn')">Bumalik</button>
+						</div>
+						<div class="col-md-6 col-xs-6">
+							<a href="#tut-fourth-step"><button class="btn btn-default step-btn-next">Susunod</button></a>
+						</div>
 						<?php } else if (is_page(122)) {?>
-						<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'third-step-pt2-tabcontent', 'third-step-pt2-tablinks', 'third-step-12', 'btn')">Back</button>
-						<span class="step-tbc">scroll down for the next step</span>
+						<div class="col-md-6 col-xs-6">
+							<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'third-step-pt2-tabcontent', 'third-step-pt2-tablinks', 'third-step-12', 'btn')">Back</button>
+						</div>
+						<div class="col-md-6 col-xs-6">
+							<a href="#tut-fourth-step"><button class="btn btn-default step-btn-next">Susunod</button></a>
+						</div>
 						<?php } ?>
 					</div>
 				</div>
@@ -583,40 +725,63 @@ if(is_page(62)) {
 					<div class="col-md-12">
 						<img class="img-responsive step-gif" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="<?php echo get_stylesheet_directory_uri();?>/images/gifs/Part_4_Step_1.gif"/>
 					</div>
-					<div class="col-md-12 step-btn-holder">
-						
+					<div class="col-md-12 col-xs-12 step-btn-holder">
 						<?php if (is_page(62)){ ?>
-						<span class="step-btp">i-scroll pataas para sa nakaraang bahagi</span>
-						<button class="btn btn-default step-btn-next" onclick="openStep(event, 'fourth-step-tabcontent', 'fourth-step-tablinks', 'fourth-step-2', 'btn')" >Susunod</button>
+						<div class="col-md-6 col-xs-6">
+							<a href="#tut-third-step-pt2"><button class="btn btn-default step-btn-prev">Bumalik</button></a>
+						</div>
+						<div class="col-md-6 col-xs-6">
+							<button class="btn btn-default step-btn-next" onclick="openStep(event, 'fourth-step-tabcontent', 'fourth-step-tablinks', 'fourth-step-2', 'btn')" >Susunod</button>
+						</div>
 						<?php } else if (is_page(122)) {?>
-						<span class="step-btp">scroll up for the previous step</span>
-						<button class="btn btn-default step-btn-next" onclick="openStep(event, 'fourth-step-tabcontent', 'fourth-step-tablinks', 'fourth-step-2', 'btn')" >Next</button>
+						<div class="col-md-6 col-xs-6">
+							<a href="#tut-third-step-pt2"><button class="btn btn-default step-btn-prev">Back</button></a>
+						</div>
+						<div class="col-md-6 col-xs-6">
+							<button class="btn btn-default step-btn-next" onclick="openStep(event, 'fourth-step-tabcontent', 'fourth-step-tablinks', 'fourth-step-2', 'btn')" >Next</button>
+						</div>
 						<?php } ?>
 					</div>
 				</div>
 
 				<div id="fourth-step-2" class="fourth-step-tabcontent">
 					<?php the_field('fourth_step_part_2'); ?>
-					<div class="col-md-12 step-btn-holder">
-						
+					<div class="col-md-12 col-xs-12 step-btn-holder">
 						<?php if (is_page(62)){ ?>
-						<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'fourth-step-tabcontent', 'fourth-step-tablinks', 'fourth-step-1', 'btn')">Bumalik</button>
-						<button class="btn btn-default step-btn-next" onclick="openStep(event, 'fourth-step-tabcontent', 'fourth-step-tablinks', 'fourth-step-3', 'btn')">Susunod</button>
+						<div class="col-md-6 col-xs-6">
+							<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'fourth-step-tabcontent', 'fourth-step-tablinks', 'fourth-step-1', 'btn')">Bumalik</button>
+						</div>
+						<div class="col-md-6 col-xs-6">
+							<button class="btn btn-default step-btn-next" onclick="openStep(event, 'fourth-step-tabcontent', 'fourth-step-tablinks', 'fourth-step-3', 'btn')">Susunod</button>
+						</div>
 						<?php } else if (is_page(122)) {?>
-						<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'fourth-step-tabcontent', 'fourth-step-tablinks', 'fourth-step-1', 'btn')">Back</button>
-						<button class="btn btn-default step-btn-next" onclick="openStep(event, 'fourth-step-tabcontent', 'fourth-step-tablinks', 'fourth-step-3', 'btn')">Next</button>
+						<div class="col-md-6 col-xs-6">
+							<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'fourth-step-tabcontent', 'fourth-step-tablinks', 'fourth-step-1', 'btn')">Back</button>
+						</div>
+						<div class="col-md-6 col-xs-6">
+							<button class="btn btn-default step-btn-next" onclick="openStep(event, 'fourth-step-tabcontent', 'fourth-step-tablinks', 'fourth-step-3', 'btn')">Next</button>
+						</div>
 						<?php } ?>
 					</div>
 				</div>
 
 				<div id="fourth-step-3" class="fourth-step-tabcontent">
 					<?php the_field('fourth_step_part_3'); ?>
-					<div class="col-md-12 step-btn-holder">
-						
+					<div class="col-md-12 col-xs-12 step-btn-holder">
 						<?php if (is_page(62)){ ?>
-						<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'fourth-step-tabcontent', 'fourth-step-tablinks', 'fourth-step-2', 'btn')">Bumalik</button>
+						<div class="col-md-6 col-xs-6">
+							<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'fourth-step-tabcontent', 'fourth-step-tablinks', 'fourth-step-2', 'btn')">Bumalik</button>
+						</div>
+						<div class="col-md-6 col-xs-6">
+							<a href="#tut-fourth-step"><button class="btn btn-default step-btn-next" style="visibility: hidden">Susunod</button></a>
+						</div>
 						<?php } else if (is_page(122)) {?>
-						<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'fourth-step-tabcontent', 'fourth-step-tablinks', 'fourth-step-2', 'btn')">Back</button>
+						<div class="col-md-6 col-xs-6">
+							<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'fourth-step-tabcontent', 'fourth-step-tablinks', 'fourth-step-2', 'btn')">Back</button>
+						</div>
+						<div class="col-md-6 col-xs-6">
+							<a href="#tut-fourth-step"><button class="btn btn-default step-btn-next" style="visibility: hidden">Susunod</button></a>
+						</div>
 						<?php } ?>
 					</div>
 				</div>
@@ -631,18 +796,21 @@ if(is_page(62)) {
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-12" style="margin: 30px 12%">
+			<div class="col-md-12 tut-mistakes-holder">
 				<div class="col-md-3 tut-mistakes-panels">
 					<h2 class="mistake-number">1</h2>
 					<?php the_field('mistake_panel_1'); ?>
+					<img class="img-responsive mistake-image" src="data:image/png;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="<?php echo get_stylesheet_directory_uri();?>/images/mistakes/1.png"/>
 				</div>
 				<div class="col-md-3 tut-mistakes-panels">
 					<h2 class="mistake-number">2</h2>
 					<?php the_field('mistake_panel_2'); ?>
+					<img class="img-responsive mistake-image" src="data:image/png;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="<?php echo get_stylesheet_directory_uri();?>/images/mistakes/2.png"/>
 				</div>
 				<div class="col-md-3 tut-mistakes-panels">
 					<h2 class="mistake-number">3</h2>
 					<?php the_field('mistake_panel_3'); ?>
+					<img class="img-responsive mistake-image" src="data:image/png;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="<?php echo get_stylesheet_directory_uri();?>/images/mistakes/3.png"/>
 				</div>
 			</div>
 		</div>
@@ -655,7 +823,7 @@ if(is_page(62)) {
 				<p class="tut-end-title">CONGRATULATIONS!</p>
 				<p class="tut-sub-title">Naisagawa mo ang home <br> infusion process.</p>
 			</div>
-			<div class="col-md-12" style="margin: 20px 40%;">
+			<div class="col-md-12 tut-end-btn-holder">
 				<a href="#" class="btn btn-default tut-end-btn" role="button">Sagutan ang Pagsasanay</a>
 			</div>
 			<?php } else if (is_page(122)) {?>
@@ -663,7 +831,7 @@ if(is_page(62)) {
 				<p class="tut-end-title">CONGRATULATIONS!</p>
 				<p class="tut-sub-title">You have completed the<br>home infusion process.</p>
 			</div>
-			<div class="col-md-12" style="margin: 20px 40%;">
+			<div class="col-md-12 tut-end-btn-holder">
 				<a href="#" class="btn btn-default tut-end-btn" role="button">Answer the Test</a>
 			</div>
 			<?php } ?>
