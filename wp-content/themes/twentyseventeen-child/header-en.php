@@ -136,7 +136,7 @@
 	<script>
 		$(document).ready(function(){
 			$('.navbar-nav li.dropdown .dropdown-toggle').click(function(){
-				$(this).css('background-color','#5b755f');
+				$(this).css('background-color','#4f7e6b');
 			});
 			$('.navbar-inverse .navbar-nav>li>a').focus(function(){
 				$(this).addClass('active-nav');
@@ -177,7 +177,11 @@
 				</div>
 				<div id="navbar" class="collapse navbar-collapse">
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="/front-page-en/#top">home</a></li>
+						<?php if(is_page(125)){ ?>
+						<li><a href="/#top" style="color:#b5f7c4;">home</a></li>
+						<?php } else { ?>
+						<li><a href="/#top">home</a></li>
+						<?php } ?>
 						<li class="dropdown">
 							<a class="dropdown-toggle" data-toggle="dropdown" href="#">about<span class="caret"></span></a>
 							<ul class="dropdown-menu">
@@ -193,23 +197,27 @@
 							</ul>
 						</li>
 						<li class="dropdown">
+							<?php if(is_page(122)){ ?>
+							<a class="dropdown-toggle" style="color:#b5f7c4;" data-toggle="dropdown" href="#">home infusion process<span class="caret"></span></a>
+							<?php } else { ?>
 							<a class="dropdown-toggle" data-toggle="dropdown" href="#">home infusion process<span class="caret"></span></a>
+							<?php } ?>
 							<ul class="dropdown-menu">
 								<li><a href="/tutorial-english/#tut-banner">What is Home Infusion Process?</a></li>
 								<li><a href="/tutorial-english/#tut-bene-warn">What are its Benetifs and Risks?</a></li>
-								<li><a href="/tutorial-english/#tut-reminder">Things to Remember Before Infusing</a></li>
 								<li><a href="/tutorial-english/#tut-dosage-calc">Dosage Calculator</a></li>
+								<li><a href="/tutorial-english/#tut-reminder">Things to Remember Before Infusing</a></li>
 								<li><a href="/tutorial-english/#tut-first-step">Part One: Preparation</a></li>
 								<li><a href="/tutorial-english/#tut-second-step">Part Two: Locating the Vein</a></li>
 								<li><a href="/tutorial-english/#tut-third-step">Part Three: Puncturing the Vein (Venipuncture)</a></li>
 								<li><a href="/tutorial-english/#tut-fourth-step">Part Four: Post-Infusion</a></li>
-								<li><a href="/tutorial-english/#tut-mistakes">Common Mistakes in Venipuncture
-									<li><a href="/tutorial-english/#tut-end">Practice Test</a></li>
-								</ul>
-							</li>
-						</ul>
-					</div><!--/.nav-collapse -->
-				</div>
-			</nav>
-		</div>
+								<li><a href="/tutorial-english/#tut-mistakes">Common Mistakes in Venipuncture</a></li>
+								<li><a href="/tutorial-english/#tut-end">Practice Test</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div><!--/.nav-collapse -->
+			</div>
+		</nav>
+	</div>
 	<!-- NAVBAR END -->

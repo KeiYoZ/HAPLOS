@@ -15,8 +15,8 @@ body, span, pre, img, ul, li, ol, p{
 
 html, body {
 	width: 100%;
-    margin: 0px;
-    padding: 0px;
+	margin: 0px;
+	padding: 0px;
 	overflow-x: hidden;
 }
 
@@ -50,7 +50,7 @@ input[type='button']{
 }
 
 .navbar {
-	background: #5b755f;
+	background: #4f7e6b;
 }
 
 /* navbar menu */
@@ -63,9 +63,11 @@ input[type='button']{
 	padding-bottom: 0px;
 	line-height: 70px;
 }
-
+.navbar-nav li a:hover{
+	color:#b5f7c4 !important;
+}
 .active-nav{
-	color:#c3c3c3 !important;
+	color:#b5f7c4 !important;
 }
 .navbar-inverse .navbar-nav>li>a{
 	color:#fff;
@@ -83,7 +85,7 @@ input[type='button']{
 }
 
 .navbar-nav > li > .dropdown-menu {
-	background-color: #5b755f;
+	background-color: #4f7e6b;
 }
 
 /*************************************************************/
@@ -93,7 +95,7 @@ input[type='button']{
 	padding-top: 0px;
 }
 .navbar .navbar-brand img {
-	height: 70px;
+	height: 190%;
 }
 
 /****************** Custom styles **********************/
@@ -122,7 +124,7 @@ input[type='button']{
 .hip-desc {
 	color: #fff;
 	width: 60%;
-	font-size: 20px;
+	font-size: 17px;
 	font-family:'Gill Sans MT';
 	margin-left:15%;
 }
@@ -135,9 +137,11 @@ input[type='button']{
 .start-process{
 	margin-left: 32%;
 	margin-top:3%;
-	background-color:#a4d2bf;
+	background-color:#a4d0be;
 	border-radius:100px;
 	padding:6px 20px;
+	font-family: Gill Sans MT;
+	font-size:17px;
 }
 
 .section-1-container{
@@ -146,36 +150,37 @@ input[type='button']{
 }
 
 .section-2-container{
-	padding-top:200px;
+	padding-top:15%;
 }
 
 .section-2-image {
 	width: 400px;
-	margin-left: 300px;
+	margin-left: 30%;
 }
 
 .section-2-text {
-	margin-right: 250px;
-	font-family:'Minion Pro';
+	margin-right: 25%;
+	font-family:'Gill Sans MT';
 	margin-top:5%;
 	width: 60%;
-	margin-left:3%;
-	font-size:16px;
+	margin-left:5%;
+	font-size:17px;
+	text-align:center;
 }
 
 .section-2-title-1{
-	color:#9cb0a4;
+	color:rgb(166,189,179);
 	font-weight:bold;
 	font-size:100px;
-	margin-left:150px;
+	margin-left:15%;
 	font-family:'League Spartan';
 }
 
 .section-2-title-2{
-	color:#709586;
+	color:#6f9485;
 	font-weight:bold;
 	font-size:130px;
-	margin-left:150px;
+	margin-left:15%;
 	margin-top:3%;
 	font-family:'League Spartan';
 }
@@ -189,8 +194,8 @@ input[type='button']{
 }
 
 .section-3-container {
-	background-color: #e6e5db;
-	padding-top:15%;
+	background-color: #e5e3da;
+	padding-top:9%;
 	padding-left:180px;
 }
 
@@ -209,12 +214,12 @@ input[type='button']{
 }
 
 .section-3-text{
-	font-size:16px;
+	font-size:17px;
 	margin-top:4%;
 	margin-bottom:6%;
 	margin-left: 200px;
 	width: 50%;
-	font-family:'Minion Pro';
+	font-family:'Gill Sans MT';
 }
 
 .contact{
@@ -246,27 +251,27 @@ input[type='button']{
 }
 
 .treatment-header{
-	color: #bdd7bf;
+	color: #b5d7c9;
 	font-weight: bold;
-	font-size: 18px;
+	font-size: 17px;
 	margin-bottom: 3%;
-	font-family:'League Spartan';
+	font-family:'Gill Sans MT';
 	margin-top:4%;
 }
 
 .hospital-name {
 	font-weight: bold;
-	font-size: 16px;
+	font-size: 17px;
 	color: #fff;
 	margin-left:7%;
-	font-family:'League Spartan';
+	font-family:'Gill Sans MT';
 }
 
 .hospital-details, .doc{
-	font-size: 16px;
+	font-size: 17px;
 	color: #fff;
 	margin-left:7%;
-	font-family:'Gotham';
+	font-family:'Gill Sans MT';
 }
 
 .section-5-container .contact-text{
@@ -275,6 +280,7 @@ input[type='button']{
 	margin-left:7%;
 	margin-top:5px;
 	font-family:'Gill Sans MT';
+	background-color:#a4d0be;
 }
 
 .col-centered{
@@ -312,14 +318,14 @@ input[type='button']{
 }
 
 .contact-text {
-	background: #a4d2bf;
+	background: #a4d0be;
 	border-radius: 12px;
 	padding: 5px;
-	margin-top: 19px;
+	margin-top: 17px;
 	text-align: center;
 	width: 87%;
-	font-family:'Gotham';
-	font-weight: bold;
+	font-family:'Gill Sans MT';
+	font-size:17px;
 }
 
 /* dot nav */
@@ -392,20 +398,20 @@ padding-right: 12px; */
 .dropdown-menu li a:hover{
 	border-left: 6px solid #a4d2bf;
 	transition: border-left 0.33s;
-	background-color:#5b755f;
+	background-color:#4f7e6b;
 	font-weight: bold;
 	color:#fff;
 }
 
 /**********tutorial css************/
 .tut-banner{
-	background-color: #EBE4D5;
+	background-color: #e5e3da;
 	margin-top: 70px;
 	padding-top: 100px;
 }
 
 .tut-banner-title{
-	color: #5B755F;
+	color: #507d69;
 	text-align: center;
 	font-size: 65px;
 	font-weight: bold;
@@ -415,8 +421,8 @@ padding-right: 12px; */
 
 .tut-banner-icon-box{
 	margin: 20px 0;
-	border-top: 5px solid #D7CEC3;
-	border-bottom: 5px solid #D7CEC3;
+	border-top: 8px solid #c6c2c1;
+	border-bottom: 8px solid #c6c2c1;
 	padding: 20px 0;
 	padding-left:6%;
 }
@@ -446,8 +452,8 @@ padding-right: 12px; */
 .tut-banner-sub{
 	color: #000;
 	text-align: center;
-	font-family: 'Gotham';
-	font-weight: bold;
+	font-family: 'Gill Sans MT';
+	font-weight: lighter;
 }
 
 .tut-bene-warn{
@@ -466,15 +472,15 @@ padding-right: 12px; */
 	width: 75%;
 	margin-left: 160px;
 	margin-right: 50px;
-	background-color: #9FB19B;
+	background-color:rgb(166,189,179);
 	border-radius: 25px;
 }
 
 .tut-warn{
 	height: auto;
-	padding-bottom: 120px;
+	padding-bottom: 57px;
 	width: 75%;
-	background-color: #6D9075;
+	background-color: #619880;
 	border-radius: 25px;
 }
 
@@ -487,16 +493,21 @@ padding-right: 12px; */
 .tut-bene-desc{
 	color: white;
 	margin-top: 15px;
-	font-family:'Gotham';
+	font-family:'Gill Sans MT';
+	font-size:17px;
 }
 
 .tut-dosage-calc-btn{
 	float: right;
 	margin-right: 100px;
-	background-color:#a4d2bf;
+	background-color:#a4d0be;
 	border-radius: 15px;
 	font-weight:bold;
 	border:0;
+}
+.dosage-examples li{
+	font-family:'Gill Sans MT';
+	font-weight: 600;
 }
 .tut-dosage-calc-btn:hover{
 	background-color:#a4d2bf;
@@ -524,7 +535,7 @@ padding-right: 12px; */
 
 .tut-reminder-number{
 	font-size: 60px;
-	color: #9FB19B;
+	color: #507d69;
 	text-align: right;
 	font-weight: bold;
 	font-family:'League Spartan';
@@ -533,7 +544,7 @@ padding-right: 12px; */
 .tut-reminder-desc{
 	margin-top: 20px;
 	font-size: 18px;
-	font-family:'Minion Pro';
+	font-family:'Gill Sans MT';
 }
 
 .tut-dosage-desc{
@@ -545,25 +556,25 @@ padding-right: 12px; */
 	font-size: 75px;
 	font-weight: bold;
 	line-height: 75px;
-	color: #9FB19B;
+	color: rgb(166,189,179);
 	font-family:'League Spartan';
 }
 
 .tut-dosage-desc-number{
 	font-size: 60px;
-	color: #6D9075;
+	color: #619880;
 	text-align: right;
 	font-weight: bold;
 	font-family:'League Spartan';
 }
 
 .tut-dosage-desc-desc{
-	font-size: 18px;
+	font-size: 17px;
 	font-family:'Gill Sans MT';
 }
 
 .dosage-formula{
-	border: 5px solid #6D9075;
+	border: 5px solid #619880;
 	border-radius: 15px; 
 	width: 46%;
 	padding: 10px;
@@ -606,7 +617,7 @@ padding-right: 12px; */
 
 .tut-dosage-calc-box{
 	margin: 50px 33%;
-	background-color: #9FB19B;
+	background-color:rgb(166,189,179);
 	border-radius:	25px;
 	padding: 10px 35px;
 	width: 32%;
@@ -625,11 +636,11 @@ padding-right: 12px; */
 	padding: 5px;
 	font-size:15px;
 	font-family:'Minion Pro';
-	color:#6f9485;
+	color:#6e9384;
 }
 
 .calc-input{
-	background-color: #9FB19B;
+	background-color: rgb(166,189,179);
 	border: none;
 	border-bottom: 2px solid white;
 	width: 100%;
@@ -642,7 +653,7 @@ padding-right: 12px; */
 .calc-submit-button{
 	border-radius: 11px;
 	color: white;
-	background-color: #6D9075;
+	background-color: #619880;
 	border:0;
 	font-family:'Gotham';
 }
@@ -655,15 +666,17 @@ padding-right: 12px; */
 }
 
 .tut-step-title{
-	color: #842B25;
-	font-size: 75px;
+	color: #8e191c;
+	font-size: 65px;
 	/*margin-top: 20px;*/
 	text-align: center;
 	font-weight: bold;
 	line-height: 75px;
 	font-family:'League Spartan';
 }
-
+p.tut-step-title span{
+	font-size:60px;
+}
 .step-tab-holder{
 	margin: 75px 12%;
 }
@@ -686,7 +699,7 @@ div.step-tab button {
 	text-align: left;
 	cursor: pointer;
 	transition: 0.3s;
-	border: 5px solid #842B25;
+	border: 5px solid #8e191c;
 	border-right: none;
 	margin-bottom: 5px;
 	border-radius: 10px 0 0 10px;
@@ -705,7 +718,7 @@ div.step-tab button:hover {
 
 /* Create an active/current "tab button" class */
 div.step-tab button.active {
-	background-color: #842B25;
+	background-color: #8e191c ;
 	color: white;
 	border-right: none;
 }
@@ -713,7 +726,7 @@ div.step-tab button.active {
 /* Style the tab content */
 .first-step-tabcontent, .second-step-tabcontent, .third-step-tabcontent, .third-step-pt2-tabcontent, .fourth-step-tabcontent {
 	position: relative;
-	background-color: #842B25;
+	background-color: #8e191c;
 	color: white;
 	float: left;
 	padding: 10px 30px;
@@ -735,12 +748,14 @@ div.step-tab button.active {
 
 .step-btn-prev{
 	margin-top: 20px;
+	font-family:'Gill Sans MT';
 }
 
 .step-btn-next{
 	float: right;
 	margin-top: 20px;
 	margin-right: 75px;
+	font-family:'Gill Sans MT';
 }
 
 .step-btp{
@@ -765,16 +780,20 @@ div.step-tab button.active {
 	font-size: 70px;
 	font-weight: bold;
 	line-height: 75px;
-	color: #9FB19B;
+	color: rgb(166,189,179);;
 	text-align: center;
 	font-family:'League Spartan';
 }
 
+.tut-mistakes-title span {
+	color:#6f9485 !important;
+}
+
 .tut-mistakes-panels{
 	height: 450px;
-	border: 5px solid #6D9075;
+	border: 5px solid #6f9485;
 	margin-right: 10px;
-	color: #6D9075;
+	color: #6f9485;
 }
 
 .mistake-number{
@@ -790,7 +809,7 @@ div.step-tab button.active {
 }
 
 .tut-mistakes-panels:hover{
-	background-color: #6D9075;
+	background-color: #6f9485;
 	color: white;
 }
 
@@ -805,6 +824,7 @@ div.step-tab button.active {
 	font-weight: bold;
 	line-height: 60px;
 	font-family: 'League Spartan';
+	line-height: 70px;
 }
 
 .tut-end-title{
@@ -893,7 +913,7 @@ div.step-tab button.active {
 	}
 
 
-/*tutorial page responsive*/
+	/*tutorial page responsive*/
 
 	.tut-banner-icons{
 		float: left;
@@ -1017,8 +1037,8 @@ div.step-tab button.active {
 
 	.tut-bene{
 		margin-left: 20px;
-    	width: 100%;
-    	padding-bottom: 185px;
+		width: 100%;
+		padding-bottom: 185px;
 	}
 
 	.tut-warn{
@@ -1028,6 +1048,7 @@ div.step-tab button.active {
 }
 
 @media only screen and (min-width : 480px) and (max-width : 991px) {
+	/* Navbar earlier collapse to hamburger than default */
 	.navbar-collapse.collapse {
 		display: none !important;
 	}
@@ -1122,7 +1143,7 @@ div.step-tab button.active {
 }
 
 .exam-header {
-	color:#b5d8ca;
+	color:#b5d7c9;
 	font-size:80px;
 	font-weight:bold;
 	font-family:'League Spartan';
@@ -1139,7 +1160,7 @@ div.step-tab button.active {
 .exam-intro{
 	color: #fff;
 	font-size: 25px;
-	font-family:'Minion Pro';
+	font-family:'Gill Sans MT';
 }
 
 .exam-part-head{
@@ -1154,7 +1175,7 @@ div.step-tab button.active {
 	color:#fff;
 	font-size:30px;
 	margin-bottom:1%;
-	font-family: 'Gotham';
+	font-family: 'Gill Sans MT';
 }
 
 .exam-question{

@@ -90,7 +90,7 @@ if(is_page(62)) {
 	<div class="section tut-dosage-calc" id="tut-dosage-calc">
 		<div class="row">
 			<div class="col-md-12" >
-				<p class="tut-dosage-calc-title">Dosage <span style="color: #9FB19B;">calculator</span></p>
+				<p class="tut-dosage-calc-title" style="color:#619880;">Dosage <span style="color:rgb(166,189,179);">calculator</span></p>
 			</div>
 		</div>
 		<div class="row">
@@ -684,6 +684,7 @@ if(is_page(62)) {
 		<li><a href="#tut-first-step"></a></li>
 		<li><a href="#tut-second-step"></a></li>
 		<li><a href="#tut-third-step"></a></li>
+		<li style="display:none;"><a href="#"></a></li>
 		<li><a href="#tut-fourth-step"></a></li>
 	</ul>
 </div>

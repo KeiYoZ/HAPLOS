@@ -10,6 +10,7 @@
 	<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/gifffer.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/within-viewport/jquery.withinviewport.js"></script>
 	<script>
 		$(document).ready(function(){
 			//Smooth Scrolling
@@ -143,7 +144,7 @@
 	<script>
 		$(document).ready(function(){
 			$('.navbar-nav li.dropdown .dropdown-toggle').click(function(){
-				$(this).css('background-color','#5b755f');
+				$(this).css('background-color','#4f7e6b');
 			});
 			$('.navbar-inverse .navbar-nav>li>a').focus(function(){
 				$(this).addClass('active-nav');
@@ -187,12 +188,16 @@
 				</div>
 				<div id="navbar" class="collapse navbar-collapse">
 					<ul class="nav navbar-nav navbar-right">
+						<?php if(is_page(2)){ ?>
+						<li><a href="/#top" style="color:#b5f7c4;">home</a></li>
+						<?php } else { ?>
 						<li><a href="/#top">home</a></li>
+						<?php } ?>
 						<li class="dropdown">
 							<a class="dropdown-toggle" data-toggle="dropdown" href="#">about<span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="/#ano_ang_haplos">Ano ang HAPLOS</a></li>
-								<li><a href="/#hemophilia">Ano ang Hemophilia?</a></li>
+								<li><a href="/#ano_ang_haplos" id="haplos_nav">Ano ang HAPLOS</a></li>
+								<li><a href="/#hemophilia" id="hemo_nav">Ano ang Hemophilia?</a></li>
 							</ul>
 						</li>
 						<li class="dropdown">
@@ -203,12 +208,16 @@
 							</ul>
 						</li>
 						<li class="dropdown">
+							<?php if(is_page(62)){ ?>
+							<a class="dropdown-toggle" style="color:#b5f7c4;" data-toggle="dropdown" href="#">home infusion process<span class="caret"></span></a>
+							<?php } else { ?>
 							<a class="dropdown-toggle" data-toggle="dropdown" href="#">home infusion process<span class="caret"></span></a>
+							<?php } ?>
 							<ul class="dropdown-menu">
 								<li><a href="/tutorial/#tut-banner">Ano ang Home Infusion Process?</a></li>
 								<li><a href="/tutorial/#tut-bene-warn">Mga Benepisyo at Panganib nito</a></li>
-								<li><a href="/tutorial/#tut-dosage-desc">Mga Dapat Alalahanin Bago Mag-Infuse</a></li>
 								<li><a href="/tutorial/#tut-dosage-calc">Dosage Calculator</a></li>
+								<li><a href="/tutorial/#tut-dosage-desc">Mga Dapat Alalahanin Bago Mag-Infuse</a></li>
 								<li><a href="/tutorial/#tut-first-step">Unang Bahagi: Paghahanda</a></li>
 								<li><a href="/tutorial/#tut-second-step">Pangalawang Bahagi: Paghahanap ng Ugat</a></li>
 								<li><a href="/tutorial/#tut-third-step">Pangatlong Bahagi: Pagturok</a></li>

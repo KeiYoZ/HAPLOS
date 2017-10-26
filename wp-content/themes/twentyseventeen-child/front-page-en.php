@@ -24,7 +24,7 @@ if(is_page(125)) {
 <!-- container start -->
 <div class="container-fluid">
 	<!-- First section start -->
-	<div class="section" style="background-color: #6d9075; padding-top:70px;">
+	<div class="section" style="background-color: #619880; padding-top:70px;">
 		<div class="row section-1-container">
 			<div class="col-md-12">
 				<p class='homeinfusionprocess'><?php the_field('section_1_title'); ?></p>
@@ -43,7 +43,7 @@ if(is_page(125)) {
 	<!-- First section end -->
 
 	<!-- Second section start -->
-	<div class="section" id="ano_ang_haplos" style="background-color: #e6e4da;">
+	<div class="section" id="ano_ang_haplos" style="background-color: #e5e3da;">
 		<div class="row section-2-container">
 			<div class="col-md-6">
 				<img src="<?php the_field('section_2_image'); ?>" alt="" class="img-responsive section-2-image">
@@ -62,26 +62,28 @@ if(is_page(125)) {
 
 	<!-- Third section start -->
 	<div class="section section-3-container" id="hemophilia">
-		<div class="row">
-			<div class="col-md-12">
-				<span class="section-3-title-1"><?php the_field('section_3_title_1'); ?></span>
+		<div style="width:53%; margin-left:10%;">
+			<div class="row">
+				<div class="col-md-12">
+					<span class="section-3-title-1"><?php the_field('section_3_title_1'); ?></span>
+				</div>
 			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-12 section-3-text">
-				<span><?php the_field('section_3_description'); ?></span>
+			<div class="row">
+				<div class="col-md-12 section-3-text">
+					<span><?php the_field('section_3_description'); ?></span>
+				</div>
 			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-12">
-				<span class="section-3-title-2"><?php the_field('section_3_title_2'); ?></span>
+			<div class="row">
+				<div class="col-md-12">
+					<span class="section-3-title-2"><?php the_field('section_3_title_2'); ?></span>
+				</div>
 			</div>
 		</div>
 	</div>
 	<!-- Third section end -->
 
 	<!-- Fourth section start -->
-	<div class="section" id="contact_haplos" style="background-color: #6d9075; padding-top:120px;">
+	<div class="section" id="contact_haplos" style="background-color: #619880; padding-top:10%; padding-bottom:14%;">
 		<div style="margin:0 auto;">
 			<div class="row">
 				<div class="col-md-12">
@@ -106,7 +108,7 @@ if(is_page(125)) {
 	<!-- Fourth section end -->
 
 	<!-- Fifth section start -->
-	<div class="section section-5-container" id="mga_ospital" style="background-color: #6d9075; padding-top:80px;s">
+	<div class="section section-5-container" id="mga_ospital" style="background-color: #619880; padding-top:6%;">
 		<div class="row">
 			<div class="col-md-7 col-centered">
 				<p class="text-center section-5-title"><?php the_field('section_5_title'); ?></p>
