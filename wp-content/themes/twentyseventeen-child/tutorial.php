@@ -839,7 +839,7 @@ if(is_page(62)) {
 				<p class="tut-sub-title">Naisagawa mo ang home <br> infusion process.</p>
 			</div>
 			<div class="col-md-12 tut-end-btn-holder">
-				<a href="#" class="btn btn-default tut-end-btn" role="button">Sagutan ang Pagsasanay</a>
+				<a href="/exam" class="btn btn-default tut-end-btn" role="button">Sagutan ang Pagsasanay</a>
 			</div>
 			<?php } else if (is_page(122)) {?>
 			<div class="col-md-12">
@@ -847,7 +847,7 @@ if(is_page(62)) {
 				<p class="tut-sub-title">You have completed the<br>home infusion process.</p>
 			</div>
 			<div class="col-md-12 tut-end-btn-holder">
-				<a href="#" class="btn btn-default tut-end-btn" role="button">Answer the Test</a>
+				<a href="/exam-en" class="btn btn-default tut-end-btn" role="button">Answer the Test</a>
 			</div>
 			<?php } ?>
 		</div>

@@ -214,7 +214,7 @@
 								<li><a href="/tutorial-english/#tut-third-step">Part Three: Puncturing the Vein (Venipuncture)</a></li>
 								<li><a href="/tutorial-english/#tut-fourth-step">Part Four: Post-Infusion</a></li>
 								<li><a href="/tutorial-english/#tut-mistakes">Common Mistakes in Venipuncture</a></li>
-								<li><a href="/tutorial-english/#tut-end">Practice Test</a></li>
+								<li><a href="/exam-en">Practice Test</a></li>
 							</ul>
 						</li>
 					</ul>

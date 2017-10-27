@@ -219,7 +219,7 @@
 								<li><a href="/tutorial/#tut-third-step">Pangatlong Bahagi: Pagturok</a></li>
 								<li><a href="/tutorial/#tut-fourth-step">Pang-apat na Bahagi: Pagkatapos Mag-Infuse</a></li>
 								<li><a href="/tutorial/#tut-mistakes">Mga Pagkakamali sa Pagturok</a></li>
-								<li><a href="/tutorial/#tut-end">Pagsusulit</a></li>
+								<li><a href="/exam">Pagsusulit</a></li>
 							</ul>
 						</li>
 					</ul>

@@ -9,6 +9,8 @@ if(is_page(160)){
 	get_header('en');
 }
 ?>
+
+<?php show_admin_bar( false ); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
