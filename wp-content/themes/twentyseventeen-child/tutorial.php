@@ -826,7 +826,11 @@ if(is_page(62)) {
 				<p class="mistakes-disclaimer">Reference: Canadian Association of Nurses in Hemophilia Care (Western Division), (2009). Home treatment guide for people with bleeding disorders. (2nd ed.)</p>
 			</div>
 			<div class="col-md-3 col-xs-3">
+				<?php if (is_page(62)){ ?>
 				<a href="#tut-fourth-step"><button class="btn btn-default tut-dosage-calc-btn mistakes-btn">Bumalik</button></a>
+				<?php } else if (is_page(122)) {?>
+				<a href="#tut-fourth-step"><button class="btn btn-default tut-dosage-calc-btn mistakes-btn">Back</button></a>
+				<?php } ?>
 			</div>
 		</div>
 	</div>
