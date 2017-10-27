@@ -36,7 +36,7 @@ if(is_page(125)) {
 			</div>
 			<div class="col-md-6">
 				<p class="hip-desc"><?php the_field('section_1_description'); ?></p>
-				<input type="button" class="start-process-2" value="Go to process">
+				<input type="button" class="start-process-2" style="margin-left: 25%;" value="Go to process">
 			</div>
 		</div>
 	</div>

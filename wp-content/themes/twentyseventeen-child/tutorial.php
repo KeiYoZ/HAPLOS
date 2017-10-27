@@ -174,7 +174,7 @@ if(is_page(62)) {
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-12 step-tab-holder">
+			<div class="col-md-12 col-xs-12 step-tab-holder">
 				<div class="step-tab">
 					<button class="first-step-tablinks active" onclick="openStep(event,'first-step-tabcontent', 'first-step-tablinks', 'first-step-1')">1</button>
 					<button class="first-step-tablinks" onclick="openStep(event, 'first-step-tabcontent', 'first-step-tablinks', 'first-step-2')">2</button>
