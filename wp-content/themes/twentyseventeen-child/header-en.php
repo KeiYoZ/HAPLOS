@@ -170,6 +170,10 @@
 						<a href="/tutorial-english"><span class="navbar-text" style="color:#fff; font-weight:bold;">ENGLISH</span></a>
 						<a href="#"><span class="navbar-text">|</span></a>
 						<a href="/tutorial"><span class="navbar-text">FILIPINO</span></a>
+						<?php } else if (is_page(128)) {?>
+						<a href="/exam-en"><span class="navbar-text" style="color:#fff; font-weight:bold;">ENGLISH</span></a>
+						<a href="#"><span class="navbar-text">|</span></a>
+						<a href="/exam"><span class="navbar-text">FILIPINO</span></a>
 						<?php } ?>
 					</div><div class="clearfix"></div>
 				</div>
