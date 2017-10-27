@@ -456,6 +456,12 @@ padding-right: 12px; */
 	font-weight: lighter;
 }
 
+.tut-banner-disclaimer{
+	font-size: 13px;
+    margin-left: 100px;
+    margin-top: 55px;
+}
+
 .tut-bene-warn{
 	background-color: #EBE4D5;
 	padding-top: 95px;
@@ -544,7 +550,7 @@ padding-right: 12px; */
 }
 
 .tut-reminder-desc{
-	margin-top: 20px;
+	margin-top: 10px;
 	font-size: 18px;
 	font-family:'Gill Sans MT';
 }
@@ -813,6 +819,8 @@ div.step-tab button.active {
 	border: 5px solid #6f9485;
 	margin-right: 10px;
 	color: #6f9485;
+	-webkit-transition: width 1s, height 1s; /* For Safari 3.1 to 6.0 */
+    transition: width 1s, height 1s;
 }
 
 .mistake-number{
@@ -830,6 +838,20 @@ div.step-tab button.active {
 .tut-mistakes-panels:hover{
 	background-color: #6f9485;
 	color: white;
+    width: 30%;
+    height: 500px;
+    font-size: 25px;
+}
+
+.mistakes-btn{
+	background-color: #a4d0be;
+	margin-left: 80px;
+    float: left;
+}
+
+.mistakes-disclaimer{
+	margin-left: 170px; 
+	font-size: 15px;
 }
 
 .tut-end{
@@ -868,6 +890,7 @@ div.step-tab button.active {
 .step-gif{
 	width: 50%;
 	margin: 0 auto;
+	margin-top: 20px;
 }
 
 .user-score{
@@ -958,6 +981,12 @@ div.step-tab button.active {
 
 	.tut-banner-icons:nth-of-type(7){
 		width: 55px;
+	}
+
+	.tut-banner-disclaimer{
+		font-size: 13px;
+	    margin-left: 100px;
+	    margin-top: 55px;
 	}
 
 	
@@ -1245,6 +1274,11 @@ div.step-tab button.active {
 		margin-top: 34px;
 	}
 
+	.tut-banner-disclaimer{
+		margin-top: 70px;
+    	margin-left: 30px;
+	}
+
 	.tut-bene-warn-first{
 		margin-top: 30px;
 	}
@@ -1381,6 +1415,19 @@ div.step-tab button.active {
 
 	.tut-mistakes-panels{
 		height: 500px;
+	}
+
+	.tut-mistakes-panels:hover{
+	    width: 100%;
+	    font-size: 25px;
+	}
+
+	.mistakes-disclaimer{
+		margin-left: 30px;
+	}
+
+	.mistakes-btn{
+		margin-left: -20%;
 	}
 
 	.tut-end-title {

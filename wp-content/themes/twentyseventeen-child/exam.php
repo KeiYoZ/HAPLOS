@@ -169,6 +169,35 @@ if(is_page(160)){
 			<div class="row">
 				<p class="user-score" id="user-score"></p>
 			</div>
+			<div class="row" style="padding: 0 200px;margin-left: 200px;">
+				<div class="col-md-4">
+					<ul style="list-style: none; color: white;">
+						<li id="answer-no-1"></li>
+						<li id="answer-no-2"></li>
+						<li id="answer-no-3"></li>
+						<li id="answer-no-4"></li>
+						<li id="answer-no-5"></li>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<ul style="list-style: none; color: white;">
+						<li id="answer-no-6"></li>
+						<li id="answer-no-7"></li>
+						<li id="answer-no-8"></li>
+						<li id="answer-no-9"></li>
+						<li id="answer-no-10"></li>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<ul style="list-style: none; color: white;">
+						<li id="answer-no-11"></li>
+						<li id="answer-no-12"></li>
+						<li id="answer-no-13"></li>
+						<li id="answer-no-14"></li>
+						<li id="answer-no-15"></li>
+					</ul>
+				</div>
+			</div>
 			<hr>
 			<div class="row">
 				<?php if (is_page(128)) {?>

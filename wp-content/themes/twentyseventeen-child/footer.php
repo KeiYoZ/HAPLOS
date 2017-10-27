@@ -47,6 +47,8 @@
 	function getExamScore(){
 		var answer_key_en = ['f', 't', 't', 'f', 't', '1', '3', '1', '3', '2', '2', '4', '4', '1', '1'];
 		var user_score = 0;
+
+		var user_answers_array = [];
 		
 		for (var i=1; i <= 15; i++){
 			var exam_item = document.getElementById(i);
@@ -56,13 +58,21 @@
 			var exam_choices = exam_container[0].getElementsByTagName("p");
 			
 			var user_answer = "";
+			var user_answer_set = [];
+
+			user_answer_set["number"] = i;
+			user_answer_set["answer"] = "no answer";
 			if (i < 6){
 				var exam_inputs = exam_choices[2].getElementsByTagName("input");
 
 				if (exam_inputs[0].checked){
 					user_answer = 't';
+					//user_answers_array.push(exam_inputs[0].value);
+					user_answer_set["answer"] = exam_inputs[0].value;
 				}else if (exam_inputs[1].checked){
 					user_answer = 'f';
+					//user_answers_array.push(exam_inputs[1].value);
+					user_answer_set["answer"] = exam_inputs[1].value;
 				}
 			}else if (i > 5){
 
@@ -73,18 +83,44 @@
 
 				if (exam_input_1[0].checked){
 					user_answer = '1';
+					//user_answers_array.push(exam_input_1[0].value);
+					user_answer_set["answer"] = exam_input_1[0].value;
 				}else if (exam_input_2[0].checked){
 					user_answer = '2';
+					//user_answers_array.push(exam_input_2[0].value);
+					user_answer_set["answer"] = exam_input_2[0].value;
 				}else if (exam_input_3[0].checked){
 					user_answer = '3';
+					//user_answers_array.push(exam_input_3[0].value);
+					user_answer_set["answer"] = exam_input_3[0].value;
 				}else if (exam_input_4[0].checked){
 					user_answer = '4';
+					//user_answers_array.push(exam_input_4[0].value); 
+					user_answer_set["answer"] = exam_input_4[0].value;
 				}
 			}
+
 			if (user_answer == answer_key_en[i-1]){
 				user_score++;
+				user_answer_set["result"] = "correct";
+			}else{
+				user_answer_set["result"] = "wrong";
+			}
+
+			user_answers_array.push(user_answer_set);
+		}
+
+		for (var ctr = 0; ctr < user_answers_array.length; ctr++){
+
+			var act_ctr = ctr + 1;
+
+			if (user_answers_array[ctr]["result"] == "correct"){
+				document.getElementById("answer-no-"+act_ctr).innerHTML = user_answers_array[ctr]["number"] + " <span>" + user_answers_array[ctr]["answer"] + "</span>";
+			}else if(user_answers_array[ctr]["result"] == "wrong"){
+				document.getElementById("answer-no-"+act_ctr).innerHTML = user_answers_array[ctr]["number"] + " <span style='font-weight: bold; color: red'>" + user_answers_array[ctr]["answer"] + "</span>";
 			}
 		}
+
 		document.getElementById("user-score").innerHTML = "Score: <span style='text-decoration:underline;'>" + user_score + "</span>/15";
 		return true;
 	}

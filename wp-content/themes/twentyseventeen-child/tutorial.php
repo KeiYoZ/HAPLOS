@@ -43,6 +43,13 @@ if(is_page(62)) {
 				<?php the_field('banner_description'); ?>
 			</div>
 		</div>
+		<div class="row">
+			<div class="tut-banner-disclaimer">
+				<p>These processes are also based from various guides or manuals about hemophilia: </p>
+				<p>&nbsp;&nbsp;&nbsp;  - Canadian Association of Nurses in Hemophilia Care (Western Division), (2009). Home treatment guide for people with bleeding disorders. (2nd ed.) </p>
+				<p>&nbsp;&nbsp;&nbsp;  - Nursing Group of Hemophilia Region VI, (2010). Emergency care for patients with hemophilia: an instructional manual for medical professionals. </p>	
+			</div>
+		</div>
 	</div>
 
 	<div class="section tut-bene-warn" id="tut-bene-warn">
@@ -812,6 +819,14 @@ if(is_page(62)) {
 					<?php the_field('mistake_panel_3'); ?>
 					<img class="img-responsive mistake-image" src="data:image/png;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="<?php echo get_stylesheet_directory_uri();?>/images/mistakes/3.png"/>
 				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-9 col-xs-9">
+				<p class="mistakes-disclaimer">Reference: Canadian Association of Nurses in Hemophilia Care (Western Division), (2009). Home treatment guide for people with bleeding disorders. (2nd ed.)</p>
+			</div>
+			<div class="col-md-3 col-xs-3">
+				<a href="#tut-fourth-step"><button class="btn btn-default tut-dosage-calc-btn mistakes-btn">Bumalik</button></a>
 			</div>
 		</div>
 	</div>
