@@ -169,7 +169,7 @@ if(is_page(160)){
 			<div class="row">
 				<p class="user-score" id="user-score"></p>
 			</div>
-			<div class="row" style="padding: 0 200px;margin-left: 200px;">
+			<div class="row answer-keys">
 				<div class="col-md-4">
 					<ul style="list-style: none; color: white;">
 						<li id="answer-no-1"></li>
@@ -201,9 +201,9 @@ if(is_page(160)){
 			<hr>
 			<div class="row">
 				<?php if (is_page(128)) {?>
-				<a href="/exam-en" style="margin: 0 42%;"><input type="button" class="start-exam" value="Answer the Practice Test again"></a>
+				<a href="/exam-en" class="re-exam-btn"><input type="button" class="start-exam" value="Answer the Practice Test again"></a>
 				<?php }else if(is_page(160)){ ?>
-				<a href="/exam" style="margin: 0 42%;"><input type="button" class="start-exam" value="Sagutan Muli ang Pagsasanay"></a>
+				<a href="/exam" class="re-exam-btn"><input type="button" class="start-exam" value="Sagutan Muli ang Pagsasanay"></a>
 				<?php } ?>
 			</div>
 		</div>

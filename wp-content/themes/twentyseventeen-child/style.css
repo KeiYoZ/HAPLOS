@@ -900,6 +900,15 @@ div.step-tab button.active {
 	color: #b5d8ca;
 }
 
+.answer-keys{
+	padding: 0 200px; 
+	margin-left: 200px;
+}
+
+.re-exam-btn{
+	margin: 0 42%;
+}
+
 /*************** Responsiveness of index ***************/
 
 /*Larger Screens*/
@@ -1446,6 +1455,18 @@ div.step-tab button.active {
 
 	.mistake-image {
 		width: 100%;
+	}
+
+
+	/*Exam page*/
+
+	.answer-keys{
+		padding: 0 75px;
+		margin-left: 0;
+	}
+
+	.re-exam-btn{
+		margin: 0 30%;
 	}
 }
 
