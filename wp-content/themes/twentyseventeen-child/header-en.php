@@ -161,15 +161,17 @@
 						<span class="icon-bar"></span>
 					</button>
 					<a class="navbar-brand" href="/haplos_wp/front-page-en"><img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/images/HAPLOS-Logo.png" alt=""></a>
-					<?php if (is_page(125)){ ?>
-					<a href="/front-page-en"><span class="navbar-text" style="color:#fff; font-weight:bold;">ENGLISH</span></a>
-					<a href="#"><span class="navbar-text">|</span></a>
-					<a href="/"><span class="navbar-text">FILIPINO</span></a>
-					<?php }else if (is_page(122)){?>
-					<a href="/tutorial-english"><span class="navbar-text" style="color:#fff; font-weight:bold;">ENGLISH</span></a>
-					<a href="#"><span class="navbar-text">|</span></a>
-					<a href="/tutorial"><span class="navbar-text">FILIPINO</span></a>
-					<?php } ?>
+					<div class="language">
+						<?php if (is_page(125)){ ?>
+						<a href="/front-page-en"><span class="navbar-text" style="color:#fff; font-weight:bold;">ENGLISH</span></a>
+						<a href="#"><span class="navbar-text">|</span></a>
+						<a href="/"><span class="navbar-text">FILIPINO</span></a>
+						<?php }else if (is_page(122)){?>
+						<a href="/tutorial-english"><span class="navbar-text" style="color:#fff; font-weight:bold;">ENGLISH</span></a>
+						<a href="#"><span class="navbar-text">|</span></a>
+						<a href="/tutorial"><span class="navbar-text">FILIPINO</span></a>
+						<?php } ?>
+					</div><div class="clearfix"></div>
 				</div>
 				<div id="navbar" class="collapse navbar-collapse">
 					<ul class="nav navbar-nav navbar-right">
