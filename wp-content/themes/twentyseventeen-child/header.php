@@ -162,7 +162,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="/haplos_wp/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/HAPLOS-Logo.png" alt=""></a>
+					<a class="navbar-brand" href="/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/HAPLOS-Logo.png" alt=""></a>
 					<!-- <a href="/front-page-en"><span class="navbar-text">ENGLISH</span></a>
 					<a href="#"><span class="navbar-text">|</span></a>
 					<a href="/"><span class="navbar-text" style="color:#fff; font-weight:bold;">FILIPINO</span></a> -->
