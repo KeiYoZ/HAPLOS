@@ -850,7 +850,7 @@ if(is_page(62)) {
 				<p class="tut-end-title">CONGRATULATIONS!</p>
 				<p class="tut-sub-title">You have completed the<br>home infusion process.</p>
 			</div>
-			<div class="col-md-12 tut-end-btn-holder">
+			<div class="col-md-12 tut-end-btn-holder-en">
 				<a href="/exam-en" class="btn btn-default tut-end-btn" role="button">Answer the Test</a>
 			</div>
 			<?php } ?>
