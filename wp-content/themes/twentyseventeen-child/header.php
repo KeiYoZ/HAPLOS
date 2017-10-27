@@ -166,15 +166,17 @@
 					<!-- <a href="/front-page-en"><span class="navbar-text">ENGLISH</span></a>
 					<a href="#"><span class="navbar-text">|</span></a>
 					<a href="/"><span class="navbar-text" style="color:#fff; font-weight:bold;">FILIPINO</span></a> -->
-					<?php if(is_page(2)) { ?>
-					<a href="/front-page-en"><span class="navbar-text">ENGLISH</span></a>
-					<a href="#"><span class="navbar-text">|</span></a>
-					<a href="/"><span class="navbar-text" style="color:#fff; font-weight:bold;">FILIPINO</span></a>
-					<?php } elseif(is_page(62)) { ?>
-					<a href="/tutorial-english"><span class="navbar-text">ENGLISH</span></a>
-					<a href="#"><span class="navbar-text">|</span></a>
-					<a href="/tutorial"><span class="navbar-text" style="color:#fff; font-weight:bold;">FILIPINO</span></a>
-					<?php } ?>
+					<div class="language">
+						<?php if(is_page(2)) { ?>
+						<a href="/front-page-en"><span class="navbar-text">ENGLISH</span></a>
+						<a href="#"><span class="navbar-text">|</span></a>
+						<a href="/"><span class="navbar-text" style="color:#fff; font-weight:bold;">FILIPINO</span></a>
+						<?php } elseif(is_page(62)) { ?>
+						<a href="/tutorial-english"><span class="navbar-text">ENGLISH</span></a>
+						<a href="#"><span class="navbar-text">|</span></a>
+						<a href="/tutorial"><span class="navbar-text" style="color:#fff; font-weight:bold;">FILIPINO</span></a>
+						<?php } ?>
+					</div><div class="clearfix"></div>
 				</div>
 				<div id="navbar" class="collapse navbar-collapse">
 					<ul class="nav navbar-nav navbar-right">
