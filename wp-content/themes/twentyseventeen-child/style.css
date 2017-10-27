@@ -28,6 +28,12 @@ input[type='button']{
 	font-family:'Gill Sans MT';
 	src: url('fonts/GIL_____.ttf');
 }
+
+@font-face{
+	font-family:'Gill Sans';
+	src: url('fonts/GillSans.ttc');
+}
+
 @font-face{
 	font-family:'Gotham';
 	src: url('fonts/Gotham-Light_0(1).otf');
@@ -135,7 +141,7 @@ input[type='button']{
 	color: #fff;
 	width: 60%;
 	font-size: 17px;
-	font-family:'Gill Sans MT';
+	font-family:'Gill Sans';
 	margin-left:15%;
 }
 
@@ -150,7 +156,7 @@ input[type='button']{
 	background-color:#a4d0be;
 	border-radius:100px;
 	padding:6px 20px;
-	font-family: Gill Sans MT;
+	font-family: Gill Sans;
 	font-size:17px;
 }
 
@@ -170,9 +176,9 @@ input[type='button']{
 
 .section-2-text {
 	margin-right: 25%;
-	font-family:'Gill Sans MT';
-	margin-top:5%;
-	width: 60%;
+	font-family:'Gill Sans';
+	margin-top:15%;
+	width: 84%;
 	margin-left:5%;
 	font-size:17px;
 	text-align:center;
@@ -229,7 +235,7 @@ input[type='button']{
 	margin-bottom:6%;
 	margin-left: 200px;
 	width: 50%;
-	font-family:'Gill Sans MT';
+	font-family:'Gill Sans';
 }
 
 .contact{
@@ -265,7 +271,7 @@ input[type='button']{
 	font-weight: bold;
 	font-size: 17px;
 	margin-bottom: 3%;
-	font-family:'Gill Sans MT';
+	font-family:'Gill Sans';
 	margin-top:4%;
 }
 
@@ -274,14 +280,14 @@ input[type='button']{
 	font-size: 17px;
 	color: #fff;
 	margin-left:7%;
-	font-family:'Gill Sans MT';
+	font-family:'Gill Sans';
 }
 
 .hospital-details, .doc{
 	font-size: 17px;
 	color: #fff;
 	margin-left:7%;
-	font-family:'Gill Sans MT';
+	font-family:'Gill Sans';
 }
 
 .section-5-container .contact-text{
@@ -289,7 +295,7 @@ input[type='button']{
 	float:left;
 	margin-left:7%;
 	margin-top:5px;
-	font-family:'Gill Sans MT';
+	font-family:'Gill Sans';
 	background-color:#a4d0be;
 }
 
@@ -334,7 +340,7 @@ input[type='button']{
 	margin-top: 17px;
 	text-align: center;
 	width: 87%;
-	font-family:'Gill Sans MT';
+	font-family:'Gill Sans';
 	font-size:17px;
 }
 
@@ -462,7 +468,7 @@ padding-right: 12px; */
 .tut-banner-sub{
 	color: #000;
 	text-align: center;
-	font-family: 'Gill Sans MT';
+	font-family: 'Gill Sans';
 	font-weight: lighter;
 }
 
@@ -470,6 +476,8 @@ padding-right: 12px; */
 	font-size: 13px;
 	margin-left: 100px;
 	margin-top: 55px;
+	font-family: 'Gill Sans';
+	font-weight: lighter;
 }
 
 .tut-bene-warn{
@@ -487,7 +495,7 @@ padding-right: 12px; */
 .tut-bene-title-en{
 	color:rgb(166,189,179); 
 	text-align: center; 
-	width:114%;
+	width:124%;
 }
 
 .tut-warn-title-en{
@@ -518,12 +526,14 @@ padding-right: 12px; */
 	font-size: 60px;
 	color: white;
 	font-family:'League Spartan';
+	margin-top: 15px;
+	text-align: center;
 }
 
 .tut-bene-desc{
 	color: white;
 	margin-top: 15px;
-	font-family:'Gill Sans MT';
+	font-family:'Gill Sans';
 	font-size:17px;
 }
 
@@ -536,7 +546,7 @@ padding-right: 12px; */
 	border:0;
 }
 .dosage-examples li{
-	font-family:'Gill Sans MT';
+	font-family:'Gill Sans';
 	font-weight: 600;
 }
 .tut-dosage-calc-btn:hover{
@@ -572,9 +582,9 @@ padding-right: 12px; */
 }
 
 .tut-reminder-desc{
-	margin-top: 10px;
-	font-size: 18px;
-	font-family:'Gill Sans MT';
+	/*margin-top: 10px;*/
+	font-size: 17px;
+	font-family:'Gill Sans';
 }
 
 .tut-dosage-desc{
@@ -604,7 +614,7 @@ padding-right: 12px; */
 
 .tut-dosage-desc-desc{
 	font-size: 17px;
-	font-family:'Gill Sans MT';
+	font-family:'Gill Sans';
 }
 
 .dosage-formula{
@@ -632,13 +642,13 @@ padding-right: 12px; */
 	background: transparent;
 	width: 250px;
 	padding: 5px;
-	font-size: 16px;
+	font-size: 17px;
 	line-height: 1;
 	border: 0;
 	border-radius: 0;
 	height: 34px;
 	-webkit-appearance: none;
-	color: #000;
+	color: #619880;
 }
 
 .styleSelect {
@@ -668,8 +678,8 @@ padding-right: 12px; */
 	border-radius: 25px;
 	text-align: center;
 	padding: 5px;
-	font-size:15px;
-	font-family:'Minion Pro';
+	font-size:17px;
+	font-family:'Gill Sans';
 	color:#6e9384;
 }
 
@@ -689,7 +699,11 @@ padding-right: 12px; */
 	color: white;
 	background-color: #619880;
 	border:0;
-	font-family:'Gotham';
+	font-family:'Gill Sans';
+}
+
+.calc-start-proc-btn{
+	font-family:'Gill Sans';
 }
 
 /*step vertical tabs*/
@@ -738,7 +752,7 @@ div.step-tab button {
 	margin-bottom: 5px;
 	border-radius: 10px 0 0 10px;
 	font-weight: bold;
-	font-size: 18px;
+	font-size: 17px;
 }
 
 div.step-tab button:last-child {
@@ -769,6 +783,7 @@ div.step-tab button.active {
 	border-left: none;
 	height: 400px;
 	border-radius: 0 10px 10px 10px;
+	font-family:'Gill Sans';
 }
 
 .first-image{
@@ -781,7 +796,7 @@ div.step-tab button.active {
 }
 
 .step-tab-holder p {
-	font-family:'Minion Pro';
+	font-family:'Gill Sans';
 }
 
 .step-btn-holder{
@@ -791,27 +806,27 @@ div.step-tab button.active {
 
 .step-btn-prev{
 	margin-top: 20px;
-	font-family:'Gill Sans MT';
+	font-family:'Gill Sans';
 }
 
 .step-btn-next{
 	float: right;
 	margin-top: 20px;
 	margin-right: 75px;
-	font-family:'Gill Sans MT';
+	font-family:'Gill Sans';
 }
 
 .step-btp{
 	float: left;
 	margin-top: 20px;
-	font-size: 20px;
+	font-size: 17px;
 }
 
 .step-tbc{
 	float: right;
 	margin-right: 60px;
 	margin-top: 20px;
-	font-size: 20px;
+	font-size: 17px;
 }
 
 .tut-mistakes{
@@ -841,8 +856,6 @@ div.step-tab button.active {
 	border: 5px solid #6f9485;
 	margin-right: 10px;
 	color: #6f9485;
-	-webkit-transition: width 1s, height 1s; /* For Safari 3.1 to 6.0 */
-	transition: width 1s, height 1s;
 }
 
 .mistake-number{
@@ -854,15 +867,12 @@ div.step-tab button.active {
 
 .mistake-desc{
 	font-size: 17px;
-	font-family:'Minion Pro';
+	font-family:'Gill Sans';
 }
 
 .tut-mistakes-panels:hover{
 	background-color: #6f9485;
 	color: white;
-	width: 30%;
-	height: 500px;
-	font-size: 25px;
 }
 
 .mistakes-btn{
@@ -907,6 +917,8 @@ div.step-tab button.active {
 	border-radius: 30px;
 	background-color: #a4d2bf;
 	color: black;
+	font-family: 'Gill Sans';
+	margin-left: 45%;
 }
 
 .step-gif{
@@ -957,13 +969,13 @@ div.step-tab button.active {
 		margin-right: 150px;
 		font-weight: bold;
 		padding-left: 80px;
-		font-size: 15px;
+		font-size: 17px;
 	}
 	.section-2-title-container{
 		margin-top:50px;
 	}
 	.section-3-text{
-		font-size:20px;
+		font-size:17px;
 		width: 65%;
 	}
 	.section-2-container{
@@ -976,7 +988,7 @@ div.step-tab button.active {
 		padding-left:180px;
 	}
 	.section-3-text{
-		font-size:15px;
+		font-size:17px;
 		margin-top:60px;
 		margin-bottom:60px;
 	}
@@ -1026,7 +1038,7 @@ div.step-tab button.active {
 	}
 
 	.tut-bene{
-		padding-bottom: 165px;
+		padding-bottom: 238px;
 	}
 
 	.tut-warn{
@@ -1035,6 +1047,10 @@ div.step-tab button.active {
 
 	.step-tab-holder{
 		margin: 40px 12%;
+	}
+
+	.tut-end-btn{
+		margin-left: 45%;
 	}
 
 }
@@ -1059,7 +1075,7 @@ div.step-tab button.active {
 		margin-right: 100px;
 		font-weight: bold;
 		padding-left: 30px;
-		font-size: 15px;
+		font-size: 17px;
 		margin-top:30px;
 	}
 	.section-2-title-container{
@@ -1234,7 +1250,7 @@ div.step-tab button.active {
 		margin:0;
 	}
 	.section-3-text {
-		font-size:18px;
+		font-size:17px;
 		width: 150% !important;
 		margin-left:3%;
 	}
@@ -1252,7 +1268,7 @@ div.step-tab button.active {
 		padding-left:0px;
 	}
 	.contact-text{
-		font-size:19px;
+		font-size:17px;
 		padding-left:10px;
 		padding-right:10px;
 		width:83%;
@@ -1425,7 +1441,7 @@ div.step-tab button.active {
 
 	.calc-input-labels{
 		padding: 5px 0px;
-		font-size: 16px;
+		font-size: 17px;
 	}
 
 	.tut-reminder-title {
@@ -1543,7 +1559,7 @@ div.step-tab button.active {
 	border-radius:100px;
 	padding:6px 20px;
 	color:#000;
-	font-family:'Gill Sans MT';
+	font-family:'Gill Sans';
 	font-weight:bold;
 	font-size:17px;
 }
@@ -1566,7 +1582,7 @@ div.step-tab button.active {
 .exam-intro{
 	color: #fff;
 	font-size: 25px;
-	font-family:'Gill Sans MT';
+	font-family:'Gill Sans';
 }
 
 .exam-part-head{
@@ -1581,7 +1597,7 @@ div.step-tab button.active {
 	color:#fff;
 	font-size:30px;
 	margin-bottom:1%;
-	font-family: 'Gill Sans MT';
+	font-family: 'Gill Sans';
 }
 
 .exam-question{
