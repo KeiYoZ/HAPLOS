@@ -492,8 +492,8 @@ padding-right: 12px; */
 
 .tut-warn-title-en{
 	color: #6D9075;
-    width: 70%;
-    text-align: center;
+	width: 70%;
+	text-align: center;
 }
 
 .tut-bene{
@@ -1359,7 +1359,7 @@ div.step-tab button.active {
 	}
 
 	.tut-warn-title-en{
-	    width: 100%;
+		width: 100%;
 	}
 
 	.tut-bene{
