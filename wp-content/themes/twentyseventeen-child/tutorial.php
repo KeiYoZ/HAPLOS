@@ -142,7 +142,14 @@ if(is_page(62)) {
 						</div>	
 					</div>
 					<div class="clearfix"></div>
-				</div>	
+				</div>
+				<div>
+					<?php if (is_page(62)){ ?>
+					<a href="#tut-first-step"><button class="btn btn-default tut-dosage-calc-btn calc-start-proc-btn">Simulan ang Proseso</button></a>
+					<?php } else if (is_page(122)) {?>
+					<a href="#tut-first-step"><button class="btn btn-default tut-dosage-calc-btn calc-start-proc-btn">Start the Process</button></a>
+					<?php } ?>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -167,7 +174,7 @@ if(is_page(62)) {
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-12 step-tab-holder">
+			<div class="col-md-12 col-xs-12 step-tab-holder">
 				<div class="step-tab">
 					<button class="first-step-tablinks active" onclick="openStep(event,'first-step-tabcontent', 'first-step-tablinks', 'first-step-1')">1</button>
 					<button class="first-step-tablinks" onclick="openStep(event, 'first-step-tabcontent', 'first-step-tablinks', 'first-step-2')">2</button>

@@ -28,6 +28,12 @@ input[type='button']{
 	font-family:'Gill Sans MT';
 	src: url('fonts/GIL_____.ttf');
 }
+
+@font-face{
+	font-family:'Gill Sans';
+	src: url('fonts/GillSans.ttc');
+}
+
 @font-face{
 	font-family:'Gotham';
 	src: url('fonts/Gotham-Light_0(1).otf');
@@ -135,7 +141,7 @@ input[type='button']{
 	color: #fff;
 	width: 60%;
 	font-size: 17px;
-	font-family:'Gill Sans MT';
+	font-family:'Gill Sans';
 	margin-left:15%;
 }
 
@@ -150,7 +156,7 @@ input[type='button']{
 	background-color:#a4d0be;
 	border-radius:100px;
 	padding:6px 20px;
-	font-family: Gill Sans MT;
+	font-family: Gill Sans;
 	font-size:17px;
 }
 
@@ -170,9 +176,9 @@ input[type='button']{
 
 .section-2-text {
 	margin-right: 25%;
-	font-family:'Gill Sans MT';
-	margin-top:5%;
-	width: 60%;
+	font-family:'Gill Sans';
+	margin-top:15%;
+	width: 84%;
 	margin-left:5%;
 	font-size:17px;
 	text-align:center;
@@ -229,7 +235,7 @@ input[type='button']{
 	margin-bottom:6%;
 	margin-left: 200px;
 	width: 50%;
-	font-family:'Gill Sans MT';
+	font-family:'Gill Sans';
 }
 
 .contact{
@@ -265,7 +271,7 @@ input[type='button']{
 	font-weight: bold;
 	font-size: 17px;
 	margin-bottom: 3%;
-	font-family:'Gill Sans MT';
+	font-family:'Gill Sans';
 	margin-top:4%;
 }
 
@@ -274,14 +280,14 @@ input[type='button']{
 	font-size: 17px;
 	color: #fff;
 	margin-left:7%;
-	font-family:'Gill Sans MT';
+	font-family:'Gill Sans';
 }
 
 .hospital-details, .doc{
 	font-size: 17px;
 	color: #fff;
 	margin-left:7%;
-	font-family:'Gill Sans MT';
+	font-family:'Gill Sans';
 }
 
 .section-5-container .contact-text{
@@ -289,7 +295,7 @@ input[type='button']{
 	float:left;
 	margin-left:7%;
 	margin-top:5px;
-	font-family:'Gill Sans MT';
+	font-family:'Gill Sans';
 	background-color:#a4d0be;
 }
 
@@ -334,7 +340,7 @@ input[type='button']{
 	margin-top: 17px;
 	text-align: center;
 	width: 87%;
-	font-family:'Gill Sans MT';
+	font-family:'Gill Sans';
 	font-size:17px;
 }
 
@@ -462,7 +468,7 @@ padding-right: 12px; */
 .tut-banner-sub{
 	color: #000;
 	text-align: center;
-	font-family: 'Gill Sans MT';
+	font-family: 'Gill Sans';
 	font-weight: lighter;
 }
 
@@ -470,6 +476,8 @@ padding-right: 12px; */
 	font-size: 13px;
 	margin-left: 100px;
 	margin-top: 55px;
+	font-family: 'Gill Sans';
+	font-weight: lighter;
 }
 
 .tut-bene-warn{
@@ -487,7 +495,7 @@ padding-right: 12px; */
 .tut-bene-title-en{
 	color:rgb(166,189,179); 
 	text-align: center; 
-	width:114%;
+	width:124%;
 }
 
 .tut-warn-title-en{
@@ -518,12 +526,14 @@ padding-right: 12px; */
 	font-size: 60px;
 	color: white;
 	font-family:'League Spartan';
+	margin-top: 15px;
+	text-align: center;
 }
 
 .tut-bene-desc{
 	color: white;
 	margin-top: 15px;
-	font-family:'Gill Sans MT';
+	font-family:'Gill Sans';
 	font-size:17px;
 }
 
@@ -536,7 +546,7 @@ padding-right: 12px; */
 	border:0;
 }
 .dosage-examples li{
-	font-family:'Gill Sans MT';
+	font-family:'Gill Sans';
 	font-weight: 600;
 }
 .tut-dosage-calc-btn:hover{
@@ -572,9 +582,9 @@ padding-right: 12px; */
 }
 
 .tut-reminder-desc{
-	margin-top: 10px;
-	font-size: 18px;
-	font-family:'Gill Sans MT';
+	/*margin-top: 10px;*/
+	font-size: 17px;
+	font-family:'Gill Sans';
 }
 
 .tut-dosage-desc{
@@ -594,6 +604,13 @@ padding-right: 12px; */
 	font-family:'League Spartan';
 }
 
+.dosage-formula-1{
+	width: 47%; 
+	text-align:center;
+}
+
+
+
 .tut-dosage-desc-number{
 	font-size: 60px;
 	color: #619880;
@@ -604,7 +621,7 @@ padding-right: 12px; */
 
 .tut-dosage-desc-desc{
 	font-size: 17px;
-	font-family:'Gill Sans MT';
+	font-family:'Gill Sans';
 }
 
 .dosage-formula{
@@ -632,13 +649,13 @@ padding-right: 12px; */
 	background: transparent;
 	width: 250px;
 	padding: 5px;
-	font-size: 16px;
+	font-size: 17px;
 	line-height: 1;
 	border: 0;
 	border-radius: 0;
 	height: 34px;
 	-webkit-appearance: none;
-	color: #000;
+	color: #619880;
 }
 
 .styleSelect {
@@ -668,8 +685,8 @@ padding-right: 12px; */
 	border-radius: 25px;
 	text-align: center;
 	padding: 5px;
-	font-size:15px;
-	font-family:'Minion Pro';
+	font-size:17px;
+	font-family:'Gill Sans';
 	color:#6e9384;
 }
 
@@ -689,7 +706,11 @@ padding-right: 12px; */
 	color: white;
 	background-color: #619880;
 	border:0;
-	font-family:'Gotham';
+	font-family:'Gill Sans';
+}
+
+.calc-start-proc-btn{
+	font-family:'Gill Sans';
 }
 
 /*step vertical tabs*/
@@ -738,7 +759,7 @@ div.step-tab button {
 	margin-bottom: 5px;
 	border-radius: 10px 0 0 10px;
 	font-weight: bold;
-	font-size: 18px;
+	font-size: 17px;
 }
 
 div.step-tab button:last-child {
@@ -769,6 +790,7 @@ div.step-tab button.active {
 	border-left: none;
 	height: 400px;
 	border-radius: 0 10px 10px 10px;
+	font-family:'Gill Sans';
 }
 
 .first-image{
@@ -781,7 +803,7 @@ div.step-tab button.active {
 }
 
 .step-tab-holder p {
-	font-family:'Minion Pro';
+	font-family:'Gill Sans';
 }
 
 .step-btn-holder{
@@ -791,27 +813,27 @@ div.step-tab button.active {
 
 .step-btn-prev{
 	margin-top: 20px;
-	font-family:'Gill Sans MT';
+	font-family:'Gill Sans';
 }
 
 .step-btn-next{
 	float: right;
 	margin-top: 20px;
 	margin-right: 75px;
-	font-family:'Gill Sans MT';
+	font-family:'Gill Sans';
 }
 
 .step-btp{
 	float: left;
 	margin-top: 20px;
-	font-size: 20px;
+	font-size: 17px;
 }
 
 .step-tbc{
 	float: right;
 	margin-right: 60px;
 	margin-top: 20px;
-	font-size: 20px;
+	font-size: 17px;
 }
 
 .tut-mistakes{
@@ -841,8 +863,6 @@ div.step-tab button.active {
 	border: 5px solid #6f9485;
 	margin-right: 10px;
 	color: #6f9485;
-	-webkit-transition: width 1s, height 1s; /* For Safari 3.1 to 6.0 */
-	transition: width 1s, height 1s;
 }
 
 .mistake-number{
@@ -854,15 +874,12 @@ div.step-tab button.active {
 
 .mistake-desc{
 	font-size: 17px;
-	font-family:'Minion Pro';
+	font-family:'Gill Sans';
 }
 
 .tut-mistakes-panels:hover{
 	background-color: #6f9485;
 	color: white;
-	width: 30%;
-	height: 500px;
-	font-size: 25px;
 }
 
 .mistakes-btn{
@@ -907,6 +924,8 @@ div.step-tab button.active {
 	border-radius: 30px;
 	background-color: #a4d2bf;
 	color: black;
+	font-family: 'Gill Sans';
+	margin-left: 45%;
 }
 
 .step-gif{
@@ -925,6 +944,7 @@ div.step-tab button.active {
 .answer-keys{
 	padding: 0 200px; 
 	margin-left: 200px;
+	font-size: 17px;
 }
 
 .re-exam-btn{
@@ -957,13 +977,13 @@ div.step-tab button.active {
 		margin-right: 150px;
 		font-weight: bold;
 		padding-left: 80px;
-		font-size: 15px;
+		font-size: 17px;
 	}
 	.section-2-title-container{
 		margin-top:50px;
 	}
 	.section-3-text{
-		font-size:20px;
+		font-size:17px;
 		width: 65%;
 	}
 	.section-2-container{
@@ -976,7 +996,7 @@ div.step-tab button.active {
 		padding-left:180px;
 	}
 	.section-3-text{
-		font-size:15px;
+		font-size:17px;
 		margin-top:60px;
 		margin-bottom:60px;
 	}
@@ -1026,7 +1046,7 @@ div.step-tab button.active {
 	}
 
 	.tut-bene{
-		padding-bottom: 165px;
+		padding-bottom: 238px;
 	}
 
 	.tut-warn{
@@ -1035,6 +1055,10 @@ div.step-tab button.active {
 
 	.step-tab-holder{
 		margin: 40px 12%;
+	}
+
+	.tut-end-btn{
+		margin-left: 45%;
 	}
 
 }
@@ -1059,7 +1083,7 @@ div.step-tab button.active {
 		margin-right: 100px;
 		font-weight: bold;
 		padding-left: 30px;
-		font-size: 15px;
+		font-size: 17px;
 		margin-top:30px;
 	}
 	.section-2-title-container{
@@ -1234,7 +1258,7 @@ div.step-tab button.active {
 		margin:0;
 	}
 	.section-3-text {
-		font-size:18px;
+		font-size:17px;
 		width: 150% !important;
 		margin-left:3%;
 	}
@@ -1252,7 +1276,7 @@ div.step-tab button.active {
 		padding-left:0px;
 	}
 	.contact-text{
-		font-size:19px;
+		font-size:17px;
 		padding-left:10px;
 		padding-right:10px;
 		width:83%;
@@ -1425,7 +1449,7 @@ div.step-tab button.active {
 
 	.calc-input-labels{
 		padding: 5px 0px;
-		font-size: 16px;
+		font-size: 17px;
 	}
 
 	.tut-reminder-title {
@@ -1536,6 +1560,444 @@ div.step-tab button.active {
 	}
 }
 
+@media only screen and (min-width : 320px) and (max-width : 479px) {
+	/* Navbar earlier collapse to hamburger than default */
+	.navbar-collapse.collapse {
+		display: none !important;
+	}
+	.navbar-collapse.collapse.in {
+		display: block !important;
+	}
+	.navbar-header .collapse, .navbar-toggle {
+		display:block !important;
+	}
+	.navbar-header {
+		float:none;
+	}
+	.homeinfusionprocess {
+		font-size: 70px;
+		margin-left:-10%;
+	}
+
+	.hand-injection {
+		width:100%;
+		margin-right:0;
+		margin-bottom:5%;
+		margin-top: 0;
+	}
+
+	.hip-desc {
+		font-size: 20px;
+		margin-left: 6%;
+		width: 90%;
+	}
+	.start-process{
+		font-size:20px;
+		margin-left:15%;
+		margin-top:5%;
+	}
+	.start-process-2{
+		font-size:20px;
+		margin-left:34%;
+		margin-top:5%;
+	}
+
+	.section-2-title-container {
+	    margin-top: 40px;
+	}
+
+	.section-2-image {
+		width: 100%;
+		margin-left:0px;
+		padding-left:20px;
+		padding-right:10px;
+	}
+	.section-2-text{
+		margin:0 auto;
+		width: 90%;
+		font-size:17px;
+		margin-top:40px;
+	}
+	.section-2-title-1{
+		font-size:50px;
+		margin-left:2%;
+		margin-top:-10%;
+	}
+	.section-2-title-2{
+		font-size:70px;
+		margin-top:3% !important;
+		margin-left:2%;
+	}
+	.section-3-container{
+		padding-left:0px;
+		margin:0;
+	}
+	.section-3-text {
+		font-size:17px;
+		width: 150% !important;
+		margin-left:3%;
+	}
+	.section-3-title-1{
+		font-size:50px;
+		line-height: 1.0em;
+		width:30%;
+	}
+	.section-3-title-2{
+		font-size:40px;		
+	}
+	.contact-wrapper{
+		margin-top:5%;
+		width: 100%;
+		padding-left:0px;
+		margin-left: 15px;
+	}
+	.contact-text{
+		font-size:17px;
+		padding-left:10px;
+		padding-right:10px;
+		width:70%;
+		margin-left: 10px;
+	}
+	.col-1{
+		width: 17%;
+	}
+	.contact{
+		font-size:60px;
+		margin: 0 8px;
+	}
+
+	.section-5-title{
+		font-size:40px;
+		margin-bottom:5%;
+		margin-left: 10px;
+	}
+	.section-5-container .container{
+		width:90% !important;
+	}
+	.navbar .navbar-brand img {
+		height: 150% !important;
+	}
+	.language{
+		margin-top:13px;
+	}
+	.contact-details-container{
+		clear:both;
+		width:100% !important;
+	}
+	/******************abcdefghijklmnoqprstuvwxyz********************/
+
+	/*tutorial responsive*/
+
+	.tut-banner-icon-box {
+		margin: 30px 0;
+		padding: 0px 0;
+		padding-left: 0;
+		height: 250px;
+	}
+
+	.tut-banner-icons{
+		width: 9%;
+		margin: 20px 13px;
+	}
+
+	.tut-banner-icons:nth-of-type(1){
+		margin-top: 37px;
+		width: 60px;
+		margin-left: 23px;
+	}
+
+	.tut-banner-icons:nth-of-type(2){
+		margin-top: 42px;
+		width: 60px
+	}
+
+	.tut-banner-icons:nth-of-type(3){
+		margin-top: 40px;
+		width: 15%;
+	}
+
+	.tut-banner-icons:nth-of-type(4){
+		margin-top: 42px;
+		width: 50px;
+	}
+
+	.tut-banner-icons:nth-of-type(5){
+		width: 45px;
+		margin-left: 33px;
+	}
+
+	.tut-banner-icons:nth-of-type(6){
+		margin-top: 25px;
+		width: 58px;
+		margin-left: 20px;
+	}
+
+	.tut-banner-icons:nth-of-type(7){
+		width: 37px;
+	}
+
+	.tut-banner-icons:nth-of-type(8){
+		width: 70px;
+		margin-left: 5px;
+		margin-top: 34px;
+	}
+
+	.tut-banner-disclaimer{
+		margin-top: 70px;
+		margin-left: 30px;
+	}
+
+	.tut-bene-warn-first{
+		margin-top: 30px;
+	}
+
+	.tut-bene-warn{
+		padding-top: 75px;
+	}
+
+	.tut-bene-warn-title:nth-of-type(1){
+		text-align: center;
+	}
+
+	.tut-bene-title-en{
+		width:105%;
+	}
+
+	.tut-warn-title-en{
+	    width: 100%;
+	}
+
+	.tut-bene{
+		margin: 0 8px;
+		width: 100%;
+		padding-bottom: 130px;
+		overflow: auto;
+	}
+
+	.tut-bene-number {
+		padding-top: 0;
+		text-align: center;
+		margin-left: -15px;
+    	margin-right: 15px;
+	}
+
+	.tut-bene-desc {
+		margin-bottom: 25px;
+		margin-top: 0px;
+		font-size: 17px;
+	}
+
+	.tut-warn{
+		width: 100%;
+		padding-bottom: 70px;
+		margin: 0 8px;
+		overflow: auto;
+	}
+
+	.tut-dosage-desc-container {
+		padding-left: 30px;
+	}
+
+	.tut-dosage-desc-title {
+	    font-size: 67px;
+	    line-height: 67px;
+	}
+
+	
+	.tut-dosage-desc-number {
+		text-align: center;
+	}
+
+	.tut-dosage-desc-desc {
+		margin-top: 0px;
+		margin-bottom: 20px;
+	}
+
+	.dosage-formula {
+		width: 87%;
+		margin-top: 10px;
+	}
+
+	.dosage-formula-1{
+		width: 88%; 
+		text-align:center;
+	}
+
+	.dosage-formula-2{
+		width: 88%; 
+		text-align:center;
+	}
+
+	.tut-dosage-calc-title {
+	    font-size: 60px;
+	    margin-left: 5px;
+	}
+
+	.tut-dosage-calc-btn {
+		float: left; 
+		margin-left: 33%;
+	}
+
+	.styleSelect{
+		margin: 0 15%;
+	}
+
+	.tut-dosage-calc-box {
+		margin: 50px 4%;
+    	width: 97%;
+	}
+
+	.tut-dosage-calc-inner {
+		margin: 45px -30px;;
+	}
+
+	.calc-input-labels{
+		padding: 5px 0px;
+		font-size: 17px;
+	}
+
+	.calc-submit {
+	    margin: 0 27%;
+	}
+
+	.tut-reminder-title {
+		margin-left: 12px;
+		font-size: 55px;
+		line-height: 60px;
+	}
+
+	.tut-reminder-number {
+		text-align: left; 
+	}
+
+	.tut-reminder-desc {
+		margin-top: 0;
+		margin-bottom: 20px;
+	}
+
+	.tut-reminder-inst{
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+
+	.step-tab-holder {
+		margin: 45px 0%;
+	}
+
+	.tut-step-title {
+		font-size: 60px;
+		line-height: 50px;
+		margin-left: 4px;
+	}
+
+	p.tut-step-title span {
+	    font-size: 40px;
+	}
+
+	.step-gif {
+		width: 100%;
+		margin: 100px auto;
+	}
+
+	.first-step-tabcontent, .second-step-tabcontent, .third-step-tabcontent{
+		width: 85%;
+		height: 650px;
+	}
+
+	.third-step-pt2-tabcontent{
+		width: 82%;
+		height: 650px;
+	}
+
+	.fourth-step-tabcontent{
+		width: 85%;
+		height: 850px;
+	}
+
+	.first-image {
+		width: 100%;
+	}
+
+	.step-btn-prev {
+		margin-left: -10px;
+	}
+
+	.step-btn-next {
+		float: right;
+		/*margin-left: 185px;*/
+		margin-right: 55px;
+	}
+
+	.tut-mistakes-holder{
+		margin: 30px 0;
+		margin-left: 20px;
+	}
+
+	.tut-mistakes-panels{
+		height: 500px;
+	}
+
+	.tut-mistakes-title {
+	    font-size: 45px;
+	    line-height: 50px;
+	    margin-left: 8px;
+	}
+
+	.tut-mistakes-panels:hover{
+		width: 100%;
+		font-size: 25px;
+	}
+
+	.mistakes-disclaimer{
+		margin-left: 30px;
+	}
+
+	.mistakes-btn{
+		margin-left: -20%;
+	}
+
+	.tut-end-title {
+		font-size: 28px;
+		margin-top: 20%;
+		margin-left: 7px;
+	}
+
+	.tut-sub-title{
+		font-size: 40px;
+		line-height: 45px;
+		margin-left: 12px;
+	}
+
+	.tut-end-btn-holder{
+		margin: 20px 27%;
+	}
+
+	.tut-end-btn-holder-en{
+		margin: 20px 0;
+	}
+
+	.tut-end-btn {
+	    margin-left: 32%;
+	}
+
+	.mistake-image {
+		width: 100%;
+	}
+
+
+	/*Exam page*/
+
+	.answer-keys{
+		padding: 0 75px;
+		margin-left: 0;
+		font-size: 17px;
+	}
+
+	.re-exam-btn{
+		margin: 0 18%;
+	}
+}
+
 
 /******* Examination Page Styles ********/
 .start-exam {
@@ -1543,7 +2005,7 @@ div.step-tab button.active {
 	border-radius:100px;
 	padding:6px 20px;
 	color:#000;
-	font-family:'Gill Sans MT';
+	font-family:'Gill Sans';
 	font-weight:bold;
 	font-size:17px;
 }
@@ -1566,7 +2028,7 @@ div.step-tab button.active {
 .exam-intro{
 	color: #fff;
 	font-size: 25px;
-	font-family:'Gill Sans MT';
+	font-family:'Gill Sans';
 }
 
 .exam-part-head{
@@ -1581,7 +2043,7 @@ div.step-tab button.active {
 	color:#fff;
 	font-size:30px;
 	margin-bottom:1%;
-	font-family: 'Gill Sans MT';
+	font-family: 'Gill Sans';
 }
 
 .exam-question{
