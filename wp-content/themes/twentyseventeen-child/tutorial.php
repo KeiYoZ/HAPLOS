@@ -60,8 +60,7 @@ if(is_page(62)) {
 					<?php the_field('benefit_panel'); ?>
 				</div>
 			</div>
-			<div class="col-md-6">
-				<!-- <p class="tut-bene-warn-title" style="color: #6D9075">PANGANIB</p> -->
+			<div class="col-md-6">]
 				<?php the_field('warning_title'); ?>
 				<div class="col-md-12 tut-warn">
 					<?php the_field('warning_panel'); ?>
@@ -850,7 +849,7 @@ if(is_page(62)) {
 				<p class="tut-sub-title">Naisagawa mo ang home <br> infusion process.</p>
 			</div>
 			<div class="col-md-12 tut-end-btn-holder">
-				<a href="/exam" class="btn btn-default tut-end-btn" role="button">Sagutan ang Pagsasanay</a>
+				<a href="/exam" class="btn btn-default tut-end-btn tut-end-btn-fl" role="button">Sagutan ang Pagsasanay</a>
 			</div>
 			<?php } else if (is_page(122)) {?>
 			<div class="col-md-12">

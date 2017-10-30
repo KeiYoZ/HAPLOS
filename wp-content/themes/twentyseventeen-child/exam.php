@@ -203,9 +203,9 @@ if(is_page(160)){
 			<hr>
 			<div class="row">
 				<?php if (is_page(128)) {?>
-				<a href="/exam-en" class="re-exam-btn"><input type="button" class="start-exam" value="Answer the Practice Test again"></a>
+				<a href="/exam-en" class="re-exam-btn "><input type="button" class="start-exam" value="Answer the Practice Test again"></a>
 				<?php }else if(is_page(160)){ ?>
-				<a href="/exam" class="re-exam-btn"><input type="button" class="start-exam" value="Sagutan Muli ang Pagsasanay"></a>
+				<a href="/exam" class="re-exam-btn-fl"><input type="button" class="start-exam" value="Sagutan Muli ang Pagsasanay"></a>
 				<?php } ?>
 			</div>
 		</div>
