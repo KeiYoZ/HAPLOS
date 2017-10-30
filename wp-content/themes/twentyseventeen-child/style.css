@@ -500,8 +500,18 @@ padding-right: 12px; */
 
 .tut-warn-title-en{
 	color: #6D9075;
-	width: 70%;
-	text-align: center;
+    width: 70%;
+    text-align: center;
+}
+
+.tut-bene-title-fl{
+	color:rgb(166,189,179); 
+	text-align: right; 
+	margin-right: 4%;
+}
+
+.tut-warn-title-fl{
+    color: #6D9075;
 }
 
 .tut-bene{
@@ -604,6 +614,14 @@ padding-right: 12px; */
 	font-family:'League Spartan';
 }
 
+.tut-dosage-desc-title-fl{
+	font-size: 75px;
+	font-weight: bold;
+	line-height: 75px;
+	color: rgb(166,189,179);
+	font-family:'League Spartan';
+}
+
 .dosage-formula-1{
 	width: 47%; 
 	text-align:center;
@@ -672,7 +690,7 @@ padding-right: 12px; */
 	border-radius:	25px;
 	padding: 10px 35px;
 	width: 32%;
-	height: 42vh;
+	height: auto;
 }
 
 .tut-dosage-calc-inner{
@@ -1383,7 +1401,7 @@ div.step-tab button.active {
 	}
 
 	.tut-warn-title-en{
-		width: 100%;
+	    width: 100%;
 	}
 
 	.tut-bene{
@@ -1560,7 +1578,479 @@ div.step-tab button.active {
 	}
 }
 
-@media only screen and (min-width : 320px) and (max-width : 479px) {
+@media only screen and (min-width : 360px) and (max-width : 479px) {
+	/* Navbar earlier collapse to hamburger than default */
+	.navbar-collapse.collapse {
+		display: none !important;
+	}
+	.navbar-collapse.collapse.in {
+		display: block !important;
+	}
+	.navbar-header .collapse, .navbar-toggle {
+		display:block !important;
+	}
+	.navbar-header {
+		float:none;
+	}
+	.homeinfusionprocess {
+		font-size: 70px;
+		margin-left:-10%;
+	}
+
+	.hand-injection {
+		width:100%;
+		margin-right:0;
+		margin-bottom:5%;
+		margin-top: 0;
+	}
+
+	.hip-desc {
+		font-size: 20px;
+		margin-left: 6%;
+		width: 90%;
+	}
+	.start-process{
+		font-size:20px;
+		margin-left:15%;
+		margin-top:5%;
+	}
+	.start-process-2{
+		font-size:20px;
+		margin-left:34%;
+		margin-top:5%;
+	}
+
+	.section-2-title-container {
+	    margin-top: 40px;
+	}
+
+	.section-2-image {
+		width: 100%;
+		margin-left:0px;
+		padding-left:20px;
+		padding-right:10px;
+	}
+	.section-2-text{
+		margin:0 auto;
+		width: 90%;
+		font-size:17px;
+		margin-top:40px;
+	}
+	.section-2-title-1{
+		font-size:50px;
+		margin-left:2%;
+		margin-top:-10%;
+	}
+	.section-2-title-2{
+		font-size:70px;
+		margin-top:3% !important;
+		margin-left:2%;
+	}
+	.section-3-container{
+		padding-left:0px;
+		margin:0;
+	}
+	.section-3-text {
+		font-size:17px;
+		width: 150% !important;
+		margin-left:3%;
+	}
+	.section-3-title-1{
+		font-size:50px;
+		line-height: 1.0em;
+		width:30%;
+	}
+	.section-3-title-2{
+		font-size:40px;		
+	}
+	.contact-wrapper{
+		margin-top:5%;
+		width: 100%;
+		padding-left:0px;
+		margin-left: 15px;
+	}
+	.contact-text{
+		font-size:17px;
+		padding-left:10px;
+		padding-right:10px;
+		width:70%;
+		margin-left: 10px;
+	}
+	.col-1{
+		width: 17%;
+	}
+	.contact{
+		font-size:60px;
+		margin: 0 8px;
+	}
+
+	.section-5-title{
+		font-size:40px;
+		margin-bottom:5%;
+		margin-left: 10px;
+	}
+	.section-5-container .container{
+		width:90% !important;
+	}
+	.navbar .navbar-brand img {
+		height: 150% !important;
+	}
+	.language{
+		margin-top:13px;
+	}
+	.contact-details-container{
+		clear:both;
+		width:100% !important;
+	}
+	/******************abcdefghijklmnoqprstuvwxyz********************/
+
+	/*tutorial responsive*/
+
+	.tut-banner-icon-box {
+		margin: 30px 0;
+		padding: 0px 0;
+		padding-left: 0;
+		height: 250px;
+	}
+
+	.tut-banner-icons{
+		width: 9%;
+		margin: 20px 17px;
+	}
+
+	.tut-banner-icons:nth-of-type(1){
+		margin-top: 37px;
+		width: 60px;
+		margin-left: 23px;
+	}
+
+	.tut-banner-icons:nth-of-type(2){
+		margin-top: 42px;
+		width: 60px
+	}
+
+	.tut-banner-icons:nth-of-type(3){
+		margin-top: 40px;
+		width: 15%;
+	}
+
+	.tut-banner-icons:nth-of-type(4){
+		margin-top: 42px;
+		width: 50px;
+	}
+
+	.tut-banner-icons:nth-of-type(5){
+		width: 45px;
+		margin-left: 33px;
+	}
+
+	.tut-banner-icons:nth-of-type(6){
+		margin-top: 25px;
+		width: 58px;
+		margin-left: 27px;
+	}
+
+	.tut-banner-icons:nth-of-type(7){
+		width: 37px;
+		margin-left: 25px;
+	}
+
+	.tut-banner-icons:nth-of-type(8){
+		width: 70px;
+		margin-left: 10px;
+		margin-top: 34px;
+	}
+
+	.tut-banner-disclaimer{
+		margin-top: 70px;
+		margin-left: 30px;
+	}
+
+	.tut-bene-warn-first{
+		margin-top: 30px;
+	}
+
+	.tut-bene-warn{
+		padding-top: 75px;
+	}
+
+	.tut-bene-warn-title:nth-of-type(1){
+		text-align: center;
+	}
+
+	.tut-bene-title-en{
+		width:105%;
+	}
+
+	.tut-warn-title-en{
+	    width: 100%;
+	}
+
+	.tut-bene-title-fl{
+		font-size: 55px;
+    	margin-left: 22px;
+	}
+
+	.tut-warn-title-fl{
+		font-size: 55px;
+    	margin-left: 22px;
+	}
+
+	.tut-bene{
+		margin: 0 8px;
+		width: 100%;
+		padding-bottom: 130px;
+		overflow: auto;
+	}
+
+	.tut-bene-number {
+		padding-top: 0;
+		text-align: center;
+		margin-left: -15px;
+    	margin-right: 15px;
+	}
+
+	.tut-bene-desc {
+		margin-bottom: 25px;
+		margin-top: 0px;
+		font-size: 17px;
+	}
+
+	.tut-warn{
+		width: 100%;
+		padding-bottom: 70px;
+		margin: 0 8px;
+		overflow: auto;
+	}
+
+	.tut-dosage-desc-container {
+		padding-left: 30px;
+	}
+
+	.tut-dosage-desc-title {
+	    font-size: 67px;
+	    line-height: 67px;
+	}
+
+	.tut-dosage-desc-title-fl {
+	    font-size: 58px;
+	    line-height: 58px;
+	}
+
+	
+	.tut-dosage-desc-number {
+		text-align: center;
+	}
+
+	.tut-dosage-desc-desc {
+		margin-top: 0px;
+		margin-bottom: 20px;
+	}
+
+	.dosage-formula {
+		width: 87%;
+		margin-top: 10px;
+	}
+
+	.dosage-formula-1{
+		width: 88%; 
+		text-align:center;
+	}
+
+	.dosage-formula-2{
+		width: 88%; 
+		text-align:center;
+	}
+
+	.dosage-formula-1-fl{
+		width: 110%; 
+		text-align:center;
+	}
+
+	.dosage-formula-2-fl{
+		width: 110%; 
+		text-align:center;
+	}	
+
+	.tut-dosage-calc-title {
+	    font-size: 60px;
+	    margin-left: 5px;
+	}
+
+	.tut-dosage-calc-btn {
+		float: left; 
+		margin-left: 33%;
+	}
+
+	.styleSelect{
+		margin: 0 15%;
+	}
+
+	.tut-dosage-calc-box {
+		margin: 50px 4%;
+    	width: 97%;
+	}
+
+	.tut-dosage-calc-inner {
+		margin: 45px -30px;;
+	}
+
+	.calc-input-labels{
+		padding: 5px 0px;
+		font-size: 17px;
+	}
+
+	.calc-submit {
+	    margin: 0 27%;
+	}
+
+	.tut-reminder-title {
+		margin-left: 12px;
+		font-size: 55px;
+		line-height: 60px;
+	}
+
+	.tut-reminder-number {
+		text-align: left; 
+	}
+
+	.tut-reminder-desc {
+		margin-top: 0;
+		margin-bottom: 20px;
+	}
+
+	.tut-reminder-inst{
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+
+	.step-tab-holder {
+		margin: 45px 0%;
+	}
+
+	.tut-step-title {
+		font-size: 60px;
+		line-height: 50px;
+		margin-left: 4px;
+	}
+
+	p.tut-step-title span {
+	    font-size: 40px;
+	}
+
+	.step-gif {
+		width: 100%;
+		margin: 100px auto;
+	}
+
+	.first-step-tabcontent, .second-step-tabcontent, .third-step-tabcontent{
+		width: 85%;
+		height: 650px;
+	}
+
+	.third-step-pt2-tabcontent{
+		width: 82%;
+		height: 650px;
+	}
+
+	.fourth-step-tabcontent{
+		width: 85%;
+		height: 850px;
+	}
+
+	.first-image {
+		width: 100%;
+	}
+
+	.step-btn-prev {
+		margin-left: -10px;
+	}
+
+	.step-btn-next {
+		float: right;
+		/*margin-left: 185px;*/
+		margin-right: 55px;
+	}
+
+	.tut-mistakes-holder{
+		margin: 30px 0;
+		margin-left: 20px;
+	}
+
+	.tut-mistakes-panels{
+		height: 500px;
+	}
+
+	.tut-mistakes-title {
+	    font-size: 45px;
+	    line-height: 50px;
+	    margin-left: 8px;
+	}
+
+	.tut-mistakes-panels:hover{
+		width: 100%;
+		font-size: 25px;
+	}
+
+	.mistakes-disclaimer{
+		margin-left: 30px;
+	}
+
+	.mistakes-btn{
+		margin-left: -20%;
+	}
+
+	.tut-end-title {
+		font-size: 28px;
+		margin-top: 20%;
+		margin-left: 7px;
+	}
+
+	.tut-sub-title{
+		font-size: 40px;
+		line-height: 45px;
+		margin-left: 12px;
+	}
+
+	.tut-end-btn-holder{
+		margin: 20px 27%;
+	}
+
+	.tut-end-btn-holder-en{
+		margin: 20px 0;
+	}
+
+	.tut-end-btn {
+	    margin-left: 32%;
+	}
+
+	.tut-end-btn-fl{
+		margin-left: 0%;
+	}
+
+	.re-exam-btn-fl{
+		margin: 0 25%;
+	}
+
+	.mistake-image {
+		width: 100%;
+	}
+
+
+	/*Exam page*/
+
+	.answer-keys{
+		padding: 0 75px;
+		margin-left: 0;
+		font-size: 17px;
+	}
+
+	.re-exam-btn{
+		margin: 0 18%;
+	}
+}
+
+@media only screen and (min-width : 320px) and (max-width : 359px) {
 	/* Navbar earlier collapse to hamburger than default */
 	.navbar-collapse.collapse {
 		display: none !important;
@@ -1801,6 +2291,11 @@ div.step-tab button.active {
 	.tut-dosage-desc-title {
 	    font-size: 67px;
 	    line-height: 67px;
+	}
+
+	.tut-dosage-desc-title-fl{
+	    font-size: 58px;
+	    line-height: 58px;
 	}
 
 	
