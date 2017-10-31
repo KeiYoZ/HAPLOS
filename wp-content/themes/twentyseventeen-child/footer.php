@@ -115,7 +115,7 @@
 			var act_ctr = ctr + 1;
 
 			if (user_answers_array[ctr]["result"] == "correct"){
-				document.getElementById("answer-no-"+act_ctr).innerHTML = user_answers_array[ctr]["number"] + " <span>" + user_answers_array[ctr]["answer"] + "</span>";
+				document.getElementById("answer-no-"+act_ctr).innerHTML = user_answers_array[ctr]["number"] + " <span style='color:#5AF25E; font-weight:bold;'>" + user_answers_array[ctr]["answer"] + "</span>";
 			}else if(user_answers_array[ctr]["result"] == "wrong"){
 				document.getElementById("answer-no-"+act_ctr).innerHTML = user_answers_array[ctr]["number"] + " <span style='font-weight: bold; color: red'>" + user_answers_array[ctr]["answer"] + "</span>";
 			}
@@ -145,8 +145,6 @@
 			?>
 		</nav><!-- .social-navigation -->
 	<?php endif;
-
-	get_template_part( 'template-parts/footer/site', 'info' );
 	?>
 </div><!-- .wrap -->
 </footer><!-- #colophon -->

@@ -60,7 +60,7 @@ if(is_page(62)) {
 					<?php the_field('benefit_panel'); ?>
 				</div>
 			</div>
-			<div class="col-md-6">]
+			<div class="col-md-6">
 				<?php the_field('warning_title'); ?>
 				<div class="col-md-12 tut-warn">
 					<?php the_field('warning_panel'); ?>
