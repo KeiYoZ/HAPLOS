@@ -388,8 +388,11 @@ if(is_page(62)) {
 
 				<div id="third-step-1" class="third-step-tabcontent">
 					<?php the_field('third_step_part_1'); ?>
-					<div class="col-md-12">
+					<div class="col-md-10">
 						<img class="img-responsive step-gif" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="<?php echo get_stylesheet_directory_uri();?>/images/gifs/Part_3_Step_1.gif"/>
+					</div>
+					<div class="col-md-2" class="wrong-needle-btn-container">
+						<input type="button" value="CLICK HERE IF NEEDLE WAS NOT INSERTED PROPERLY">
 					</div>
 					<div class="col-md-12 col-xs-12 step-btn-holder">
 						<?php if (is_page(62)){ ?>

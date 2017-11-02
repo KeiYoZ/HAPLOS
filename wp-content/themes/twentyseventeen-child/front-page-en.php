@@ -36,7 +36,7 @@ if(is_page(125)) {
 			</div>
 			<div class="col-md-6">
 				<p class="hip-desc"><?php the_field('section_1_description'); ?></p>
-				<input type="button" class="start-process-2" value="Go to process">
+				<a href="/tutorial-english"><input type="button" class="start-process-2" value="Go to Process"></a>
 			</div>
 		</div>
 	</div>
@@ -62,7 +62,7 @@ if(is_page(125)) {
 
 	<!-- Third section start -->
 	<div class="section section-3-container" id="hemophilia">
-		<div style="width:53%; margin-left:10%;">
+		<div style="width:53%; margin-left:5%">
 			<div class="row">
 				<div class="col-md-12">
 					<span class="section-3-title-1"><?php the_field('section_3_title_1'); ?></span>

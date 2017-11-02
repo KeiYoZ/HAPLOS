@@ -30,7 +30,7 @@ if(is_page(2)) {
 			</div>
 			<div class="col-md-6">
 				<p class="hip-desc"><?php the_field('section_1_description'); ?></p>
-				<input type="button" class="start-process" value="Puntahan ang proseso">
+				<a href="/tutorial"><input type="button" class="start-process" value="Puntahan ang Proseso"></a>
 			</div>
 		</div>
 	</div>
