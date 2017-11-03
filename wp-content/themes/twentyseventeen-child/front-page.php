@@ -121,7 +121,7 @@ if(is_page(2)) {
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-sm-12">
+					<div class="col-sm-12" style="margin:40px 0px !important;">
 						<p class="treatment-header">DAVAO CITY</p>
 						<p class="hospital-name">Mindanao Hemophilia and Bleeding Disorder Treatment Center, </p>
 						<p class="hospital-details">Brokenshire Hospital, Madapo Hill, Davao del Sur, Davao City 8000</p>

@@ -45,9 +45,15 @@ if(is_page(62)) {
 		</div>
 		<div class="row">
 			<div class="tut-banner-disclaimer">
+				<?php if (is_page(62)){ ?>
+				<p>Ang mga prosesong ito ay hango rin mula sa iba’t-ibang guides o manuals ukol sa hemophilia: </p>
+				<p>&nbsp;&nbsp;&nbsp;  - Canadian Association of Nurses in Hemophilia Care (Western Division), (2009). Home treatment guide for people with bleeding disorders. (2nd ed.) </p>
+				<p>&nbsp;&nbsp;&nbsp;  - Nursing Group of Hemophilia Region VI, (2010). Emergency care for patients with hemophilia: an instructional manual for medical professionals.</p>	
+				<?php } else if (is_page(122)) {?>
 				<p>These processes are also based from various guides or manuals about hemophilia: </p>
 				<p>&nbsp;&nbsp;&nbsp;  - Canadian Association of Nurses in Hemophilia Care (Western Division), (2009). Home treatment guide for people with bleeding disorders. (2nd ed.) </p>
 				<p>&nbsp;&nbsp;&nbsp;  - Nursing Group of Hemophilia Region VI, (2010). Emergency care for patients with hemophilia: an instructional manual for medical professionals. </p>	
+				<?php } ?>
 			</div>
 		</div>
 	</div>
@@ -56,9 +62,16 @@ if(is_page(62)) {
 		<div class="row">
 			<div class="col-md-6">
 				<?php the_field('benefit_titles'); ?>
+				<?php if (is_page(62)){ ?>
+				<div class="col-md-12 tut-bene-fl">
+					<?php the_field('benefit_panel'); ?>
+				</div>
+				<?php } else if (is_page(122)) {?>
 				<div class="col-md-12 tut-bene">
 					<?php the_field('benefit_panel'); ?>
 				</div>
+				<?php } ?>
+				
 			</div>
 			<div class="col-md-6">
 				<?php the_field('warning_title'); ?>
@@ -388,11 +401,8 @@ if(is_page(62)) {
 
 				<div id="third-step-1" class="third-step-tabcontent">
 					<?php the_field('third_step_part_1'); ?>
-					<div class="col-md-10">
+					<div class="col-md-12">
 						<img class="img-responsive step-gif" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="<?php echo get_stylesheet_directory_uri();?>/images/gifs/Part_3_Step_1.gif"/>
-					</div>
-					<div class="col-md-2" class="wrong-needle-btn-container">
-						<input type="button" value="CLICK HERE IF NEEDLE WAS NOT INSERTED PROPERLY">
 					</div>
 					<div class="col-md-12 col-xs-12 step-btn-holder">
 						<?php if (is_page(62)){ ?>
@@ -535,9 +545,18 @@ if(is_page(62)) {
 
 				<div id="third-step-7" class="third-step-tabcontent">
 					<?php the_field('third_step_part_7'); ?>
-					<div class="col-md-12">
-						<img class="img-responsive step-gif" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="<?php echo get_stylesheet_directory_uri();?>/images/gifs/Part_3_Step_7.gif"/>
+					<div class="col-md-10">
+						<img class="img-responsive step-gif-3-7" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="<?php echo get_stylesheet_directory_uri();?>/images/gifs/Part_3_Step_7.gif"/>
 					</div>
+					<?php if (is_page(62)){ ?>
+					<div class="col-md-2">
+						<a href="#tut-mistakes"><button class="btn btn-default step-mistakes-btn">PINDUTIN ITO KUNG<br>NAGKAMALI SA PAGTUROK</button></a>
+					</div>
+					<?php } else if (is_page(122)) {?>
+					<div class="col-md-2">
+						<a href="#tut-mistakes"><button class="btn btn-default step-mistakes-btn">CLICK HERE IF NEEDLE WAS NOT<br>INSERTED PROPERLY</button></a>
+					</div>
+					<?php } ?>
 					<div class="col-md-12 col-xs-12 step-btn-holder">
 						<?php if (is_page(62)){ ?>
 						<div class="col-md-6 col-xs-6">
@@ -551,7 +570,7 @@ if(is_page(62)) {
 							<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'third-step-tabcontent', 'third-step-tablinks', 'third-step-6', 'btn')">Back</button>
 						</div>
 						<div class="col-md-6 col-xs-6">
-							<a href="#tut-third-step-pt2"><button class="btn btn-default step-btn-next">Susunod</button></a>
+							<a href="#tut-third-step-pt2"><button class="btn btn-default step-btn-next">Next</button></a>
 						</div>
 						<?php } ?>
 					</div>
@@ -832,7 +851,11 @@ if(is_page(62)) {
 		</div>
 		<div class="row">
 			<div class="col-md-9 col-xs-9">
+				<?php if (is_page(62)){ ?>
+				<p class="mistakes-disclaimer">Hango mula sa: Canadian Association of Nurses in Hemophilia Care (Western Division), (2009). Home treatment guide for people with bleeding disorders. (2nd ed.)</p>
+				<?php } else if (is_page(122)) {?>
 				<p class="mistakes-disclaimer">Reference: Canadian Association of Nurses in Hemophilia Care (Western Division), (2009). Home treatment guide for people with bleeding disorders. (2nd ed.)</p>
+				<?php } ?>
 			</div>
 			<div class="col-md-3 col-xs-3">
 				<?php if (is_page(62)){ ?>

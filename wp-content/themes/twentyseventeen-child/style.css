@@ -208,6 +208,7 @@ input[type='button']{
 	margin-left:15%;
 	margin-top:3%;
 	font-family:'League Spartan';
+	line-height: 115px;
 }
 
 .section-2-title-container{
@@ -242,7 +243,7 @@ input[type='button']{
 	font-size:17px;
 	margin-top:4%;
 	margin-bottom:6%;
-	margin-left: 10%;
+	margin-left: 35%;
 	width: 80%;
 	font-family:'Gill Sans';
 }
@@ -476,6 +477,7 @@ padding-right: 12px; */
 }
 
 .tut-banner-sub{
+	font-size: 17px;
 	color: #000;
 	text-align: center;
 	font-family: 'Gill Sans';
@@ -488,6 +490,7 @@ padding-right: 12px; */
 	margin-top: 55px;
 	font-family: 'Gill Sans';
 	font-weight: lighter;
+	color: gray;
 }
 
 .tut-bene-warn{
@@ -509,7 +512,7 @@ padding-right: 12px; */
 }
 
 .tut-warn-title-en{
-	color: #6D9075;
+	color: #619880;
 	width: 70%;
 	text-align: center;
 }
@@ -521,12 +524,23 @@ padding-right: 12px; */
 }
 
 .tut-warn-title-fl{
-	color: #6D9075;
+	color: #619880;
+	margin-left: 35px;
 }
 
 .tut-bene{
 	height: auto;
 	padding-bottom: 229px;
+	width: 75%;
+	margin-left: 160px;
+	margin-right: 50px;
+	background-color:rgb(166,189,179);
+	border-radius: 25px;
+}
+
+.tut-bene-fl{
+	height: auto;
+	padding-bottom: 214px;
 	width: 75%;
 	margin-left: 160px;
 	margin-right: 50px;
@@ -618,7 +632,7 @@ padding-right: 12px; */
 .tut-dosage-desc-title{
 	font-size: 75px;
 	font-weight: bold;
-	line-height: 84px;
+	line-height: 85px;
 	color: rgb(166,189,179);
 	font-family:'League Spartan';
 }
@@ -626,7 +640,7 @@ padding-right: 12px; */
 .tut-dosage-desc-title-fl{
 	font-size: 75px;
 	font-weight: bold;
-	line-height: 75px;
+	line-height: 85px;
 	color: rgb(166,189,179);
 	font-family:'League Spartan';
 }
@@ -634,10 +648,6 @@ padding-right: 12px; */
 .dosage-formula-1{
 	width: 47%; 
 	text-align:center;
-}
-
-.dosage-formula{
-	font-weight:bold;
 }
 
 .tut-dosage-desc-number{
@@ -659,6 +669,9 @@ padding-right: 12px; */
 	width: 46%;
 	padding: 10px;
 	margin-left: 50px;
+	font-weight:bold;
+	margin-top: 10px;
+	text-align: center;
 }
 
 .tut-dosage-calc{
@@ -969,6 +982,17 @@ div.step-tab button.active {
 	margin-top: 20px;
 }
 
+.step-gif-3-7{
+	width: 63%;
+    margin-left: 28%;
+    margin-top: 20px;
+}
+
+.step-mistakes-btn{
+	margin-left: -85px;
+    margin-top: 170px;
+}
+
 .user-score{
 	font-size: 60px;
 	text-align: center;
@@ -1022,10 +1046,7 @@ div.step-tab button.active {
 		margin-top:50px;
 		margin-left:-6.5%;
 	}
-	.section-3-text{
-		font-size:17px;
-		width: 92%;
-	}
+
 	.section-2-container{
 		padding-top:130px;
 	}
@@ -1038,6 +1059,8 @@ div.step-tab button.active {
 		font-size:17px;
 		margin-top:60px;
 		margin-bottom:60px;
+		width: 92%;
+		margin-left: 35%;
 	}
 
 	.contact-wrapper {
@@ -1085,7 +1108,11 @@ div.step-tab button.active {
 	}
 
 	.tut-bene{
-		padding-bottom: 230px;
+		padding-bottom: 238px;
+	}
+
+	.tut-bene-fl{
+		padding-bottom: 214px;
 	}
 
 	.tut-warn{
