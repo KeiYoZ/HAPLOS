@@ -157,9 +157,9 @@ if(is_page(62)) {
 				</div>
 				<div>
 					<?php if (is_page(62)){ ?>
-					<a href="#tut-first-step"><button class="btn btn-default tut-dosage-calc-btn calc-start-proc-btn">Simulan ang Proseso</button></a>
+					<a href="#tut-reminder"><button class="btn btn-default tut-dosage-calc-btn calc-start-proc-btn">Simulan ang Proseso</button></a>
 					<?php } else if (is_page(122)) {?>
-					<a href="#tut-first-step"><button class="btn btn-default tut-dosage-calc-btn calc-start-proc-btn">Start the Process</button></a>
+					<a href="#tut-reminder"><button class="btn btn-default tut-dosage-calc-btn calc-start-proc-btn">Start the Process</button></a>
 					<?php } ?>
 				</div>
 			</div>
@@ -554,7 +554,7 @@ if(is_page(62)) {
 					</div>
 					<?php } else if (is_page(122)) {?>
 					<div class="col-md-2">
-						<a href="#tut-mistakes"><button class="btn btn-default step-mistakes-btn">CLICK HERE IF NEEDLE WAS NOT<br>INSERTED PROPERLY</button></a>
+						<a href="#tut-mistakes"><button class="btn btn-default step-mistakes-btn">CLICK HERE IF NEEDLE WAS<br>NOT INSERTED PROPERLY</button></a>
 					</div>
 					<?php } ?>
 					<div class="col-md-12 col-xs-12 step-btn-holder">
@@ -859,9 +859,9 @@ if(is_page(62)) {
 			</div>
 			<div class="col-md-3 col-xs-3">
 				<?php if (is_page(62)){ ?>
-				<a href="#tut-fourth-step"><button class="btn btn-default tut-dosage-calc-btn mistakes-btn">Bumalik</button></a>
+				<a href="#tut-third-step"><button class="btn btn-default tut-dosage-calc-btn mistakes-btn">Bumalik</button></a>
 				<?php } else if (is_page(122)) {?>
-				<a href="#tut-fourth-step"><button class="btn btn-default tut-dosage-calc-btn mistakes-btn">Back</button></a>
+				<a href="#tut-third-step"><button class="btn btn-default tut-dosage-calc-btn mistakes-btn">Back</button></a>
 				<?php } ?>
 			</div>
 		</div>
@@ -903,8 +903,10 @@ if(is_page(62)) {
 		<li><a href="#tut-first-step"></a></li>
 		<li><a href="#tut-second-step"></a></li>
 		<li><a href="#tut-third-step"></a></li>
-		<li style="display:none;"><a href="#"></a></li>
+		<li><a href="#tut-third-step-pt2"></a></li>
 		<li><a href="#tut-fourth-step"></a></li>
+		<li><a href="#tut-mistakes"></a></li>
+		<li><a href="#tut-end"></a></li>
 	</ul>
 </div>
 <!-- dot nav bar end -->

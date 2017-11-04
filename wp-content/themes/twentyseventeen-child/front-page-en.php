@@ -110,7 +110,7 @@ if(is_page(125)) {
 	<!-- Fifth section start -->
 	<div class="section section-5-container" id="mga_ospital" style="background-color: #619880;">
 		<div class="row">
-			<div class="col-md-7 col-centered">
+			<div class="col-md-9 col-centered">
 				<p class="text-center section-5-title"><?php the_field('section_5_title'); ?></p>
 			</div>
 		</div>

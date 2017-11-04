@@ -208,7 +208,7 @@ input[type='button']{
 	margin-left:15%;
 	margin-top:3%;
 	font-family:'League Spartan';
-	line-height: 115px;
+	line-height: 125px;
 }
 
 .section-2-title-container{
@@ -261,7 +261,7 @@ input[type='button']{
 }
 
 .section-5-container{
-	padding-top:7%;
+	padding-top:9%;
 }
 
 .section-5-container .container{
@@ -495,7 +495,7 @@ padding-right: 12px; */
 
 .tut-bene-warn{
 	background-color: #e5e3da;
-	padding-top: 95px;
+	padding-top: 100px;
 }
 
 
@@ -520,12 +520,12 @@ padding-right: 12px; */
 .tut-bene-title-fl{
 	color:rgb(166,189,179); 
 	text-align: right; 
-	margin-right: 4%;
+	margin-right: 6%;
 }
 
 .tut-warn-title-fl{
 	color: #619880;
-	margin-left: 35px;
+	margin-left: 50px;
 }
 
 .tut-bene{
@@ -540,7 +540,7 @@ padding-right: 12px; */
 
 .tut-bene-fl{
 	height: auto;
-	padding-bottom: 214px;
+	padding-bottom: 217px;
 	width: 75%;
 	margin-left: 160px;
 	margin-right: 50px;
@@ -597,7 +597,7 @@ padding-right: 12px; */
 	text-align: center;
 	font-weight: bold;
 	line-height: 75px;
-	color: #9FB19B; 
+	color: rgb(166,189,179); 
 	margin-top: 30px;
 	font-family:'League Spartan';
 }
@@ -622,7 +622,7 @@ padding-right: 12px; */
 
 .tut-dosage-desc{
 	background-color: #e5e3da;
-	padding-top: 85px;
+	padding-top: 105px;
 }
 
 .tut-dosage-desc-container{
@@ -765,7 +765,7 @@ padding-right: 12px; */
 .tut-step-title{
 	color: #8e191c;
 	font-size: 65px;
-	/*margin-top: 20px;*/
+	margin-top: 15px;
 	text-align: center;
 	font-weight: bold;
 	line-height: 75px;
@@ -775,7 +775,7 @@ p.tut-step-title span{
 	font-size:60px;
 }
 .step-tab-holder{
-	margin: 75px 12%;
+	margin: 30px 12%;
 }
 
 /* Style the tab */
@@ -841,12 +841,12 @@ div.step-tab button.active {
 
 .mistake-image {
 	width: 90%;
-	bottom: 0px;
+	bottom: 15px;
 	position: absolute;
 }
 
 .exam-container input[type='radio']{
-	margin-right:5px;
+	margin-right:10px;
 }
 
 .step-tab-holder p {
@@ -917,7 +917,7 @@ div.step-tab button.active {
 	text-align: center;
 	font-weight: bold;
 	font-family:'League Spartan';
-	color:#619880 !important;
+	/*color:#619880;*/
 }
 
 .mistake-desc{
@@ -926,7 +926,8 @@ div.step-tab button.active {
 }
 
 .tut-mistakes-panels:hover{
-	background-color: #6f9485;
+	/*background-color: #6f9485;*/
+	background-color: #619880;
 	color: white;
 }
 
@@ -965,7 +966,11 @@ div.step-tab button.active {
 }
 
 .tut-end-btn-holder{
-	margin: 20px 0;
+	margin: 40px 0;
+}
+
+.tut-end-btn-holder-en{
+	margin: 40px 0;
 }
 
 .tut-end-btn{
@@ -989,7 +994,7 @@ div.step-tab button.active {
 }
 
 .step-mistakes-btn{
-	margin-left: -85px;
+	margin-left: -70px;;
     margin-top: 170px;
 }
 
@@ -1043,12 +1048,12 @@ div.step-tab button.active {
 		font-size: 17px;
 	}
 	.section-2-title-container{
-		margin-top:50px;
+		margin-top:40px;
 		margin-left:-6.5%;
 	}
 
 	.section-2-container{
-		padding-top:130px;
+		padding-top:100px;
 	}
 
 	.section-3-container {
@@ -1077,7 +1082,7 @@ div.step-tab button.active {
 	.tut-banner-icons{
 		float: left;
 		width: 7%;
-		margin: 20px 35px;
+		margin: 20px 32px;
 	}
 
 	.tut-banner-icons:nth-of-type(1){
@@ -1104,7 +1109,7 @@ div.step-tab button.active {
 
 	
 	.tut-bene-warn{
-		padding-top: 75px;
+		padding-top: 100px;
 	}
 
 	.tut-bene{
@@ -1112,7 +1117,7 @@ div.step-tab button.active {
 	}
 
 	.tut-bene-fl{
-		padding-bottom: 214px;
+		padding-bottom: 217px;
 	}
 
 	.tut-warn{
@@ -1120,7 +1125,7 @@ div.step-tab button.active {
 	}
 
 	.step-tab-holder{
-		margin: 40px 12%;
+		margin: 30px 12%;
 	}
 
 	.tut-end-btn{
@@ -1217,7 +1222,7 @@ div.step-tab button.active {
 	}
 
 	.tut-bene-warn{
-		padding-top: 75px;
+		padding-top: 100px;
 	}
 
 	.tut-bene-warn-title:nth-of-type(1){
@@ -1245,7 +1250,7 @@ div.step-tab button.active {
 	}
 
 	.step-tab-holder {
-		margin: 45px 5%;
+		margin: 30px 12%;
 	}
 
 	.first-step-tabcontent, .second-step-tabcontent, .third-step-tabcontent, 
@@ -1441,7 +1446,7 @@ div.step-tab button.active {
 	}
 
 	.tut-bene-warn{
-		padding-top: 75px;
+		padding-top: 100px;
 	}
 
 	.tut-bene-warn-title:nth-of-type(1){
@@ -1829,7 +1834,7 @@ div.step-tab button.active {
 	}
 
 	.tut-bene-warn{
-		padding-top: 75px;
+		padding-top: 100px;
 	}
 
 	.tut-bene-warn-title:nth-of-type(1){
@@ -2296,7 +2301,7 @@ div.step-tab button.active {
 	}
 
 	.tut-bene-warn{
-		padding-top: 75px;
+		padding-top: 100px;
 	}
 
 	.tut-bene-warn-title:nth-of-type(1){
@@ -2564,6 +2569,7 @@ div.step-tab button.active {
 	font-size:80px;
 	font-weight:bold;
 	font-family:'League Spartan';
+	padding-top: 50px;
 }
 
 .exam-subheader{
@@ -2596,7 +2602,7 @@ div.step-tab button.active {
 }
 
 .exam-question{
-	width:96%;
+	width:140%;
 }
 
 .exam-container {
