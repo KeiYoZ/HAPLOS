@@ -176,15 +176,20 @@ if(is_page(160)){
 				<ul style="list-style: none; color: white;">
 					<li id="answer-no-1"></li>
 					<li id="answer-no-2"></li>
-					<li id="answer-no-3"></li>
-					<li id="answer-no-4"></li>
-					<li id="answer-no-5"></li>
+					<li id="answer-no-3">
+					</li>
+					<li id="answer-no-4">
+					</li>
+					<li id="answer-no-5">
+					</li>
 				</ul>
 			</div>
 			<div class="col-md-4">
 				<ul style="list-style: none; color: white;">
-					<li id="answer-no-6"></li>
-					<li id="answer-no-7"></li>
+					<li id="answer-no-6">
+					</li>
+					<li id="answer-no-7">
+					</li>
 					<li id="answer-no-8"></li>
 					<li id="answer-no-9"></li>
 					<li id="answer-no-10"></li>
