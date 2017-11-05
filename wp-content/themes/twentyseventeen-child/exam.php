@@ -33,7 +33,7 @@ if(is_page(160)){
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-lg-6 col-centered text-center" style="margin-top:150px;">
+			<div class="col-lg-6 col-centered text-center exam-start-holder">
 				<a href="#1"><input type="button" class="start-exam" value="Start"></a>
 			</div>
 		</div>
@@ -53,9 +53,9 @@ if(is_page(160)){
 						<p class="exam-subheader"><?php the_field('exam_subheader'); ?></p>
 					</div>
 				</div>
-				<form action="">
+				<form action="" class="question-holder">
 					<div class="row">
-						<div class="col-lg-6 col-sm-12 exam-container">
+						<div class="col-lg-12 col-sm-12 exam-container">
 							<p class="exam-part-head"><?php the_field('p1_question_header'); ?></p>
 							<p class="exam-question">
 								<?php the_sub_field('true_or_false_question'); ?>
@@ -110,9 +110,9 @@ if(is_page(160)){
 					<p class="exam-subheader"><?php the_field('exam_subheader'); ?></p>
 				</div>
 			</div>
-			<form action="">
+			<form action="" class="question-holder">
 				<div class="row">
-					<div class="col-lg-6 col-sm-12 exam-container">
+					<div class="col-lg-12 col-sm-12 exam-container">
 						<p class="exam-part-head"><?php the_field('p2_question_header'); ?></p>
 						<p class="exam-question">
 							<?php the_sub_field('multiple_choice_question'); ?>
@@ -172,7 +172,7 @@ if(is_page(160)){
 			<p class="user-score" id="user-score"></p>
 		</div>
 		<div class="row answer-keys">
-			<div class="col-md-4">
+			<div class="col-md-4 col-xs-12 answer-keys-col">
 				<ul style="list-style: none; color: white;">
 					<li id="answer-no-1"></li>
 					<li id="answer-no-2"></li>
@@ -184,7 +184,7 @@ if(is_page(160)){
 					</li>
 				</ul>
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-4 col-xs-12 answer-keys-col">
 				<ul style="list-style: none; color: white;">
 					<li id="answer-no-6">
 					</li>
@@ -195,7 +195,7 @@ if(is_page(160)){
 					<li id="answer-no-10"></li>
 				</ul>
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-4 col-xs-12 answer-keys-col">
 				<ul style="list-style: none; color: white;">
 					<li id="answer-no-11"></li>
 					<li id="answer-no-12"></li>

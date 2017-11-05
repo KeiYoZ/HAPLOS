@@ -808,14 +808,14 @@ if(is_page(62)) {
 							<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'fourth-step-tabcontent', 'fourth-step-tablinks', 'fourth-step-2', 'btn')">Bumalik</button>
 						</div>
 						<div class="col-md-6 col-xs-6">
-							<a href="#tut-fourth-step"><button class="btn btn-default step-btn-next" style="visibility: hidden">Susunod</button></a>
+							<a href="#tut-end"><button class="btn btn-default step-btn-next">Tapos na</button></a>
 						</div>
 						<?php } else if (is_page(122)) {?>
 						<div class="col-md-6 col-xs-6">
 							<button class="btn btn-default step-btn-prev" onclick="openStep(event, 'fourth-step-tabcontent', 'fourth-step-tablinks', 'fourth-step-2', 'btn')">Back</button>
 						</div>
 						<div class="col-md-6 col-xs-6">
-							<a href="#tut-fourth-step"><button class="btn btn-default step-btn-next" style="visibility: hidden">Susunod</button></a>
+							<a href="#tut-end"><button class="btn btn-default step-btn-next">Finish</button></a>
 						</div>
 						<?php } ?>
 					</div>

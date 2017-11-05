@@ -577,6 +577,7 @@ padding-right: 12px; */
 	background-color:#a4d0be;
 	border-radius: 15px;
 	font-weight:bold;
+	font-family:'Gill Sans';
 	border:0;
 }
 .dosage-examples li{
@@ -615,9 +616,21 @@ padding-right: 12px; */
 	font-family:'League Spartan';
 }
 
+tut-reminder-number-1{
+	padding-right: 25px;
+}
+
 .tut-reminder-desc{
 	font-size: 17px;
 	font-family:'Gill Sans';
+}
+
+.tut-reminder-desc-1, .tut-reminder-desc-2{
+	margin-top: 10px;
+}
+
+.tut-reminder-desc-3, .tut-reminder-desc-4{
+	margin-top: 25px;
 }
 
 .tut-dosage-desc{
@@ -656,12 +669,24 @@ padding-right: 12px; */
 	text-align: right;
 	font-weight: bold;
 	font-family:'League Spartan';
+	padding-right: 25px;
+}
+
+.tut-dosage-desc-number-1{
+	padding-right: 35px;
 }
 
 .tut-dosage-desc-desc{
 	font-size: 17px;
 	font-family:'Gill Sans';
+	padding-left: 0px;
 }
+
+.tut-dosage-desc-desc-3 {
+	margin-top: 15px;
+	padding-left: 0px;
+}
+
 
 .dosage-formula{
 	border: 5px solid #619880;
@@ -1012,10 +1037,79 @@ div.step-tab button.active {
 	width: 95%;
 }
 
+.answer-key-desc{
+	padding-left: 0px;
+}
+
 .re-exam-btn{
 	margin: 0 42%;
 }
 
+
+/******* Examination Page Styles ********/
+.exam-start-holder{
+	margin-top: 150px;
+}
+
+.start-exam {
+	background-color:#a4d2bf;
+	border-radius:100px;
+	padding:6px 20px;
+	color:#000;
+	font-family:'Gill Sans';
+	font-weight:bold;
+	font-size:17px;
+}
+
+.exam-header {
+	color:#b5d7c9;
+	font-size:80px;
+	font-weight:bold;
+	font-family:'League Spartan';
+	padding-top: 50px;
+}
+
+.exam-subheader{
+	color: #fff;
+	font-weight: bold;
+	font-size: 32px;
+	margin-bottom:60px;
+	font-family:'League Spartan';
+}
+
+.exam-intro{
+	color: #fff;
+	font-size: 25px;
+	font-family:'Gill Sans';
+}
+
+.exam-part-head{
+	color:#b5d8ca;
+	font-size:36px;
+	font-weight:bold;
+	margin-bottom:5%;
+	font-family:'League Spartan';
+}
+
+.exam-question, input[type="radio"] {
+	color:#fff;
+	font-size:30px;
+	margin-bottom:1%;
+	font-family: 'Gill Sans';
+}
+
+.exam-question{
+	/*width:140%;*/
+	width: 85%;
+}
+
+.exam-container {
+	margin-left:10%;
+}
+
+.exam-radio-btn {
+	margin-left:6%;
+}
 
 /*************** Responsiveness of index ***************/
 
@@ -1113,7 +1207,7 @@ div.step-tab button.active {
 	}
 
 	.tut-bene{
-		padding-bottom: 238px;
+		padding-bottom: 258px;
 	}
 
 	.tut-bene-fl{
@@ -1708,6 +1802,7 @@ div.step-tab button.active {
 		font-size:70px;
 		margin-top:3% !important;
 		margin-left:2%;
+		line-height: 65px;
 	}
 	.section-3-container{
 		padding-left:0px;
@@ -1851,7 +1946,7 @@ div.step-tab button.active {
 
 	.tut-bene-title-fl{
 		font-size: 55px;
-		margin-left: 22px;
+		margin-left: 35px;
 	}
 
 	.tut-warn-title-fl{
@@ -1860,6 +1955,13 @@ div.step-tab button.active {
 	}
 
 	.tut-bene{
+		margin: 0 8px;
+		width: 100%;
+		padding-bottom: 130px;
+		overflow: auto;
+	}
+
+	.tut-bene-fl{
 		margin: 0 8px;
 		width: 100%;
 		padding-bottom: 130px;
@@ -1905,9 +2007,21 @@ div.step-tab button.active {
 		text-align: center;
 	}
 
+	.tut-dosage-desc-number-1{
+		padding-right: 0px;
+	}
+
 	.tut-dosage-desc-desc {
 		margin-top: 0px;
 		margin-bottom: 20px;
+	}
+
+	.tut-dosage-desc-desc-1, .tut-dosage-desc-desc-2, .tut-dosage-desc-desc-3 {
+		padding-left: 15px;
+	}
+
+	.tut-dosage-desc-desc-3 {
+		margin-top: 0px;
 	}
 
 	.dosage-formula {
@@ -1926,12 +2040,12 @@ div.step-tab button.active {
 	}
 
 	.dosage-formula-1-fl{
-		width: 110%; 
+		width: 85%; 
 		text-align:center;
 	}
 
 	.dosage-formula-2-fl{
-		width: 110%; 
+		width: 85%; 
 		text-align:center;
 	}	
 
@@ -1946,7 +2060,7 @@ div.step-tab button.active {
 	}
 
 	.styleSelect{
-		margin: 0 15%;
+		margin: 0 18%;
 	}
 
 	.tut-dosage-calc-box {
@@ -1977,9 +2091,17 @@ div.step-tab button.active {
 		text-align: left; 
 	}
 
+	.tut-reminder-number-1{
+		padding-left: 25px;
+	}
+
 	.tut-reminder-desc {
 		margin-top: 0;
 		margin-bottom: 20px;
+	}
+
+	.tut-reminder-desc-4{
+		margin-top: 10px;
 	}
 
 	.tut-reminder-inst{
@@ -1992,13 +2114,13 @@ div.step-tab button.active {
 	}
 
 	.tut-step-title {
-		font-size: 60px;
-		line-height: 50px;
+		font-size: 45px;
+		line-height: 60px;
 		margin-left: 4px;
 	}
 
 	p.tut-step-title span {
-		font-size: 40px;
+		font-size: 45px;
 	}
 
 	.step-gif {
@@ -2045,15 +2167,15 @@ div.step-tab button.active {
 	}
 
 	.tut-mistakes-title {
-		font-size: 45px;
-		line-height: 50px;
-		margin-left: 8px;
+		font-size: 50px;
+    	line-height: 60px;
+    	margin-left: 8px;
 	}
 
-	.tut-mistakes-panels:hover{
+	/*.tut-mistakes-panels:hover{
 		width: 100%;
 		font-size: 25px;
-	}
+	}*/
 
 	.mistakes-disclaimer{
 		margin-left: 30px;
@@ -2091,21 +2213,60 @@ div.step-tab button.active {
 		margin-left: 0%;
 	}
 
-	.mistake-image {
-		width: 100%;
+	.step-gif-3-7 {
+		width: 100%; 
+		margin-left: 0px; 
+		margin-top: 20px;
 	}
+
+	.step-mistakes-btn {
+	    margin-left: 0px;
+	    margin-top: 80px;
+	}
+	/*.mistake-image {
+		width: 100%;
+	}*/
 
 
 	/*Exam page*/
 
+	.exam-header{
+		font-size: 50px;
+		padding-left: 15px;
+	}
+
+	.exam-subheader{
+		padding-left: 15px;
+	}
+
+	.exam-intro {
+		padding-left: 15px;
+	}
+
+	.exam-start-holder{
+		margin-top: 35px;
+	}
+
+	.question-holder{
+		padding-left: 15px;
+	}
+
 	.answer-keys{
-		padding: 0 75px;
+		padding: 0 30px;
 		margin-left: 0;
 		font-size: 17px;
 	}
 
-	.re-exam-btn{
-		margin: 0 16%;
+	.answer-keys-col{
+		width: 120%;
+	}
+
+	.answer-key-desc{
+		margin-left: -10px;
+	}
+
+	.re-exam-btn, .re-exam-btn-fl{
+		margin-left: 30px;
 	}
 }
 
@@ -2393,7 +2554,7 @@ div.step-tab button.active {
 	}
 
 	.styleSelect{
-		margin: 0 15%;
+		margin: 0 18%;
 	}
 
 	.tut-dosage-calc-box {
@@ -2553,65 +2714,7 @@ div.step-tab button.active {
 }
 
 
-/******* Examination Page Styles ********/
-.start-exam {
-	background-color:#a4d2bf;
-	border-radius:100px;
-	padding:6px 20px;
-	color:#000;
-	font-family:'Gill Sans';
-	font-weight:bold;
-	font-size:17px;
-}
 
-.exam-header {
-	color:#b5d7c9;
-	font-size:80px;
-	font-weight:bold;
-	font-family:'League Spartan';
-	padding-top: 50px;
-}
-
-.exam-subheader{
-	color: #fff;
-	font-weight: bold;
-	font-size: 32px;
-	margin-bottom:60px;
-	font-family:'League Spartan';
-}
-
-.exam-intro{
-	color: #fff;
-	font-size: 25px;
-	font-family:'Gill Sans';
-}
-
-.exam-part-head{
-	color:#b5d8ca;
-	font-size:36px;
-	font-weight:bold;
-	margin-bottom:5%;
-	font-family:'League Spartan';
-}
-
-.exam-question, input[type="radio"] {
-	color:#fff;
-	font-size:30px;
-	margin-bottom:1%;
-	font-family: 'Gill Sans';
-}
-
-.exam-question{
-	width:140%;
-}
-
-.exam-container {
-	margin-left:10%;
-}
-
-.exam-radio-btn {
-	margin-left:6%;
-}
 
 /**********additional css*******************/
 

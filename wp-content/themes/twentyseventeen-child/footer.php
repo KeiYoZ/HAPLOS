@@ -115,10 +115,10 @@
 			var act_ctr = ctr + 1;
 
 			if (user_answers_array[ctr]["result"] == "correct"){
-				document.getElementById("answer-no-"+act_ctr).innerHTML = "<div class='col-md-2'>" + user_answers_array[ctr]["number"] + "</div><div class='col-md-10' style='padding-left:0'><span style='color:#5AF25E; font-weight:bold;'>" + user_answers_array[ctr]["answer"] + "</span></div>";
+				document.getElementById("answer-no-"+act_ctr).innerHTML = "<div class='col-md-2 col-xs-2'>" + user_answers_array[ctr]["number"] + "</div><div class='col-md-10 col-xs-10 answer-key-desc'><span style='color:#5AF25E; font-weight:bold;'>" + user_answers_array[ctr]["answer"] + "</span></div>";
 
 			}else if(user_answers_array[ctr]["result"] == "wrong"){
-				document.getElementById("answer-no-"+act_ctr).innerHTML = "<div class='col-md-2'>" + user_answers_array[ctr]["number"] + "</div><div class='col-md-10' style='padding-left:0'><span style='color:red; font-weight:bold;'>" + user_answers_array[ctr]["answer"] + "</span></div>";
+				document.getElementById("answer-no-"+act_ctr).innerHTML = "<div class='col-md-2 col-xs-2'>" + user_answers_array[ctr]["number"] + "</div><div class='col-md-10 col-xs-10 answer-key-desc'><span style='color:red; font-weight:bold;'>" + user_answers_array[ctr]["answer"] + "</span></div>";
 			}
 		}
 
