@@ -33,9 +33,15 @@ if(is_page(160)){
 			</div>
 		</div>
 		<div class="row">
+			<?php if(is_page(160)){?>
 			<div class="col-lg-6 col-centered text-center exam-start-holder">
-				<a href="#1"><input type="button" class="start-exam" value="Start"></a>
+				<a href="#1"><input type="button" class="start-exam start-exam-btn" value="Simulan"></a>
 			</div>
+			<?php }else if(is_page(128)){ ?>
+			<div class="col-lg-6 col-centered text-center exam-start-holder">
+				<a href="#1"><input type="button" class="start-exam start-exam-btn" value="Start"></a>
+			</div>
+			<?php } ?>
 		</div>
 	</div>
 	<!-- exam intro end -->
