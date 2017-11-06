@@ -2126,8 +2126,8 @@ div.step-tab button.active {
 	}
 
 	.tut-step-title {
-		font-size: 45px;
-		line-height: 60px;
+		font-size: 50px;
+    	line-height: 63px;
 		margin-left: 4px;
 	}
 
@@ -2198,9 +2198,10 @@ div.step-tab button.active {
 	}
 
 	.tut-end-title {
-		font-size: 28px;
-		margin-top: 20%;
-		margin-left: 7px;
+		font-size: 35px;
+	    margin-top: 20%;
+	    margin-left: 7px;
+	    letter-spacing: 1px;
 	}
 
 	.tut-sub-title{
@@ -2232,7 +2233,7 @@ div.step-tab button.active {
 	}
 
 	.step-mistakes-btn {
-	    margin-left: 0px;
+	    margin-left: 25px;
 	    margin-top: 80px;
 	}
 	/*.mistake-image {
