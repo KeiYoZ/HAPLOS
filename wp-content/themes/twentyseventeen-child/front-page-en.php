@@ -62,7 +62,7 @@ if(is_page(125)) {
 
 	<!-- Third section start -->
 	<div class="section section-3-container" id="hemophilia">
-		<div style="width:53%; margin-left:5%">
+		<div style="width:53%; margin-left:5%" class="section-3-inner">
 			<div class="row">
 				<div class="col-md-12 col-xs-12">
 					<span class="section-3-title-1"><?php the_field('section_3_title_1'); ?></span>
@@ -83,7 +83,7 @@ if(is_page(125)) {
 	<!-- Third section end -->
 
 	<!-- Fourth section start -->
-	<div class="section" id="contact_haplos" style="background-color: #619880; padding-top:10%; padding-bottom:14%;">
+	<div class="section" id="contact_haplos" style="background-color: #619880; padding-top:120px; padding-bottom:200px;">
 		<div style="margin:0 auto;">
 			<div class="row">
 				<div class="col-md-12">

@@ -57,7 +57,7 @@ if(is_page(2)) {
 
 	<!-- Third section start -->
 	<div class="section section-3-container" id="hemophilia">
-		<div style="width:53%; margin-left:10%;">
+		<div style="width:53%; margin-left:10%;" class="section-3-inner">
 			<div class="row">
 				<div class="col-md-12 col-xs-12">
 					<span class="section-3-title-1"><?php the_field('section_3_title_1'); ?></span>
